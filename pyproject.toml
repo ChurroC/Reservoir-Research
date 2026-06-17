@@ -18,9 +18,11 @@ dependencies = [
     "numpy>=2.4.6",
     "pandas>=3.0.3",
     "plotly>=6.7.0",
+    "pygfx>=0.15.3",
     "pyqt6>=6.11.0",
     "pyqtgraph>=0.14.0",
     "pyvista[jupyter]>=0.48.4",
     "scikit-learn>=1.9.0",
     "scipy>=1.17.1",
+    "wgpu>=0.29.0",
 ]
