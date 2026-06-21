@@ -1,0 +1,1 @@
+What if instead of the non linear springs being a reservoir basically could we derive the acoustic forces and use it as a way to back propogate.
