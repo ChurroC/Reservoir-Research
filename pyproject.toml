@@ -11,6 +11,7 @@ dependencies = [
     "glfw>=2.10.0",
     "imageio>=2.37.3",
     "imgui-bundle>=1.92.801",
+    "ipympl>=0.10.0",
     "ipywidgets>=8.1.8",
     "jupyter-rfb>=1.0.2",
     "matplotlib>=3.10.9",
@@ -25,5 +26,6 @@ dependencies = [
     "pyvista[jupyter]>=0.48.4",
     "scikit-learn>=1.9.0",
     "scipy>=1.17.1",
+    "simplejpeg>=1.9.0",
     "wgpu>=0.29.0",
 ]
