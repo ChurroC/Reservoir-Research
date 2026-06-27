@@ -24,6 +24,7 @@ dependencies = [
     "pyqt6>=6.11.0",
     "pyqtgraph>=0.14.0",
     "pyvista[jupyter]>=0.48.4",
+    "ray[tune]>=2.55.1",
     "scikit-learn>=1.9.0",
     "scipy>=1.17.1",
     "simplejpeg>=1.9.0",
