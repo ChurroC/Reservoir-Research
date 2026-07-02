@@ -1,0 +1,17 @@
+- A brief introduction to Reservoir Computing
+  - Lorentz prediction with Echo State Network
+  - https://www.martinuzzi.net/posts/a-brief-introduction-to-reservoir-computing/
+- Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series
+  - They do pretty much everything you can do with a reservoir on how to test and optimize it less on reservoir
+  - https://computo-journal.org/published-202505-ferte-reservoirnet/#hyperparameter-optimisation-using-random-search
+- Pattern Recognition in a Bucket
+  - What the name is bruh
+  - https://link.springer.com/chapter/10.1007/978-3-540-39432-7_63
+- Computing with strange matter: why and how is biological matter playing Doom these days
+  - They played doom which is crazy
+    - But was it supervised or nah since if not we could try basically using a pendulum as a game and using itself to 
+    - Supposedly they use a FORCE (First-Order Reduced and Controlled Error) to update weights in real time to get error lower
+    - So instead of training the linear regression of the states and the weights we continouslly randomly move it till it performs better.
+    - Basically reinforcement learning I think
+    - But cool part would be doing pong or pendulum with this
+  - https://fcaravelli.github.io/blog/2026-06-02-doom1.html

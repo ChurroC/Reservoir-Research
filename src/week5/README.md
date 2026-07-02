@@ -15,3 +15,7 @@ Gonna use this now to know what I did lol and for the slides tbh
   - Things to do
     - Now I want to implement both a boosted reservoir and deep reservoir
     - Need to do Liquid State Machines
+
+Todo:
+Need to do the boosted reservoir still
+Gonna get to working on the metamaterial stuff
