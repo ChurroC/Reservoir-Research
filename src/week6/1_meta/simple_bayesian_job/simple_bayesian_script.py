@@ -211,7 +211,7 @@ def objective(trial):
 
 study = optuna.create_study(directions=["maximize", "minimize"])
 optuna.logging.set_verbosity(optuna.logging.WARNING)
-study.optimize(objective, n_trials=1000, n_jobs=-1)
+study.optimize(objective, n_trials=5000, n_jobs=-1)
 
 
 df = study.trials_dataframe()

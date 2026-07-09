@@ -10,3 +10,5 @@ Also back on the pendulum idea what if I use the pendulum as the reservior. Then
 Like the inputs is basically gravity and position of the pendulum. Then the inputs are directly applied automatically. But the problem is we don't have training data for the supervised stuff.
 We could maybe do a geentic algo to find something good than train it with this but that's always double the work for the theory.
 How did the doom and ping pong work since they don't have training data and what to do right. Unsupervised osmething?
+
+Use Cupy for the math when doing cluster
