@@ -12,3 +12,13 @@ We could maybe do a geentic algo to find something good than train it with this 
 How did the doom and ping pong work since they don't have training data and what to do right. Unsupervised osmething?
 
 Use Cupy for the math when doing cluster
+
+Let the sim run the let spring run for a couple steps without the force to almost allow wave rpopfgation or time delay.
+
+Finish up mult hexagon
+Generatively build a mesh or spring system thing
+Penedulum idea
+
+What if I have a a graph neural network that let's me build and genratively diesn a spring system
+
+Plot Henon like a time series have x over time and y over time
