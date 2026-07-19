@@ -15,6 +15,10 @@ Use Cupy for the math when doing cluster
 
 Let the sim run the let spring run for a couple steps without the force to almost allow wave rpopfgation or time delay.
 
+Boosted NN
+
+If we can derive a linear sol for pendulums. Could it replace a sol based of control theory? Would solving contorl theory with the lens of reservoir with itself as the reservoir.
+
 Finish up mult hexagon
 Generatively build a mesh or spring system thing
 Penedulum idea
