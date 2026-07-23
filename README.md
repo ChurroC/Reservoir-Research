@@ -9,5 +9,9 @@ squeue -u charanc2
 
 sacct -j 425896 --format=JobID,JobName,Start,End,Elapsed
 
-rsync -avz --filter=':- ./home/charanc2/projects/Reservoir-Research/.gitignore' charanc2@lakeshore.acer.uic.edu:/home/charanc2/projects/Reservoir-Research/ /Users/churroc/Personal/code/reservoir_research/
+rsync -avz --exclude='.git' --filter=':- ./home/charanc2/projects/Reservoir-Research/.gitignore' charanc2@lakeshore.acer.uic.edu:/home/charanc2/projects/Reservoir-Research/ /Users/churroc/Personal/code/reservoir_research/
 -a is archive, -v is verbose, -z is compression
+
+
+This one is syncing local to the cluster
+rsync -avz --exclude='.git' --filter=':- /Users/churroc/Personal/code/reservoir_research/.gitignore' /Users/churroc/Personal/code/reservoir_research/ charanc2@lakeshore.acer.uic.edu:/home/charanc2/projects/Reservoir-Research/
