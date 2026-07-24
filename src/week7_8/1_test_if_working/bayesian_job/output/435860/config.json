@@ -1,0 +1,6 @@
+{
+    "steps": 1000000,
+    "N": 100,
+    "target_node_count": 10,
+    "timeout": 60
+}

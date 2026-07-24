@@ -1,0 +1,115 @@
+Job started at: 2026/07/24_11-05-51
+[I 2026-07-24 11:05:55,383] A new study created in RDB with name: reservoir_job_435760
+[Optuna] Trial #0 executing on GPU 0...[Optuna] Trial #1 executing on GPU 1...[Optuna] Trial #3 executing on GPU 3...[Optuna] Trial #2 executing on GPU 2...[I 2026-07-24 11:06:45,176] Trial 0 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 3.9441216662146594, 'm_val': 0.0032628972876740992, 'm_spread': 1.2370640103217725, 'c_val': 0.090491712149382, 'c_spread': 0.7768255399873434, 'k_wall_val': 89.159829471885, 'k_wall_spread': 1.2322663296065752, 'k_between_val': 1.327259412564466, 'k_between_spread': 0.14505441981130063, 'wall_rest_spread': 0.8887455009305003, 'between_rest_spread': 0.7025012895412607, 'ridge_alpha': 1.0593444589662415e-06}.
+[Optuna] Trial #4 executing on GPU 0...[I 2026-07-24 11:06:45,324] Trial 3 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 28.407430307512936, 'm_val': 0.08480703079614203, 'm_spread': 0.7451029796594708, 'c_val': 0.016740618272467304, 'c_spread': 0.5800276471412154, 'k_wall_val': 35.934362823546756, 'k_wall_spread': 1.1782744015366544, 'k_between_val': 71.26516204389968, 'k_between_spread': 0.4403609261401236, 'wall_rest_spread': 1.1625638547049337, 'between_rest_spread': 0.5637103316349159, 'ridge_alpha': 5.9508437705287346e-05}.
+[I 2026-07-24 11:06:45,445] Trial 2 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 3.596084666146624, 'm_val': 0.0025733311996769185, 'm_spread': 0.6563108417568446, 'c_val': 0.20127359409179998, 'c_spread': 1.0581919512252895, 'k_wall_val': 1.2876425903529893, 'k_wall_spread': 0.9424358255879084, 'k_between_val': 10.917963321662711, 'k_between_spread': 0.8108881260124376, 'wall_rest_spread': 0.38073321326734244, 'between_rest_spread': 0.9702347000262032, 'ridge_alpha': 0.0006160919737940942}.
+[Optuna] Trial #6 executing on GPU 2...[Optuna] Trial #5 executing on GPU 1...[I 2026-07-24 11:06:45,767] Trial 1 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 27.275746026421437, 'm_val': 0.030532625287864594, 'm_spread': 1.2545030575622362, 'c_val': 0.04929620120805967, 'c_spread': 0.3092911825660301, 'k_wall_val': 84.6830091225239, 'k_wall_spread': 1.4741576480039367, 'k_between_val': 12.878147094295253, 'k_between_spread': 0.7301670098421137, 'wall_rest_spread': 0.08669568065860589, 'between_rest_spread': 0.520480206014925, 'ridge_alpha': 0.0047651261307250685}.
+[Optuna] Trial #7 executing on GPU 3...[I 2026-07-24 11:07:27,314] Trial 4 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 33.564753543146736, 'm_val': 0.007395339705682001, 'm_spread': 1.309366636599322, 'c_val': 0.10104897377858453, 'c_spread': 0.8449250423858867, 'k_wall_val': 2.703108482361673, 'k_wall_spread': 0.06409313114282672, 'k_between_val': 24.067644179387607, 'k_between_spread': 1.351471871620397, 'wall_rest_spread': 1.1240404515854476, 'between_rest_spread': 0.8865612009312904, 'ridge_alpha': 0.4363456417528858}.
+[Optuna] Trial #8 executing on GPU 0...[I 2026-07-24 11:07:27,469] Trial 6 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 29.28227424242143, 'm_val': 0.005081221871827369, 'm_spread': 0.855906984509125, 'c_val': 0.9727938579341764, 'c_spread': 1.1025463884980333, 'k_wall_val': 35.55524464061421, 'k_wall_spread': 0.8779011218890785, 'k_between_val': 11.119671718125199, 'k_between_spread': 0.5469502659623813, 'wall_rest_spread': 0.5023770619209762, 'between_rest_spread': 1.1184309135087973, 'ridge_alpha': 4.741304339119823}.
+[Optuna] Trial #9 executing on GPU 1...[W 2026-07-24 11:07:27,875] Trial 9 failed with parameters: {'input_force': 31.18411206510418, 'm_val': 0.0017802329549030207, 'm_spread': 0.34246723469604823, 'c_val': 0.048822089951018756, 'c_spread': 0.890240815833085, 'k_wall_val': 34.769896047977596, 'k_wall_spread': 0.8591028923951891, 'k_between_val': 11.753257543061672, 'k_between_spread': 0.09476492245724794, 'wall_rest_spread': 0.4325071815369919, 'between_rest_spread': 0.09727988330909587, 'ridge_alpha': 0.09973843741250582} because of the following error: OutOfMemoryError('Out of memory allocating 5,280,048,128 bytes (allocated so far: 161,280 bytes).').
+Traceback (most recent call last):
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+  File "/home/charanc2/projects/Reservoir-Research/src/week7/1_test_if_working/bayesian_job/mult_bayesian_job.py", line 303, in objective
+    r_2, mse = spring_trial(
+               ~~~~~~~~~~~~^
+        rng_seed=trial_seed,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        ridge_alpha=trial.suggest_float("ridge_alpha", 1e-6, 1e2, log=True),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/charanc2/projects/Reservoir-Research/src/week7/1_test_if_working/bayesian_job/mult_bayesian_job.py", line 186, in spring_trial
+    U_cp = cp.asarray(U)
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/cupy/_creation/from_data.py", line 94, in asarray
+    return _core.array(a, dtype, copy, order, blocking=blocking)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 2745, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2765, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2981, in cupy._core.core._array_default
+  File "cupy/_core/core.pyx", line 176, in cupy._core.core.ndarray.__new__
+  File "cupy/_core/core.pyx", line 282, in cupy._core.core._ndarray_base._init
+  File "cupy/cuda/memory.pyx", line 904, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1614, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1635, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1350, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1376, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1560, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 5,280,048,128 bytes (allocated so far: 161,280 bytes).
+[W 2026-07-24 11:07:27,877] Trial 9 failed with value None.
+Process Process-3:
+Traceback (most recent call last):
+  File "/mmfs1/home/charanc2/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/mmfs1/home/charanc2/.local/share/uv/python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/charanc2/projects/Reservoir-Research/src/week7/1_test_if_working/bayesian_job/mult_bayesian_job.py", line 325, in worker_task
+    study.optimize(objective, timeout=timeout_limit, n_jobs=1)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/optuna/study/study.py", line 516, in optimize
+    _optimize(
+    ~~~~~~~~~^
+        study=self,
+        ^^^^^^^^^^^
+    ...<7 lines>...
+        show_progress_bar=show_progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/optuna/study/_optimize.py", line 68, in _optimize
+    _optimize_sequential(
+    ~~~~~~~~~~~~~~~~~~~~^
+        study,
+        ^^^^^^
+    ...<8 lines>...
+        progress_bar=progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/optuna/study/_optimize.py", line 263, in _run_trial
+    raise func_err
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+  File "/home/charanc2/projects/Reservoir-Research/src/week7/1_test_if_working/bayesian_job/mult_bayesian_job.py", line 303, in objective
+    r_2, mse = spring_trial(
+               ~~~~~~~~~~~~^
+        rng_seed=trial_seed,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        ridge_alpha=trial.suggest_float("ridge_alpha", 1e-6, 1e2, log=True),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/charanc2/projects/Reservoir-Research/src/week7/1_test_if_working/bayesian_job/mult_bayesian_job.py", line 186, in spring_trial
+    U_cp = cp.asarray(U)
+  File "/mmfs1/projects/mie_seara/charanc2/Reservoir-Research/.venv/lib/python3.13/site-packages/cupy/_creation/from_data.py", line 94, in asarray
+    return _core.array(a, dtype, copy, order, blocking=blocking)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 2745, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2765, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2981, in cupy._core.core._array_default
+  File "cupy/_core/core.pyx", line 176, in cupy._core.core.ndarray.__new__
+  File "cupy/_core/core.pyx", line 282, in cupy._core.core._ndarray_base._init
+  File "cupy/cuda/memory.pyx", line 904, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1614, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1635, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1350, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1376, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1560, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 5,280,048,128 bytes (allocated so far: 161,280 bytes).
+[I 2026-07-24 11:07:28,062] Trial 7 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 40.911768469948946, 'm_val': 0.019383795179200365, 'm_spread': 0.18711092457770234, 'c_val': 0.03343510992387413, 'c_spread': 0.7954845779148481, 'k_wall_val': 36.59079543218713, 'k_wall_spread': 0.5132853865743465, 'k_between_val': 90.73660573833996, 'k_between_spread': 0.6399457585522085, 'wall_rest_spread': 0.6365333921387419, 'between_rest_spread': 0.41233690638407805, 'ridge_alpha': 0.005779197327601226}.
+[Optuna] Trial #10 executing on GPU 2...[I 2026-07-24 11:07:28,597] Trial 5 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 39.93999809432734, 'm_val': 0.0015084744246841222, 'm_spread': 0.39116840156167865, 'c_val': 0.7362416738939965, 'c_spread': 1.3637487862195334, 'k_wall_val': 20.026298706588964, 'k_wall_spread': 0.1076893040520095, 'k_between_val': 9.415246783672956, 'k_between_spread': 0.4969484741026028, 'wall_rest_spread': 0.3855310775524528, 'between_rest_spread': 0.5446409902959211, 'ridge_alpha': 1.1557441500088629e-05}.
+[Optuna] Trial #11 executing on GPU 3...[I 2026-07-24 11:08:09,589] Trial 8 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 19.104805777017557, 'm_val': 0.0016973094620459472, 'm_spread': 1.4694067692249821, 'c_val': 0.42050017987355515, 'c_spread': 1.2517041583105928, 'k_wall_val': 9.545034676022373, 'k_wall_spread': 0.7177355774875647, 'k_between_val': 52.987848653416194, 'k_between_spread': 0.11772726346191492, 'wall_rest_spread': 1.482029459847486, 'between_rest_spread': 0.8375239725143879, 'ridge_alpha': 2.78944393005877e-06}.
+[Optuna] Trial #12 executing on GPU 0...[I 2026-07-24 11:08:10,552] Trial 11 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 38.978485239960705, 'm_val': 0.024446449231933697, 'm_spread': 1.1074916085151878, 'c_val': 0.0412984707777654, 'c_spread': 0.36355820603662997, 'k_wall_val': 15.89264119823555, 'k_wall_spread': 0.5601980605681778, 'k_between_val': 68.97949533741216, 'k_between_spread': 1.2556956294820807, 'wall_rest_spread': 0.5350332834569999, 'between_rest_spread': 0.1224755079747541, 'ridge_alpha': 0.0005608249899740123}.
+[Optuna] Trial #13 executing on GPU 1...[I 2026-07-24 11:08:10,821] Trial 10 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 18.541311360563164, 'm_val': 0.012384812843747777, 'm_spread': 1.4148534609203236, 'c_val': 0.4433852417732331, 'c_spread': 0.7979511038142421, 'k_wall_val': 2.310290289581453, 'k_wall_spread': 0.9181469455936035, 'k_between_val': 33.45205081559445, 'k_between_spread': 1.0634542096370763, 'wall_rest_spread': 1.1935180819655087, 'between_rest_spread': 0.5812444247902354, 'ridge_alpha': 1.213767376649742}.
+[Optuna] Trial #14 executing on GPU 2...[I 2026-07-24 11:08:51,418] Trial 12 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 13.101879822557725, 'm_val': 0.0016222665143317135, 'm_spread': 0.6831821854808602, 'c_val': 0.07749969971707096, 'c_spread': 1.2132658355524886, 'k_wall_val': 4.52965132945784, 'k_wall_spread': 0.06716196651334766, 'k_between_val': 4.455155413024144, 'k_between_spread': 0.38911773720208953, 'wall_rest_spread': 0.6590337181386876, 'between_rest_spread': 0.36179979946499635, 'ridge_alpha': 5.256820609560306e-06}.
+[I 2026-07-24 11:08:53,062] Trial 14 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 11.43165216333925, 'm_val': 0.0012022707267881068, 'm_spread': 0.5895945686778619, 'c_val': 0.013784689242113615, 'c_spread': 0.6419130901741268, 'k_wall_val': 67.13957649246997, 'k_wall_spread': 0.6821854224728703, 'k_between_val': 5.759715611433727, 'k_between_spread': 1.1296439741229383, 'wall_rest_spread': 1.364839096100984, 'between_rest_spread': 0.9588282448163677, 'ridge_alpha': 0.000814262915838015}.
+[I 2026-07-24 11:08:53,584] Trial 13 finished with values: [-1.999990909173553, 990991072.152503] and parameters: {'input_force': 7.162227493315327, 'm_val': 0.0351409693635931, 'm_spread': 0.6957991756863403, 'c_val': 0.6401729533746562, 'c_spread': 0.9035736307481014, 'k_wall_val': 1.1036212990991496, 'k_wall_spread': 0.29663928797212175, 'k_between_val': 9.122224799914084, 'k_between_spread': 0.9561643159246043, 'wall_rest_spread': 0.09692878620122936, 'between_rest_spread': 1.1216450691990334, 'ridge_alpha': 0.020508321362065384}.
+
+[Optuna] Optimization finished successfully across all 4 GPUs.
+Job finished at: 2026/07/24_11-08-55
