@@ -26,3 +26,5 @@ Penedulum idea
 What if I have a a graph neural network that let's me build and genratively diesn a spring system
 
 Plot Henon like a time series have x over time and y over time
+
+use narma instead of henon

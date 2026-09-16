@@ -17,6 +17,9 @@ https://pair.withgoogle.com/explorables/
 
 https://pair-code.github.io/understanding-umap/
 
+https://github.com/neonwatty/machine-learning-refined
+https://www.mlrefined.com/resources
+
 Useful
 https://removepaywalls.com/
 
