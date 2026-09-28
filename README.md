@@ -24,3 +24,5 @@ TODO
 Hyseria
 Do GPU stuff
 instead of havr rest lenth between 0 to 2 have instead be 1 to 2 since 0 to 1 can stop it
+
+Get all my stuff conencted to zotero and papers
