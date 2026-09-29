@@ -28,3 +28,8 @@ What if I have a a graph neural network that let's me build and genratively dies
 Plot Henon like a time series have x over time and y over time
 
 use narma instead of henon
+
+
+Check if having randomness can cause some nodes to pull in instead of at rest values
+
+find articel I read last time from first fall presentation
