@@ -33,3 +33,7 @@ use narma instead of henon
 Check if having randomness can cause some nodes to pull in instead of at rest values
 
 find articel I read last time from first fall presentation
+
+
+
+check if we should make the wall_rest_val be above 1 and do that for a trial
