@@ -13,7 +13,7 @@ rsync -avz --exclude='.git' --filter=':- ./home/charanc2/projects/Reservoir-Rese
 -a is archive, -v is verbose, -z is compression
 
 
-rsync -avz --exclude='.git' --filter=':- /home/charanc2/projects/Reservoir-Research/.gitignore' charanc2@lakeshore.acer.uic.edu:/home/charanc2/projects/Reservoir-Research/src/week7/1_test_if_working/bayesian_job /Users/churroc/Personal/code/reservoir_research/src/week7_8/1_test_if_working/bayesian_job
+rsync -avz --exclude='.git' --filter=':- /Users/churroc/Personal/code/reservoir_research/.gitignore' charanc2@lakeshore.acer.uic.edu:/home/charanc2/mie_seara_link/charanc2/Reservoir-Research/src/26_09_30_bayesian_mem_cap/ /Users/churroc/Personal/code/reservoir_research/src/26_09_30_bayesian_mem_cap
 
 
 This one is syncing local to the cluster

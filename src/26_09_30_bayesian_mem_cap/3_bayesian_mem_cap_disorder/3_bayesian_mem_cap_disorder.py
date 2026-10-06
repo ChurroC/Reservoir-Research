@@ -5,14 +5,19 @@ import optuna
 import time
 import os
 import pandas as pd
+import json
 
 slurm_job_id = os.environ.get("SLURM_JOB_ID", "")
+os.makedirs(slurm_job_id, exist_ok=True)
 trial_result_path = os.path.join(slurm_job_id, "trials_results.csv")
 best_results_path = os.path.join(slurm_job_id, "best_results.csv")
 config_path = os.path.join(slurm_job_id, "config.json")
 
+
 @njit(cache=True)
-def get_spring_forces(connections_list, disp, initial_pos, rest_lens, k_vals, num_nodes, dims):
+def get_spring_forces(
+    connections_list, disp, initial_pos, rest_lens, k_vals, num_nodes, dims
+):
     forces = np.zeros((num_nodes, dims))
     disp_reshaped = disp.reshape(num_nodes, dims)
 
@@ -39,9 +44,19 @@ def get_spring_forces(connections_list, disp, initial_pos, rest_lens, k_vals, nu
 
     return forces.reshape(-1)
 
+
 @njit(cache=True)
 def run_simulation(
-    steps, dt, m_inv_diag, c_diag, U, initial_pos, connections_list, k_vals, rest_lens, wall_nodes=[-1]
+    steps,
+    dt,
+    m_inv_diag,
+    c_diag,
+    U,
+    initial_pos,
+    connections_list,
+    k_vals,
+    rest_lens,
+    wall_nodes=[-1],
 ):
     num_nodes = initial_pos.shape[0]
     dims = initial_pos.shape[1]
@@ -66,18 +81,17 @@ def run_simulation(
         acc *= mask
 
         disp[i] = disp[i - 1] + v[i - 1] * dt + acc * 0.5 * dt**2
-        
+
         F_spring = get_spring_forces(
             connections_list, disp[i], initial_pos, rest_lens, k_vals, num_nodes, dims
         )
 
-        acc_next = m_inv_diag * (F_spring - c_diag * (v[i - 1] + .5 * acc * dt) + U[i])
+        acc_next = m_inv_diag * (F_spring - c_diag * (v[i - 1] + 0.5 * acc * dt) + U[i])
         acc_next *= mask
 
         v[i] = v[i - 1] + 0.5 * (acc + acc_next) * dt
 
     return disp, v
-
 
 
 N = 30
@@ -119,6 +133,7 @@ src_nodes = np.concatenate([connection_src, between_src])
 dst_nodes = np.concatenate([connection_dst, between_dst])
 connections_list = np.column_stack((src_nodes, dst_nodes))
 
+
 def evaluate_capacity(X_train, X_test, Y_train, Y_test, num_lags, ridge_alpha):
     model = Ridge(alpha=ridge_alpha)
     model.fit(X_train, Y_train)
@@ -138,6 +153,7 @@ def evaluate_capacity(X_train, X_test, Y_train, Y_test, num_lags, ridge_alpha):
         c_k[k] = (cov**2) / denom if denom > 1e-12 else 0.0
 
     return c_k
+
 
 def spring_trial(
     rng_seed,
@@ -171,10 +187,14 @@ def spring_trial(
     c_diag = np.repeat(c_nodes, dims)
 
     k_connection_vals = rng.lognormal(
-        mean=mu(k_wall_val, k_wall_spread), sigma=k_wall_spread, size=connection_src.shape[0] // 2
+        mean=mu(k_wall_val, k_wall_spread),
+        sigma=k_wall_spread,
+        size=connection_src.shape[0] // 2,
     ).repeat(2)
     k_between_vals = rng.lognormal(
-        mean=mu(k_between_val, k_between_spread), sigma=k_between_spread, size=between_src.shape[0]
+        mean=mu(k_between_val, k_between_spread),
+        sigma=k_between_spread,
+        size=between_src.shape[0],
     )
     k_vals = np.concatenate([k_connection_vals, k_between_vals])
 
@@ -184,7 +204,9 @@ def spring_trial(
         size=connection_src.shape[0] // 2,
     ).repeat(2)
     rest_between_lens = rng.lognormal(
-        mean=mu(between_rest_val, between_rest_spread), sigma=between_rest_spread, size=between_src.shape[0]
+        mean=mu(between_rest_val, between_rest_spread),
+        sigma=between_rest_spread,
+        size=between_src.shape[0],
     )
     rest_lens = np.concatenate([rest_connection_lens, rest_between_lens])
 
@@ -206,6 +228,11 @@ def spring_trial(
     X = np.column_stack((displacement[:, movement_idx], velocity[:, movement_idx]))
 
     return X, u
+
+
+k_cross = 25
+k_cross3 = 25
+
 
 def memory_trial(
     input, X_states, k_max, total_steps, start_idx, train_steps, test_steps, ridge_alpha
@@ -249,7 +276,6 @@ def memory_trial(
     Y3_test = Y3_clean[train_steps : train_steps + test_steps]
     c_deg3 = evaluate_capacity(X_train, X_test, Y3_train, Y3_test, k_max, ridge_alpha)
 
-    k_cross = 25
     cross_pairs = [
         (k1, k2) for k1 in range(1, k_cross + 1) for k2 in range(k1 + 1, k_cross + 1)
     ]
@@ -272,7 +298,6 @@ def memory_trial(
         ridge_alpha,
     )
 
-    k_cross3 = 25
     # Cross Degree 3 (2+1 interaction)
     pairs_21 = [
         (k1, k2)
@@ -335,14 +360,14 @@ def memory_trial(
         c_cross3_111,
     ]
 
+
 rng = np.random.default_rng(42)
+trial_seeds = rng.integers(0, 2**31 - 1, size=5)
 
 
 def objective(trial):
-    if trial.number % 10 == 0:
+    if trial.number % 1000 == 0:
         print(f"\r[Optuna] Processing Trial #{trial.number}...", end="", flush=True)
-    trial_seeds = rng.integers(0, 2**31 - 1, size=3)
-    trial.set_user_attr("trial_seeds", trial_seeds)
 
     start_time = time.perf_counter()
     rng_trials_results_avg = np.zeros(6)
@@ -351,17 +376,19 @@ def objective(trial):
             rng_seed=trial_seed,
             input_force=trial.suggest_float("input_force", 1, 50),
             m_val=trial.suggest_float("m_val", 0.001, 0.1, log=True),
-            m_spread=0,
+            m_spread=trial.suggest_float("m_spread", 0, 1.5, log=False),
             c_val=trial.suggest_float("c_val", 0.01, 1.0, log=True),
-            c_spread=0,
+            c_spread=trial.suggest_float("c_spread", 0, 1.5, log=False),
             k_wall_val=trial.suggest_float("k_wall_val", 1, 100, log=True),
-            k_wall_spread=0,
+            k_wall_spread=trial.suggest_float("k_wall_spread", 0, 1.5, log=False),
             k_between_val=trial.suggest_float("k_between_val", 1, 100, log=True),
-            k_between_spread=0,
-            wall_rest_val=dist_y * 1.1,
-            wall_rest_spread=0,
+            k_between_spread=trial.suggest_float("k_between_spread", 0, 1.5, log=False),
+            wall_rest_val=dist_y,
+            wall_rest_spread=trial.suggest_float("wall_rest_spread", 0, 1.5, log=False),
             between_rest_val=dist_between,
-            between_rest_spread=0,
+            between_rest_spread=trial.suggest_float(
+                "between_rest_spread", 0, 1.5, log=False
+            ),
         )
         if np.isnan(X).any():
             raise optuna.TrialPruned("NaN detected in spring_trial results.")
@@ -381,21 +408,58 @@ def objective(trial):
     trial.set_user_attr("duration_sec", elapsed_time)
 
     results = rng_trials_results_avg / len(trial_seeds)
-    return results[0] + results[1] + results[2], results[3] + results[4] + results[5]
+    linear_cap = results[0]
+    nonlinear_cap = results[1] + results[2] + results[3] + results[4] + results[5]
+    return linear_cap, nonlinear_cap
 
 
-order_study = optuna.create_study(directions=["maximize"] * 2)
+disorder_study = optuna.create_study(directions=["maximize"] * 2)
 optuna.logging.set_verbosity(optuna.logging.WARNING)
-order_study.optimize(objective, timeout=60, n_jobs=-1)  # timeout, n_trials
+disorder_study.optimize(objective, timeout=24000, n_jobs=-1)  # timeout, n_trials
+
+config = {
+    "slurm_job_id": slurm_job_id,
+    "lattice": {
+        "N": N,
+        "dist_between": dist_between,
+        "dist_y": dist_y,
+        "target_node_count": target_node_count,
+    },
+    "simulation": {
+        "dt": dt,
+        "total_steps": total_steps,
+        "transient": transient,
+        "train_steps": train_steps,
+        "test_steps": test_steps,
+    },
+    "capacity": {
+        "k_max": k_max,
+        "k_cross": k_cross,
+        "k_cross3": k_cross3,
+    },
+    "optimization": {
+        "num_eval_seeds": len(trial_seeds),
+        "fixed_seeds": trial_seeds.tolist(),
+    },
+}
+
+with open(config_path, "w") as f:
+    json.dump(config, f, indent=4)
 
 
-df = order_study.trials_dataframe()
+df = disorder_study.trials_dataframe()
 df.to_csv(trial_result_path, index=False)
 best_trials_df = pd.DataFrame(
     [
-        {"trial": t.number, "values": t.values, "params": t.params}
-        for t in order_study.best_trials
+        {
+            "trial": t.number,
+            "linear_mc": t.values[0],
+            "nonlinear_mc": t.values[1],
+            "total_mc": sum(t.values),
+            **t.params,
+        }
+        for t in disorder_study.best_trials
     ]
 )
 best_trials_df.to_csv(best_results_path, index=False)
-print("Finished Trials")
+print("Finished Trials Successfully")

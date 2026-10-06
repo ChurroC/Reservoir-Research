@@ -1,0 +1,31 @@
+{
+    "slurm_job_id": "485660",
+    "lattice": {
+        "N": 30,
+        "dist_between": 2.5,
+        "dist_y": 1.0,
+        "target_node_count": 10
+    },
+    "simulation": {
+        "dt": 0.01,
+        "total_steps": 9000,
+        "transient": 1000,
+        "train_steps": 5000,
+        "test_steps": 3000
+    },
+    "capacity": {
+        "k_max": 200,
+        "k_cross": 25,
+        "k_cross3": 25
+    },
+    "optimization": {
+        "num_eval_seeds": 5,
+        "fixed_seeds": [
+            191664963,
+            1662057957,
+            1405681631,
+            942484272,
+            929893137
+        ]
+    }
+}
