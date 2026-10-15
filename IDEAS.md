@@ -56,6 +56,13 @@ simplify bayesian
 maybe also check if without von miss that disorder improves it
 also plot log normal sigma val with mass and damping val
 
+
+Anderson stuff
+1. Calculate the Participation Ratio (PR) of Eigenmodes
+2. Plot the Local Density of States (LDOS) - In quantum mechanics and acoustic metamaterials, the Local Density of States (LDOS) maps how many vibrational modes are available at a specific node \(i\) at a specific frequency \(\omega \).
+• The Phenomenon: When you introduce your log-normal distribution for the springs and bistable truss lengths, you shatter the flat, uniform spectrum of the material into highly fragmented, localized energy landscapes.
+• The Proof: By plotting a 2D colormap of Node ID vs. Frequency (\(\omega \)), your disordered lattice will exhibit highly localized "islands" of energy spikes. This proves that your 10 driven nodes are feeding data into a material that natively partitions frequencies into separate spatial zones. This acts as a physical spectrum analyzer, performing a real-time Fourier transform via structural geometry before your linear regression even reads the output.
+
 Moderate disorder in a network of nonlinear von Mises trusses may improve reservoir computing by creating heterogeneous, partially localized, and state-dependent responses. These responses increase the diversity and memory of the reservoir. However, strong localization may reduce computational performance by preventing information from spreading across the network.
 
 
@@ -128,3 +135,127 @@ Run three quick benchmark simulations using your optimized mass/damping ratio an
 • Case C: Disordered truss lengths only (Uniform springs) → Expect decent nonlinearity, but low memory retention.
 • Case D (Your System): Both disordered → Expect peak performance.
 Showing that Case D significantly outperforms Cases B and C completely validates your engineering choice and cements the dual-distribution design as a core architectural contribution of your work.
+
+
+
+
+1. Quantify the "Edge of Chaos" via the Maximal Lyapunov Exponent (MLE)
+
+A physical reservoir computes best at the Edge of Chaos—the exact boundary between rigid stability (where the material doesn't change) and chaotic turbulence (where the material forgets everything instantly).
+• How to prove it: Run two parallel simulations with identical log-normal disorder profiles. Start them with infinitesimally different initial input vectors (Δ x₀ = 10⁻⁶). Track how the Euclidean distance between the two 100-node state trajectories (\(\Delta x_t\)) diverges or converges over time. Calculate the Lyapunov Exponent: \(\lambda = \lim_{t \to \infty} \frac{1}{t} \ln \frac{\Vert{}\Delta x_t\Vert{}}{\Vert{}\Delta x_0\Vert{}}\).
+• The Result: Plot the MLE (λ) against your Log-Normal disorder strength (σ).
+	• Ordered lattice: λ will be heavily negative (strongly stable, low computational flexibility).
+	• Hyper-chaotic lattice: λ will be positive (chaotic, breaks the Echo State Property).
+	• Optimized lattice: λ will hover exactly near 0 (the edge of chaos). Showing that your Bayesian Optimizer explicitly picks parameters that drive the MLE to zero is absolute gold-standard proof that disorder tunes the material's phase space for maximum information processing.
+
+
+
+
+
+2. Map the Attractor Reconstructed Phase-Space Rank
+
+Because you are feeding your system a NARMA signal and using linear regression to predict a future step, you are performing a physical version of Takens' Embedding Theorem. Your 100-node disordered lattice is taking a 1D time-series input and reconstructing its high-dimensional chaotic attractor inside the material's physical folds.
+• How to prove it: Extract the 100-node output trajectory matrix during a NARMA run. Run a Principal Component Analysis (PCA) on this state space. Calculate the number of principal components required to explain 99% of the variance.
+• The Result: An ordered lattice will show that just 2 or 3 principal components explain all the motion because the waves move uniformly. Your optimized, localized disordered lattice will require a vastly higher number of principal components to explain the variance. This proves that the disorder physically reconstructs a much cleaner, uncollapsed phase space of the NARMA attractor, which is exactly why the linear regression can effortlessly predict the future step.
+
+
+
+
+3. Track Information Bottleneck and Mutual Information Decay
+
+Reviewers love information theory. You can track exactly how information flows from your 10 driven nodes down into the 90 reservoir nodes by calculating Time-Delayed Mutual Information (MI) between the input signal U(t) and the individual state vectors of your nodes \(X_i(t+\tau)\).
+• How to prove it: Calculate \(I(U(t); X_i(t+\tau))\) for various time delays τ across every node in the lattice.
+• The Result:
+	• Ordered Lattice: Mutual information drops off a cliff almost instantly across all nodes due to global scattering and constructive interference wiping the memory clean.
+	• Disordered Lattice: The mutual information decay profile will show a power-law decay, with specific node clusters holding onto high mutual information for long delays (τ > 5). This provides rigorous information-theoretic proof that wave localization physically traps the Shannon information inside the spatial bounds of the material, creating local hardware storage registers.
+
+
+
+
+
+Why it matters to you: This study is one of the very few that explicitly isolates vibration mode localization as a design methodology for Physical Reservoir Computing. They mathematically analyze how trapping structural waves increases features, which provides the exact peer-reviewed foundation you need to back up your claim that wave localization directly upgrades computation. - https://www.nms.me.kyoto-u.ac.jp/en/mode-localization-reservoir-computing/
+
+
+
+
+
+
+
+styling papers
+
+Paper A: “Visualizing the Loss Landscape of Neural Nets” (Li et al.)
+
+• The Style: Deep Blue & Copper Metamaterial/Contour aesthetic.
+• Why it's perfect for you: This paper is famous for making high-dimensional vector spaces look incredibly clean. They use highly polished 3D surface maps and 2D contour lines to track states. It uses a minimal layout with sharp contrast, using deep blues to represent low error and rich copper/reds to show high error.
+
+Paper B: “Embodying Intelligence into Mechanical Metamaterials via Reservoir Computing” (He, Musgrave, et al., May 2026)
+
+• The Style: Modern Engineering Blueprint & Flat Vector aesthetic.
+• Why it's perfect for you: This paper is in your exact domain. Look at how they structure their figures: they combine the actual CAD/physics diagram of the metamaterial right next to flat, clear line graphs. The font in the plots matches the font of the paper's text exactly, and they stick to a strictly restricted, desaturated color palette (Slate Gray, Soft Teal, muted Red).
+
+
+
+
+
+
+
+
+
+
+
+
+Yes, UMAP (Uniform Manifold Approximation and Projection) is a phenomenal tool for your work, and it will provide your paper with one of its most visually striking and scientifically deep figures.
+In your 100-node lattice, your reservoir state matrix is 100-dimensional (100 distinct node displacements or velocities changing at every time step). Because humans cannot visualize a 100-dimensional space, UMAP's job is to crush those 100 dimensions down to a 2D or 3D coordinate space while preserving the complex, non-linear relationships between those states.
+Here is exactly how you can use UMAP to provide definitive proof of your system's capabilities:
+
+1. Visualize the "Attractor Reconstruction" (The Smoking Gun Proof)
+
+Since you are driving your lattice with a NARMA signal, the input sequence is tracing a specific chaotic trajectory (an attractor) through time.
+• How to use UMAP: Collect your 100 × N state matrix (where N is the number of time steps in your simulation). Pass this matrix into UMAP to project it down to 2D (X and Y). Color-code the plotted points by the true future NARMA value.
+• What it proves:
+	• Ordered Lattice UMAP: The projected points will look like a messy, tangled ball of yarn. This proves that the ordered lattice collapses the input data, making it impossible for a linear regression model to separate different future states.
+	• Disordered Lattice UMAP: The points will untangle into a beautiful, smoothly unrolled geometric shape (the reconstructed attractor) where the colors transition perfectly from one side to the other. This visualizes exactly why your linear regression works so well—the disorder has successfully unrolled the high-dimensional phase space, making the future states linearly separable.
+
+2. Map the "Topology of Energy Pockets" (Multistability)
+
+You can use UMAP to map the structural configurations of your bistable von Mises units.
+• How to use UMAP: Run your simulation across thousands of random input pulses, and save the final "settled" binary-like state of your 100 nodes (which trusses snapped up, and which snapped down). Pass these final state vectors into UMAP.
+• What it proves: The UMAP plot will show distinct, isolated clusters of points. Each cluster represents a specific "energy pocket" or macro-stable memory configuration. You can use this to visually prove that your disordered lattice creates a vast, rich archipelago of unique memory clusters, whereas the ordered lattice only shows a couple of flat, uninteresting dots.
+
+3. Track the "Trajectory of Information" Over Time
+
+Instead of plotting static points, you can plot the UMAP coordinates sequentially and connect them with a line to show the path your material takes as a wave travels through it.
+• How to use UMAP: Trace a single 50-step simulation run.
+• What it proves: You can show that when a new NARMA input hit the 10 driven nodes, the system's state trajectory swiftly branches into a specific region of the UMAP space. This proves the Echo State Property visually: it shows how the material dynamically transitions between states based on temporal context without getting permanently locked in a single configuration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+PRESENTATION
+
+Use esn equation
+
+simplied for actual
+cite it using name et al and publication and year
+
+then talk about actual real ones
+
+rnn
+echo state reservoir
+physical reservoir
+
+
+
+
+Ideas more Chloe
+Basically the bistable energy landscape but do it to the entire structure as multiple are conncted
+Also for the spring displacment heat plot what if we also have another plot left of it that colors based of the strength of the spring so we can see that it gets forced into the localized due to that.
