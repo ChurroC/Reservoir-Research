@@ -1,0 +1,49 @@
+struct,parity,target,r2,kappa,f,Omega
+"A uniform, uncompressed (symmetric)",odd,u(t-1),0.9998805613531819,1.0,0.5,2.0
+"A uniform, uncompressed (symmetric)",odd,u(t-2),0.9994241703430322,1.0,0.5,2.0
+"A uniform, uncompressed (symmetric)",odd,u(t)^3,0.8889907419710592,1.0,0.5,2.0
+"A uniform, uncompressed (symmetric)",odd,u(t)u(t-1)u(t-2),0.14253263250464554,1.0,0.5,2.0
+"A uniform, uncompressed (symmetric)",even,u(t)^2,-0.003171468605236649,1.0,0.5,2.0
+"A uniform, uncompressed (symmetric)",even,u(t)u(t-1),-0.005322204820123799,1.0,0.5,2.0
+"A uniform, uncompressed (symmetric)",even,u(t-1)^2,-0.0023332375656266446,1.0,0.5,2.0
+"A uniform, uncompressed (symmetric)",even,u(t)u(t-2),-0.002047286692428596,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),odd,u(t-1),0.9999996594135004,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),odd,u(t-2),0.9999969684320491,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),odd,u(t)^3,0.9945619026564044,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),odd,u(t)u(t-1)u(t-2),0.849939229577301,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),even,u(t)^2,-0.020060775104362216,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),even,u(t)u(t-1),-0.008953927913850634,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),even,u(t-1)^2,-0.013831446408117065,1.0,0.5,2.0
+B uncompressed + stiffness disorder (symmetric),even,u(t)u(t-2),-0.0061956747677220925,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),odd,u(t-1),0.9999999093936667,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),odd,u(t-2),0.9999994773262455,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),odd,u(t)^3,0.9991791780014033,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),odd,u(t)u(t-1)u(t-2),0.9253348439168128,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),even,u(t)^2,0.9999220468910583,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),even,u(t)u(t-1),0.999799554063636,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),even,u(t-1)^2,0.9999686550839743,1.0,0.5,2.0
+C uncompressed + prestress disorder (breaks),even,u(t)u(t-2),0.9991499923154341,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",odd,u(t-1),0.9999070729718568,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",odd,u(t-2),0.9995781288986824,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",odd,u(t)^3,0.8474030090643876,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",odd,u(t)u(t-1)u(t-2),0.007557936477970317,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",even,u(t)^2,0.9934461070856007,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",even,u(t)u(t-1),0.8778966849417433,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",even,u(t-1)^2,0.985956126166992,1.0,0.5,2.0
+"D uniform, bistable (spontaneous breaking)",even,u(t)u(t-2),0.24232736671591892,1.0,0.5,2.0
+E bistable + stiffness disorder,odd,u(t-1),0.9999998125328465,1.0,0.5,2.0
+E bistable + stiffness disorder,odd,u(t-2),0.9999976438043117,1.0,0.5,2.0
+E bistable + stiffness disorder,odd,u(t)^3,0.9964702081061031,1.0,0.5,2.0
+E bistable + stiffness disorder,odd,u(t)u(t-1)u(t-2),0.9288775867694858,1.0,0.5,2.0
+E bistable + stiffness disorder,even,u(t)^2,0.9999317799242717,1.0,0.5,2.0
+E bistable + stiffness disorder,even,u(t)u(t-1),0.9998133549959031,1.0,0.5,2.0
+E bistable + stiffness disorder,even,u(t-1)^2,0.9998749742197082,1.0,0.5,2.0
+E bistable + stiffness disorder,even,u(t)u(t-2),0.9987708013467286,1.0,0.5,2.0
+F bistable + prestress disorder,odd,u(t-1),0.9999993343354178,1.0,0.5,2.0
+F bistable + prestress disorder,odd,u(t-2),0.9999967865081123,1.0,0.5,2.0
+F bistable + prestress disorder,odd,u(t)^3,0.9961795868858657,1.0,0.5,2.0
+F bistable + prestress disorder,odd,u(t)u(t-1)u(t-2),0.812554814826858,1.0,0.5,2.0
+F bistable + prestress disorder,even,u(t)^2,0.9997683223089607,1.0,0.5,2.0
+F bistable + prestress disorder,even,u(t)u(t-1),0.9987869332207785,1.0,0.5,2.0
+F bistable + prestress disorder,even,u(t-1)^2,0.9999007851089231,1.0,0.5,2.0
+F bistable + prestress disorder,even,u(t)u(t-2),0.9957053235207998,1.0,0.5,2.0

@@ -1,0 +1,1201 @@
+struct,seed,kappa,f,Omega,r2,seconds
+"A uniform, uncompressed (symmetric)",0,0.1,0.1,0.5,0.17945830622727932,4.0
+"A uniform, uncompressed (symmetric)",0,0.1,0.05,0.5,0.19559677399365294,4.2
+"A uniform, uncompressed (symmetric)",0,0.1,0.5,0.5,0.19082942190169982,4.1
+"A uniform, uncompressed (symmetric)",0,0.1,0.2,0.5,0.19799471763781418,4.3
+"A uniform, uncompressed (symmetric)",0,0.1,0.1,1.0,0.25912500948298567,7.6
+"A uniform, uncompressed (symmetric)",0,0.1,0.5,1.0,0.25595552236785646,7.7
+"A uniform, uncompressed (symmetric)",0,0.1,0.05,1.0,0.2557161077805349,8.0
+"A uniform, uncompressed (symmetric)",0,0.1,1.0,0.5,0.18583336857761823,3.9
+"A uniform, uncompressed (symmetric)",0,0.1,0.2,1.0,0.2584551170665538,8.1
+"A uniform, uncompressed (symmetric)",0,0.1,2.0,0.5,0.18917631434254578,4.0
+"A uniform, uncompressed (symmetric)",0,0.1,1.0,1.0,0.2545420413776942,7.7
+"A uniform, uncompressed (symmetric)",0,0.1,0.05,2.0,0.27474345933876787,15.2
+"A uniform, uncompressed (symmetric)",0,0.1,0.2,2.0,0.27160815534151805,15.1
+"A uniform, uncompressed (symmetric)",0,0.1,0.1,2.0,0.2757773746203571,15.3
+"A uniform, uncompressed (symmetric)",0,0.1,2.0,1.0,0.26412777003351173,7.7
+"A uniform, uncompressed (symmetric)",0,0.2,0.05,0.5,0.22208467119293673,3.7
+"A uniform, uncompressed (symmetric)",0,0.1,0.5,2.0,0.27453741679840427,15.5
+"A uniform, uncompressed (symmetric)",0,0.2,0.1,0.5,0.2261646622841147,3.9
+"A uniform, uncompressed (symmetric)",0,0.2,0.05,1.0,0.2656501258557592,7.6
+"A uniform, uncompressed (symmetric)",0,0.1,1.0,2.0,0.29884234727870085,15.1
+"A uniform, uncompressed (symmetric)",0,0.1,2.0,2.0,0.4505899999877714,15.0
+"A uniform, uncompressed (symmetric)",0,0.2,0.1,1.0,0.26732616377955454,7.7
+"A uniform, uncompressed (symmetric)",0,0.2,0.2,0.5,0.22731970853917194,3.9
+"A uniform, uncompressed (symmetric)",0,0.1,0.1,4.0,0.27283634434788884,30.0
+"A uniform, uncompressed (symmetric)",0,0.2,0.5,0.5,0.22139654255731356,4.0
+"A uniform, uncompressed (symmetric)",0,0.1,0.2,4.0,0.3161036914063944,30.6
+"A uniform, uncompressed (symmetric)",0,0.2,0.05,2.0,0.26548205849533835,15.5
+"A uniform, uncompressed (symmetric)",0,0.2,0.2,1.0,0.26769128413102494,8.0
+"A uniform, uncompressed (symmetric)",0,0.1,0.05,4.0,0.23565112109067743,31.2
+"A uniform, uncompressed (symmetric)",0,0.2,1.0,0.5,0.2161593157758953,4.0
+"A uniform, uncompressed (symmetric)",0,0.2,0.1,2.0,0.2743140840633028,15.6
+"A uniform, uncompressed (symmetric)",0,0.1,0.5,4.0,0.41501857839014156,31.1
+"A uniform, uncompressed (symmetric)",0,0.2,0.5,1.0,0.26734448455592585,8.2
+"A uniform, uncompressed (symmetric)",0,0.1,1.0,4.0,0.4984038770768616,30.7
+"A uniform, uncompressed (symmetric)",0,0.2,1.0,1.0,0.267565662801738,8.2
+"A uniform, uncompressed (symmetric)",0,0.2,0.2,2.0,0.275806052457237,15.9
+"A uniform, uncompressed (symmetric)",0,0.2,2.0,0.5,0.2130921104995469,4.2
+"A uniform, uncompressed (symmetric)",0,0.1,2.0,4.0,0.9083129352074646,30.6
+"A uniform, uncompressed (symmetric)",0,0.5,0.05,0.5,0.25073652670901103,4.2
+"A uniform, uncompressed (symmetric)",0,0.2,2.0,1.0,0.2733894062601485,8.2
+"A uniform, uncompressed (symmetric)",0,0.2,0.5,2.0,0.2907613108769579,15.8
+"A uniform, uncompressed (symmetric)",0,0.2,0.05,4.0,0.2022991380932564,31.1
+"A uniform, uncompressed (symmetric)",0,0.5,0.05,1.0,0.2712044143357316,8.1
+"A uniform, uncompressed (symmetric)",0,0.5,0.1,0.5,0.25055990082164903,4.1
+"A uniform, uncompressed (symmetric)",0,0.2,1.0,2.0,0.3365842110545283,16.5
+"A uniform, uncompressed (symmetric)",0,0.5,0.1,1.0,0.27088351300872937,7.9
+"A uniform, uncompressed (symmetric)",0,0.5,0.2,0.5,0.2505073127717665,4.3
+"A uniform, uncompressed (symmetric)",0,0.2,0.1,4.0,0.3212032156901139,32.0
+"A uniform, uncompressed (symmetric)",0,0.2,2.0,2.0,0.5152724534160789,16.0
+"A uniform, uncompressed (symmetric)",0,0.2,0.2,4.0,0.3766822660719321,31.8
+"A uniform, uncompressed (symmetric)",0,0.5,0.2,1.0,0.274564873591835,8.1
+"A uniform, uncompressed (symmetric)",0,0.5,0.05,2.0,0.1953132970673026,16.3
+"A uniform, uncompressed (symmetric)",0,0.5,0.5,0.5,0.24698966531574174,4.2
+"A uniform, uncompressed (symmetric)",0,0.5,1.0,0.5,0.24316897812754357,4.2
+"A uniform, uncompressed (symmetric)",0,0.5,0.5,1.0,0.2791148784091668,8.2
+"A uniform, uncompressed (symmetric)",0,0.5,0.1,2.0,0.2460627485046991,16.1
+"A uniform, uncompressed (symmetric)",0,0.2,0.5,4.0,0.5169157130536374,31.9
+"A uniform, uncompressed (symmetric)",0,0.5,1.0,1.0,0.2824293613457872,8.3
+"A uniform, uncompressed (symmetric)",0,0.5,2.0,0.5,0.23561568340086125,4.2
+"A uniform, uncompressed (symmetric)",0,0.5,0.2,2.0,0.2797654323280786,16.5
+"A uniform, uncompressed (symmetric)",0,0.2,1.0,4.0,0.6713335035285078,32.1
+"A uniform, uncompressed (symmetric)",0,1.0,0.05,0.5,0.2633468342372891,4.2
+"A uniform, uncompressed (symmetric)",0,0.5,0.5,2.0,0.3590307781558487,16.4
+"A uniform, uncompressed (symmetric)",0,0.5,2.0,1.0,0.288829408957746,8.1
+"A uniform, uncompressed (symmetric)",0,0.2,2.0,4.0,0.37976092684934726,32.4
+"A uniform, uncompressed (symmetric)",0,0.5,1.0,2.0,0.43732600925394705,16.2
+"A uniform, uncompressed (symmetric)",0,1.0,0.05,1.0,0.2733037324872073,8.3
+"A uniform, uncompressed (symmetric)",0,0.5,0.05,4.0,0.46768090701232845,31.9
+"A uniform, uncompressed (symmetric)",0,1.0,0.1,0.5,0.261594091278999,4.3
+"A uniform, uncompressed (symmetric)",0,1.0,0.2,0.5,0.25945883939076964,4.2
+"A uniform, uncompressed (symmetric)",0,0.5,0.1,4.0,0.5506646068853832,31.7
+"A uniform, uncompressed (symmetric)",0,1.0,0.1,1.0,0.2692210039469871,8.3
+"A uniform, uncompressed (symmetric)",0,0.5,2.0,2.0,0.5851660237342146,16.3
+"A uniform, uncompressed (symmetric)",0,1.0,0.5,0.5,0.25661014992668985,4.2
+"A uniform, uncompressed (symmetric)",0,1.0,0.2,1.0,0.2743426683411274,8.2
+"A uniform, uncompressed (symmetric)",0,1.0,0.05,2.0,0.033956074240564904,16.4
+"A uniform, uncompressed (symmetric)",0,0.5,0.2,4.0,0.6374515412863178,32.6
+"A uniform, uncompressed (symmetric)",0,1.0,1.0,0.5,0.2567504967586365,4.1
+"A uniform, uncompressed (symmetric)",0,1.0,0.5,1.0,0.2832931212544265,8.3
+"A uniform, uncompressed (symmetric)",0,1.0,0.1,2.0,0.21783459124164828,16.2
+"A uniform, uncompressed (symmetric)",0,0.5,0.5,4.0,0.8022174063885568,32.4
+"A uniform, uncompressed (symmetric)",0,1.0,0.2,2.0,0.37478196737265335,16.3
+"A uniform, uncompressed (symmetric)",0,1.0,2.0,0.5,0.2573484899060505,4.5
+"A uniform, uncompressed (symmetric)",0,1.0,1.0,1.0,0.2906758759558088,8.6
+"A uniform, uncompressed (symmetric)",0,0.5,1.0,4.0,0.8598019579345446,32.3
+"A uniform, uncompressed (symmetric)",0,1.0,0.5,2.0,0.46603786555492455,16.4
+"A uniform, uncompressed (symmetric)",0,1.0,2.0,1.0,0.2978982725421978,8.4
+"A uniform, uncompressed (symmetric)",0,2.0,0.05,0.5,0.27282105408865887,4.4
+"A uniform, uncompressed (symmetric)",0,0.5,2.0,4.0,0.889991797652747,32.8
+"A uniform, uncompressed (symmetric)",0,2.0,0.1,0.5,0.2724114715807925,4.5
+"A uniform, uncompressed (symmetric)",0,2.0,0.05,1.0,0.2381221958685048,8.6
+"A uniform, uncompressed (symmetric)",0,1.0,1.0,2.0,0.5407597404491764,16.7
+"A uniform, uncompressed (symmetric)",0,1.0,0.05,4.0,0.571295829257431,32.9
+"A uniform, uncompressed (symmetric)",0,2.0,0.1,1.0,0.2196247241181063,8.4
+"A uniform, uncompressed (symmetric)",0,2.0,0.2,0.5,0.27160112118296387,4.2
+"A uniform, uncompressed (symmetric)",0,1.0,2.0,2.0,0.6809953298349977,16.8
+"A uniform, uncompressed (symmetric)",0,1.0,0.1,4.0,0.6639925166534284,33.5
+"A uniform, uncompressed (symmetric)",0,2.0,0.05,2.0,0.11448223492697152,17.3
+"A uniform, uncompressed (symmetric)",0,2.0,0.5,0.5,0.2727729551273096,4.6
+"A uniform, uncompressed (symmetric)",0,2.0,0.2,1.0,0.23952641039083722,8.7
+"A uniform, uncompressed (symmetric)",0,1.0,0.2,4.0,0.7295586311545617,34.1
+"A uniform, uncompressed (symmetric)",0,2.0,0.5,1.0,0.2744447493968426,8.5
+"A uniform, uncompressed (symmetric)",0,2.0,1.0,0.5,0.275463171237584,4.3
+"A uniform, uncompressed (symmetric)",0,2.0,0.1,2.0,0.36838848186516027,17.3
+"A uniform, uncompressed (symmetric)",0,1.0,0.5,4.0,0.8084510064664918,33.5
+"A uniform, uncompressed (symmetric)",0,2.0,1.0,1.0,0.29905574984784367,8.5
+"A uniform, uncompressed (symmetric)",0,2.0,2.0,0.5,0.276637955132811,4.3
+"A uniform, uncompressed (symmetric)",0,2.0,0.2,2.0,0.5212949941400152,17.1
+"A uniform, uncompressed (symmetric)",0,1.0,1.0,4.0,0.9152765708568233,33.6
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.05,0.5,-0.36699369623989764,4.2
+"A uniform, uncompressed (symmetric)",0,2.0,2.0,1.0,0.32146703507937746,8.4
+"A uniform, uncompressed (symmetric)",0,2.0,0.5,2.0,0.5993030969306605,17.3
+"A uniform, uncompressed (symmetric)",0,1.0,2.0,4.0,0.9559354768984901,33.5
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.05,1.0,0.2074281692164014,8.2
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.1,0.5,0.1776606740717932,4.4
+"A uniform, uncompressed (symmetric)",0,2.0,1.0,2.0,0.7166954851809493,16.9
+"A uniform, uncompressed (symmetric)",0,2.0,0.05,4.0,0.6521228149170748,33.5
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.2,0.5,0.046076100679332876,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.1,1.0,0.27815111709960016,8.6
+"A uniform, uncompressed (symmetric)",0,2.0,2.0,2.0,0.8570121543240384,16.5
+"A uniform, uncompressed (symmetric)",0,2.0,0.1,4.0,0.7295360529812973,33.3
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.5,0.5,0.11245621197658284,4.2
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.2,1.0,0.2919286670249974,8.6
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.05,2.0,0.2813334293547777,16.7
+"A uniform, uncompressed (symmetric)",0,2.0,0.2,4.0,0.7914935110905734,33.2
+B uncompressed + stiffness disorder (symmetric),0,0.1,1.0,0.5,0.1971940891797931,4.2
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.5,1.0,0.2937267493569833,8.4
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.1,2.0,0.3452338563246553,16.9
+"A uniform, uncompressed (symmetric)",0,2.0,0.5,4.0,0.8852693619391937,32.6
+B uncompressed + stiffness disorder (symmetric),0,0.1,2.0,0.5,0.2226942029344824,4.2
+B uncompressed + stiffness disorder (symmetric),0,0.1,1.0,1.0,0.30485172515280523,8.3
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.2,2.0,0.4615279300322708,16.7
+"A uniform, uncompressed (symmetric)",0,2.0,1.0,4.0,0.9723562199207415,32.8
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.05,0.5,0.16561764479977192,4.2
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.5,2.0,0.6302091000535738,16.6
+B uncompressed + stiffness disorder (symmetric),0,0.1,2.0,1.0,0.34582728993656486,8.5
+"A uniform, uncompressed (symmetric)",0,2.0,2.0,4.0,0.9932003093883217,32.7
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.05,1.0,0.2558011080722752,8.4
+B uncompressed + stiffness disorder (symmetric),0,0.1,1.0,2.0,0.7619217397768652,16.4
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.1,0.5,0.1633045848303447,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.05,4.0,0.7815860978800315,32.9
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.2,0.5,0.24106921387292646,4.2
+B uncompressed + stiffness disorder (symmetric),0,0.1,2.0,2.0,0.9262502382545538,16.6
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.1,1.0,0.28968101573637994,8.6
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.1,4.0,0.9142305416180179,33.4
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.2,1.0,0.30184326589623756,8.2
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.05,2.0,0.27322849703294894,16.8
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.5,0.5,0.2562385267911679,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.2,4.0,0.9678233788004295,33.8
+B uncompressed + stiffness disorder (symmetric),0,0.2,1.0,0.5,0.25746243490901455,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.5,1.0,0.3166476357617275,8.5
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.1,2.0,0.48606171310161106,16.9
+B uncompressed + stiffness disorder (symmetric),0,0.1,0.5,4.0,0.9928695818395483,33.6
+B uncompressed + stiffness disorder (symmetric),0,0.2,1.0,1.0,0.3505609284966428,8.3
+B uncompressed + stiffness disorder (symmetric),0,0.2,2.0,0.5,0.2642446000049037,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.2,2.0,0.7036284119353242,16.9
+B uncompressed + stiffness disorder (symmetric),0,0.1,1.0,4.0,0.9982346797478967,34.1
+B uncompressed + stiffness disorder (symmetric),0,0.2,2.0,1.0,0.436568596220805,8.2
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.05,0.5,0.21731904598298557,4.3
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.5,2.0,0.866207850431839,16.9
+B uncompressed + stiffness disorder (symmetric),0,0.1,2.0,4.0,0.9967419530118667,33.2
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.1,0.5,0.23884551768012152,4.2
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.05,1.0,0.2561885687786294,8.4
+B uncompressed + stiffness disorder (symmetric),0,0.2,1.0,2.0,0.9258001478504327,16.9
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.05,4.0,0.9180482137399245,33.3
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.2,0.5,0.2690395006578582,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.1,1.0,0.289805417365528,8.5
+B uncompressed + stiffness disorder (symmetric),0,0.2,2.0,2.0,0.980643362912999,16.8
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.1,4.0,0.9716942631253419,33.3
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.5,0.5,0.2867428324417337,4.5
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.2,1.0,0.3330981944090933,8.5
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.2,4.0,0.9905304116612481,33.0
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.05,2.0,0.5801641126572316,17.1
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.5,1.0,0.35524849353375176,8.6
+B uncompressed + stiffness disorder (symmetric),0,0.5,1.0,0.5,0.2912573218956451,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.1,2.0,0.8692212367486272,16.7
+B uncompressed + stiffness disorder (symmetric),0,0.2,0.5,4.0,0.9980399345013069,33.4
+B uncompressed + stiffness disorder (symmetric),0,0.5,2.0,0.5,0.3005003066752844,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.5,1.0,1.0,0.40552960302107977,8.5
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.2,2.0,0.9524507068588071,16.7
+B uncompressed + stiffness disorder (symmetric),0,0.2,1.0,4.0,0.9994793006341367,33.2
+B uncompressed + stiffness disorder (symmetric),0,0.5,2.0,1.0,0.5192091976734441,8.6
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.5,2.0,0.9825312334786469,16.7
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.05,0.5,0.21574801341535133,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.2,2.0,4.0,0.9985014144001596,33.2
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.05,1.0,0.1501847549193347,8.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.1,0.5,0.25205107644400304,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.05,4.0,0.9040379526687848,33.4
+B uncompressed + stiffness disorder (symmetric),0,0.5,1.0,2.0,0.9891100866893889,17.4
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.1,1.0,0.18207453882099278,8.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.2,0.5,0.2781965639695212,4.4
+B uncompressed + stiffness disorder (symmetric),0,0.5,2.0,2.0,0.9970296969848292,17.0
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.1,4.0,0.9683759557041182,33.9
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.5,0.5,0.3015379463872636,4.4
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.05,2.0,0.7519333553527827,16.9
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.2,1.0,0.27272526917564777,8.7
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.2,4.0,0.9903495285715974,33.4
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.1,2.0,0.9087329855418105,16.9
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.5,1.0,0.44471369998099086,8.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,1.0,0.5,0.30956676506456593,4.3
+B uncompressed + stiffness disorder (symmetric),0,0.5,0.5,4.0,0.9986666904894566,33.9
+B uncompressed + stiffness disorder (symmetric),0,1.0,2.0,0.5,0.3211872100851032,4.3
+B uncompressed + stiffness disorder (symmetric),0,1.0,1.0,1.0,0.5906742462259904,8.6
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.2,2.0,0.9715548120146927,17.2
+B uncompressed + stiffness disorder (symmetric),0,0.5,1.0,4.0,0.9996026781055295,33.9
+B uncompressed + stiffness disorder (symmetric),0,1.0,2.0,1.0,0.7284240667025014,8.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.5,2.0,0.9908733888752658,16.8
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.05,0.5,0.21970923489002114,4.5
+B uncompressed + stiffness disorder (symmetric),0,0.5,2.0,4.0,0.9996482229992972,33.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,1.0,2.0,0.9949861835026681,16.8
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.05,1.0,-0.26192305260951176,8.7
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.1,0.5,0.2702947536104734,4.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.05,4.0,0.8920424731784335,33.2
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.1,1.0,-0.08110042724341748,8.5
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.2,0.5,0.2949014727023821,4.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,2.0,2.0,0.9986393177208137,17.1
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.1,4.0,0.9705346711497327,33.4
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.2,1.0,0.3445344608350388,8.5
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.5,0.5,0.31368504261971497,4.3
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.05,2.0,0.5953851260735745,17.0
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.2,4.0,0.9919669577105945,33.2
+B uncompressed + stiffness disorder (symmetric),0,2.0,1.0,0.5,0.3255794117882205,4.5
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.5,1.0,0.8183133485548116,8.5
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.1,2.0,0.8392504080121056,16.7
+B uncompressed + stiffness disorder (symmetric),0,1.0,0.5,4.0,0.9984244288130744,33.6
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.2,2.0,0.9668043998201307,16.9
+B uncompressed + stiffness disorder (symmetric),0,2.0,2.0,0.5,0.33952686552943223,4.3
+B uncompressed + stiffness disorder (symmetric),0,2.0,1.0,1.0,0.9004709424869413,8.5
+B uncompressed + stiffness disorder (symmetric),0,1.0,1.0,4.0,0.9997601543137237,33.5
+B uncompressed + stiffness disorder (symmetric),0,2.0,2.0,1.0,0.9353525502853136,8.6
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.05,0.5,0.1154261771554489,4.4
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.5,2.0,0.9922773349143816,17.2
+B uncompressed + stiffness disorder (symmetric),0,1.0,2.0,4.0,0.9999303685570524,33.5
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.1,0.5,0.0661668544606101,4.3
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.05,1.0,0.2565064416032222,8.7
+B uncompressed + stiffness disorder (symmetric),0,2.0,1.0,2.0,0.9968041920580498,17.1
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.05,4.0,0.8321875549613527,33.5
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.2,0.5,0.17976528071839593,4.5
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.1,1.0,0.2635116797798276,8.6
+B uncompressed + stiffness disorder (symmetric),0,2.0,2.0,2.0,0.9991419620057679,17.3
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.1,4.0,0.9651789562563968,33.8
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.2,1.0,0.27721682198615927,8.5
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.5,0.5,0.24095339073165523,4.3
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.05,2.0,0.2568178402574097,17.2
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.2,4.0,0.9907914124468393,33.8
+B uncompressed + stiffness disorder (symmetric),1,0.1,1.0,0.5,0.23394491575656218,4.3
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.1,2.0,0.3332982266622726,17.2
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.5,1.0,0.29938511732346185,8.6
+B uncompressed + stiffness disorder (symmetric),0,2.0,0.5,4.0,0.9980848984314427,33.9
+B uncompressed + stiffness disorder (symmetric),1,0.1,1.0,1.0,0.30648065429409965,8.5
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.2,2.0,0.4163451516020088,17.1
+B uncompressed + stiffness disorder (symmetric),1,0.1,2.0,0.5,0.24373845767405278,4.4
+B uncompressed + stiffness disorder (symmetric),0,2.0,1.0,4.0,0.9997743787374784,34.4
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.05,0.5,0.19408723509205628,4.4
+B uncompressed + stiffness disorder (symmetric),1,0.1,2.0,1.0,0.3521723882514812,8.6
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.5,2.0,0.6613496865836688,17.0
+B uncompressed + stiffness disorder (symmetric),0,2.0,2.0,4.0,0.9999607499215084,33.6
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.05,1.0,0.2498732542888259,8.5
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.1,0.5,0.23023341739255498,4.5
+B uncompressed + stiffness disorder (symmetric),1,0.1,1.0,2.0,0.8386059536997141,16.9
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.05,4.0,0.8176756168258364,33.6
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.2,0.5,0.24405054198874643,4.3
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.1,1.0,0.27255459363972645,8.6
+B uncompressed + stiffness disorder (symmetric),1,0.1,2.0,2.0,0.9220616162222647,16.9
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.1,4.0,0.9308275199783848,33.9
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.2,1.0,0.29084904829587743,8.6
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.5,0.5,0.25936217275646545,4.4
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.05,2.0,0.17524744733420572,17.3
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.2,4.0,0.966740815015196,34.0
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.5,1.0,0.3140893965298833,8.4
+B uncompressed + stiffness disorder (symmetric),1,0.2,1.0,0.5,0.2636148331219227,4.5
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.1,2.0,0.4265505470185882,16.9
+B uncompressed + stiffness disorder (symmetric),1,0.1,0.5,4.0,0.9929681632148705,34.0
+B uncompressed + stiffness disorder (symmetric),1,0.2,2.0,0.5,0.2723180517108851,4.3
+B uncompressed + stiffness disorder (symmetric),1,0.2,1.0,1.0,0.3482715388228437,8.7
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.2,2.0,0.6695106726398483,17.2
+B uncompressed + stiffness disorder (symmetric),1,0.1,1.0,4.0,0.9987908375895709,33.5
+B uncompressed + stiffness disorder (symmetric),1,0.2,2.0,1.0,0.41479139328819936,8.6
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.05,0.5,0.21758243251192366,4.4
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.5,2.0,0.8705043096074025,17.4
+B uncompressed + stiffness disorder (symmetric),1,0.1,2.0,4.0,0.9955989990447113,33.9
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.05,1.0,0.2409356206318467,8.7
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.1,0.5,0.24768996024381407,4.5
+B uncompressed + stiffness disorder (symmetric),1,0.2,1.0,2.0,0.9375765931917066,17.1
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.05,4.0,0.911596449470029,33.8
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.2,0.5,0.264196804314782,4.5
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.1,1.0,0.27953910235518253,8.8
+B uncompressed + stiffness disorder (symmetric),1,0.2,2.0,2.0,0.9791525761168653,17.2
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.1,4.0,0.9657588697555722,34.0
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.05,2.0,0.508359526383696,17.1
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.5,0.5,0.284816262747848,4.6
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.2,1.0,0.31593481906324317,8.9
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.2,4.0,0.9874048776697855,34.2
+B uncompressed + stiffness disorder (symmetric),1,0.5,1.0,0.5,0.29601412667727356,4.5
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.5,1.0,0.3519224380267476,8.8
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.1,2.0,0.7992029522999324,17.3
+B uncompressed + stiffness disorder (symmetric),1,0.2,0.5,4.0,0.9978997627069452,34.0
+B uncompressed + stiffness disorder (symmetric),1,0.5,2.0,0.5,0.3078470934693841,4.3
+B uncompressed + stiffness disorder (symmetric),1,0.5,1.0,1.0,0.40331178893316444,8.7
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.2,2.0,0.9324293889657643,17.4
+B uncompressed + stiffness disorder (symmetric),1,0.2,1.0,4.0,0.999560974531747,34.3
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.05,0.5,0.25337828740144763,4.3
+B uncompressed + stiffness disorder (symmetric),1,0.5,2.0,1.0,0.5228642841608679,8.7
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.5,2.0,0.9803625697861607,17.1
+B uncompressed + stiffness disorder (symmetric),1,0.2,2.0,4.0,0.9982695038460961,34.0
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.05,1.0,0.1742316799567163,8.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.1,0.5,0.26237448941806574,4.4
+B uncompressed + stiffness disorder (symmetric),1,0.5,1.0,2.0,0.9900866067244894,17.1
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.05,4.0,0.9117441562109219,34.3
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.1,1.0,0.18204530998646806,8.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.2,0.5,0.28330695407550976,4.2
+B uncompressed + stiffness disorder (symmetric),1,0.5,2.0,2.0,0.9976063809317277,17.0
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.1,4.0,0.9718779073605982,34.3
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.5,0.5,0.30040585297025113,4.4
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.2,1.0,0.254747527258972,8.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.05,2.0,0.682913366555749,16.9
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.2,4.0,0.9909235442726658,34.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.5,1.0,0.3932323820512842,8.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,1.0,0.5,0.3140754502756742,4.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.1,2.0,0.9049388997562047,16.9
+B uncompressed + stiffness disorder (symmetric),1,0.5,0.5,4.0,0.9984070984229361,33.7
+B uncompressed + stiffness disorder (symmetric),1,1.0,1.0,1.0,0.5425290620576703,8.4
+B uncompressed + stiffness disorder (symmetric),1,1.0,2.0,0.5,0.3298598961896264,4.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.2,2.0,0.970981620135659,16.8
+B uncompressed + stiffness disorder (symmetric),1,0.5,1.0,4.0,0.9996718838059234,33.9
+B uncompressed + stiffness disorder (symmetric),1,1.0,2.0,1.0,0.710805282369433,8.6
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.05,0.5,0.22929353127859708,4.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.5,2.0,0.9926999265377516,17.0
+B uncompressed + stiffness disorder (symmetric),1,0.5,2.0,4.0,0.9996948975308138,33.7
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.1,0.5,0.2622337585811987,4.4
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.05,1.0,-0.1548898840592332,8.6
+B uncompressed + stiffness disorder (symmetric),1,1.0,1.0,2.0,0.9964975308577552,17.1
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.05,4.0,0.8790043177256348,33.7
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.2,0.5,0.28439000258395963,4.6
+B uncompressed + stiffness disorder (symmetric),1,1.0,2.0,2.0,0.9988236762061757,16.9
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.1,1.0,-0.06371534071061347,8.6
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.1,4.0,0.9677647007405553,33.4
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.5,0.5,0.31437932767723975,4.2
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.05,2.0,0.5828450932914706,17.1
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.2,4.0,0.9932238309431636,33.6
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.2,1.0,0.38681505412907824,8.9
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.5,1.0,0.7422467849857806,8.4
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.1,2.0,0.8522410746996225,16.8
+B uncompressed + stiffness disorder (symmetric),1,2.0,1.0,0.5,0.32676907432062086,4.3
+B uncompressed + stiffness disorder (symmetric),1,1.0,0.5,4.0,0.9986417320305773,33.7
+B uncompressed + stiffness disorder (symmetric),1,2.0,2.0,0.5,0.34186091224844894,4.5
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.2,2.0,0.9728274802164709,17.0
+B uncompressed + stiffness disorder (symmetric),1,2.0,1.0,1.0,0.8515469240184026,8.6
+B uncompressed + stiffness disorder (symmetric),1,1.0,1.0,4.0,0.999685538592194,33.6
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.5,2.0,0.9917811332978271,16.9
+C uncompressed + prestress disorder (breaks),0,0.1,0.05,0.5,0.2791682753952647,4.3
+B uncompressed + stiffness disorder (symmetric),1,2.0,2.0,1.0,0.9067171319035587,8.5
+B uncompressed + stiffness disorder (symmetric),1,1.0,2.0,4.0,0.9999491330621847,33.9
+C uncompressed + prestress disorder (breaks),0,0.1,0.1,0.5,0.2785014730424804,4.4
+C uncompressed + prestress disorder (breaks),0,0.1,0.05,1.0,0.3569388646965972,8.6
+B uncompressed + stiffness disorder (symmetric),1,2.0,1.0,2.0,0.9967283143766928,17.3
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.05,4.0,0.8415638345338181,33.7
+C uncompressed + prestress disorder (breaks),0,0.1,0.1,1.0,0.36392904093025935,8.4
+B uncompressed + stiffness disorder (symmetric),1,2.0,2.0,2.0,0.9991523420891076,16.8
+C uncompressed + prestress disorder (breaks),0,0.1,0.2,0.5,0.2763244282580034,4.4
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.1,4.0,0.9529316136757446,33.4
+C uncompressed + prestress disorder (breaks),0,0.1,0.5,0.5,0.2711455547892746,4.5
+C uncompressed + prestress disorder (breaks),0,0.1,0.2,1.0,0.35876125017566285,8.7
+C uncompressed + prestress disorder (breaks),0,0.1,0.05,2.0,0.9933263481184321,17.0
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.2,4.0,0.9900996417351452,33.7
+C uncompressed + prestress disorder (breaks),0,0.1,0.5,1.0,0.33182256507274566,8.5
+C uncompressed + prestress disorder (breaks),0,0.1,1.0,0.5,0.2652532423084313,4.5
+C uncompressed + prestress disorder (breaks),0,0.1,0.1,2.0,0.9899687953779861,17.1
+B uncompressed + stiffness disorder (symmetric),1,2.0,0.5,4.0,0.9986516686258463,33.5
+C uncompressed + prestress disorder (breaks),0,0.1,1.0,1.0,0.33324241025914814,8.6
+C uncompressed + prestress disorder (breaks),0,0.1,2.0,0.5,0.2649223237076712,4.5
+C uncompressed + prestress disorder (breaks),0,0.1,0.2,2.0,0.9706503490934161,16.9
+B uncompressed + stiffness disorder (symmetric),1,2.0,1.0,4.0,0.9997565715961267,33.9
+C uncompressed + prestress disorder (breaks),0,0.1,2.0,1.0,0.36799566488267,8.5
+C uncompressed + prestress disorder (breaks),0,0.2,0.05,0.5,0.28633066617473146,4.4
+C uncompressed + prestress disorder (breaks),0,0.1,0.5,2.0,0.9038968013120803,17.1
+B uncompressed + stiffness disorder (symmetric),1,2.0,2.0,4.0,0.9999570122670622,33.6
+C uncompressed + prestress disorder (breaks),0,0.2,0.05,1.0,0.4620846269331017,8.6
+C uncompressed + prestress disorder (breaks),0,0.2,0.1,0.5,0.2881480681434514,4.4
+C uncompressed + prestress disorder (breaks),0,0.1,1.0,2.0,0.9096231933826914,16.5
+C uncompressed + prestress disorder (breaks),0,0.1,0.05,4.0,0.9999985191124156,33.3
+C uncompressed + prestress disorder (breaks),0,0.2,0.1,1.0,0.4889324406522926,8.5
+C uncompressed + prestress disorder (breaks),0,0.2,0.2,0.5,0.2871829338936298,4.5
+C uncompressed + prestress disorder (breaks),0,0.1,2.0,2.0,0.9577336540993844,17.0
+C uncompressed + prestress disorder (breaks),0,0.1,0.1,4.0,0.999995159795486,33.9
+C uncompressed + prestress disorder (breaks),0,0.2,0.5,0.5,0.2827280981135394,4.5
+C uncompressed + prestress disorder (breaks),0,0.2,0.2,1.0,0.4912526847100571,8.5
+C uncompressed + prestress disorder (breaks),0,0.2,0.05,2.0,0.9999321054994088,16.9
+C uncompressed + prestress disorder (breaks),0,0.1,0.2,4.0,0.9999733136294189,34.0
+C uncompressed + prestress disorder (breaks),0,0.2,1.0,0.5,0.28059640417262244,4.4
+C uncompressed + prestress disorder (breaks),0,0.2,0.5,1.0,0.44231404749211034,8.5
+C uncompressed + prestress disorder (breaks),0,0.2,0.1,2.0,0.9999086472555647,17.0
+C uncompressed + prestress disorder (breaks),0,0.1,0.5,4.0,0.9998831799710498,33.5
+C uncompressed + prestress disorder (breaks),0,0.2,2.0,0.5,0.27953315034165493,4.4
+C uncompressed + prestress disorder (breaks),0,0.2,1.0,1.0,0.43373498285492595,8.5
+C uncompressed + prestress disorder (breaks),0,0.2,0.2,2.0,0.9996953585603732,16.9
+C uncompressed + prestress disorder (breaks),0,0.1,1.0,4.0,0.9998989902632842,33.3
+C uncompressed + prestress disorder (breaks),0,0.5,0.05,0.5,0.3105716282065749,4.4
+C uncompressed + prestress disorder (breaks),0,0.2,2.0,1.0,0.4490698134388661,8.7
+C uncompressed + prestress disorder (breaks),0,0.2,0.5,2.0,0.9975637853007334,17.1
+C uncompressed + prestress disorder (breaks),0,0.1,2.0,4.0,0.9996119714838965,34.1
+C uncompressed + prestress disorder (breaks),0,0.5,0.05,1.0,0.7577959394574407,8.4
+C uncompressed + prestress disorder (breaks),0,0.5,0.1,0.5,0.3174689835269978,4.4
+C uncompressed + prestress disorder (breaks),0,0.2,1.0,2.0,0.9934115110299533,17.0
+C uncompressed + prestress disorder (breaks),0,0.2,0.05,4.0,0.9999999676492677,33.8
+C uncompressed + prestress disorder (breaks),0,0.2,2.0,2.0,0.9907321014915835,17.1
+C uncompressed + prestress disorder (breaks),0,0.5,0.2,0.5,0.32189885641056737,4.2
+C uncompressed + prestress disorder (breaks),0,0.5,0.1,1.0,0.8519063512774552,8.5
+C uncompressed + prestress disorder (breaks),0,0.2,0.1,4.0,0.9999999583929181,33.9
+C uncompressed + prestress disorder (breaks),0,0.5,0.05,2.0,0.9999994454523377,17.0
+C uncompressed + prestress disorder (breaks),0,0.5,0.5,0.5,0.31989395660795106,4.4
+C uncompressed + prestress disorder (breaks),0,0.5,0.2,1.0,0.8926969827501303,8.6
+C uncompressed + prestress disorder (breaks),0,0.2,0.2,4.0,0.9999998206118889,33.9
+C uncompressed + prestress disorder (breaks),0,0.5,1.0,0.5,0.31155930036844315,4.4
+C uncompressed + prestress disorder (breaks),0,0.5,0.5,1.0,0.885213121238304,8.7
+C uncompressed + prestress disorder (breaks),0,0.5,0.1,2.0,0.9999995057967628,17.0
+C uncompressed + prestress disorder (breaks),0,0.2,0.5,4.0,0.999998907743869,34.7
+C uncompressed + prestress disorder (breaks),0,0.5,1.0,1.0,0.8031914059497284,8.6
+C uncompressed + prestress disorder (breaks),0,0.5,2.0,0.5,0.3151943277535607,4.5
+C uncompressed + prestress disorder (breaks),0,0.5,0.2,2.0,0.9999989542598529,17.1
+C uncompressed + prestress disorder (breaks),0,0.2,1.0,4.0,0.9999973144855355,34.0
+C uncompressed + prestress disorder (breaks),0,1.0,0.05,0.5,0.33841195723360207,4.4
+C uncompressed + prestress disorder (breaks),0,0.5,2.0,1.0,0.719630130272847,8.6
+C uncompressed + prestress disorder (breaks),0,0.5,0.5,2.0,0.9999938522356029,16.9
+C uncompressed + prestress disorder (breaks),0,0.2,2.0,4.0,0.9999553527938939,33.7
+C uncompressed + prestress disorder (breaks),0,1.0,0.1,0.5,0.35809865621394465,4.3
+C uncompressed + prestress disorder (breaks),0,0.5,1.0,2.0,0.9999425056443311,16.9
+C uncompressed + prestress disorder (breaks),0,1.0,0.05,1.0,0.9958731395177136,8.7
+C uncompressed + prestress disorder (breaks),0,0.5,0.05,4.0,0.9999999946532269,33.9
+C uncompressed + prestress disorder (breaks),0,1.0,0.1,1.0,0.9972515921979233,8.6
+C uncompressed + prestress disorder (breaks),0,1.0,0.2,0.5,0.38141156369100093,4.5
+C uncompressed + prestress disorder (breaks),0,0.5,2.0,2.0,0.9998194562362097,17.4
+C uncompressed + prestress disorder (breaks),0,0.5,0.1,4.0,0.9999999964908323,34.1
+C uncompressed + prestress disorder (breaks),0,1.0,0.2,1.0,0.9977594065199158,8.5
+C uncompressed + prestress disorder (breaks),0,1.0,0.5,0.5,0.38604119370911505,4.4
+C uncompressed + prestress disorder (breaks),0,1.0,0.05,2.0,0.9999989190696613,17.0
+C uncompressed + prestress disorder (breaks),0,0.5,0.2,4.0,0.9999999960684348,33.8
+C uncompressed + prestress disorder (breaks),0,1.0,1.0,0.5,0.3698441116949731,4.4
+C uncompressed + prestress disorder (breaks),0,1.0,0.1,2.0,0.9999995935560595,16.8
+C uncompressed + prestress disorder (breaks),0,1.0,0.5,1.0,0.9973203382507991,8.6
+C uncompressed + prestress disorder (breaks),0,0.5,0.5,4.0,0.9999999895932243,34.0
+C uncompressed + prestress disorder (breaks),0,1.0,1.0,1.0,0.995073133890631,8.6
+C uncompressed + prestress disorder (breaks),0,1.0,2.0,0.5,0.36893056999021756,4.4
+C uncompressed + prestress disorder (breaks),0,1.0,0.2,2.0,0.999999651616324,17.1
+C uncompressed + prestress disorder (breaks),0,0.5,1.0,4.0,0.9999999709247066,33.7
+C uncompressed + prestress disorder (breaks),0,2.0,0.05,0.5,0.35158203080932393,4.4
+C uncompressed + prestress disorder (breaks),0,1.0,0.5,2.0,0.9999997449324037,17.2
+C uncompressed + prestress disorder (breaks),0,1.0,2.0,1.0,0.9840859787739655,8.9
+C uncompressed + prestress disorder (breaks),0,0.5,2.0,4.0,0.9999997899093513,34.1
+C uncompressed + prestress disorder (breaks),0,2.0,0.1,0.5,0.37900983121028875,4.4
+C uncompressed + prestress disorder (breaks),0,2.0,0.05,1.0,0.9990004084606602,8.8
+C uncompressed + prestress disorder (breaks),0,1.0,1.0,2.0,0.9999988602966932,17.0
+C uncompressed + prestress disorder (breaks),0,1.0,0.05,4.0,0.9999999919303186,34.5
+C uncompressed + prestress disorder (breaks),0,1.0,2.0,2.0,0.9999962549706649,16.7
+C uncompressed + prestress disorder (breaks),0,2.0,0.1,1.0,0.9993879015057527,8.8
+C uncompressed + prestress disorder (breaks),0,2.0,0.2,0.5,0.40099035700797103,4.6
+C uncompressed + prestress disorder (breaks),0,1.0,0.1,4.0,0.999999996890934,34.1
+C uncompressed + prestress disorder (breaks),0,2.0,0.2,1.0,0.9996438914275829,8.6
+C uncompressed + prestress disorder (breaks),0,2.0,0.5,0.5,0.41710281860622545,4.5
+C uncompressed + prestress disorder (breaks),0,2.0,0.05,2.0,0.9999995287788838,17.3
+C uncompressed + prestress disorder (breaks),0,1.0,0.2,4.0,0.9999999964811757,34.2
+C uncompressed + prestress disorder (breaks),0,2.0,0.5,1.0,0.9998557001908834,8.8
+C uncompressed + prestress disorder (breaks),0,2.0,1.0,0.5,0.4192724128422429,4.4
+C uncompressed + prestress disorder (breaks),0,2.0,0.1,2.0,0.9999997757448925,17.1
+C uncompressed + prestress disorder (breaks),0,1.0,0.5,4.0,0.9999999979988593,34.0
+C uncompressed + prestress disorder (breaks),0,2.0,1.0,1.0,0.9998653357685194,8.6
+C uncompressed + prestress disorder (breaks),0,2.0,2.0,0.5,0.42083050318719684,4.4
+C uncompressed + prestress disorder (breaks),0,2.0,0.2,2.0,0.9999998450503095,17.2
+C uncompressed + prestress disorder (breaks),0,1.0,1.0,4.0,0.999999995659946,34.2
+C uncompressed + prestress disorder (breaks),1,0.1,0.05,0.5,0.2771076665771931,4.5
+C uncompressed + prestress disorder (breaks),0,2.0,2.0,1.0,0.9996301947057767,8.7
+C uncompressed + prestress disorder (breaks),0,2.0,0.5,2.0,0.9999999147546436,17.3
+C uncompressed + prestress disorder (breaks),0,1.0,2.0,4.0,0.999999986609328,34.0
+C uncompressed + prestress disorder (breaks),1,0.1,0.1,0.5,0.27706808514805636,4.6
+C uncompressed + prestress disorder (breaks),0,2.0,1.0,2.0,0.999999882624372,17.2
+C uncompressed + prestress disorder (breaks),1,0.1,0.05,1.0,0.3479492212450864,8.8
+C uncompressed + prestress disorder (breaks),0,2.0,0.05,4.0,0.9999999924288748,33.6
+C uncompressed + prestress disorder (breaks),0,2.0,2.0,2.0,0.9999995556454631,16.9
+C uncompressed + prestress disorder (breaks),1,0.1,0.1,1.0,0.35126008358158967,8.5
+C uncompressed + prestress disorder (breaks),1,0.1,0.2,0.5,0.27468685206607935,4.4
+C uncompressed + prestress disorder (breaks),0,2.0,0.1,4.0,0.999999997230497,34.2
+C uncompressed + prestress disorder (breaks),1,0.1,0.5,0.5,0.2658722624812394,4.4
+C uncompressed + prestress disorder (breaks),1,0.1,0.2,1.0,0.3465573900012563,8.7
+C uncompressed + prestress disorder (breaks),1,0.1,0.05,2.0,0.9855003806181977,17.0
+C uncompressed + prestress disorder (breaks),0,2.0,0.2,4.0,0.9999999986720326,34.0
+C uncompressed + prestress disorder (breaks),1,0.1,0.5,1.0,0.3139727378933709,8.7
+C uncompressed + prestress disorder (breaks),1,0.1,1.0,0.5,0.2579458573766561,4.3
+C uncompressed + prestress disorder (breaks),1,0.1,0.1,2.0,0.9791428218695853,17.2
+C uncompressed + prestress disorder (breaks),0,2.0,0.5,4.0,0.9999999990617476,33.9
+C uncompressed + prestress disorder (breaks),1,0.1,1.0,1.0,0.3150915147810288,8.6
+C uncompressed + prestress disorder (breaks),1,0.1,2.0,0.5,0.25879774671621547,4.5
+C uncompressed + prestress disorder (breaks),1,0.1,0.2,2.0,0.9386583952420945,17.1
+C uncompressed + prestress disorder (breaks),0,2.0,1.0,4.0,0.9999999989440594,34.2
+C uncompressed + prestress disorder (breaks),1,0.2,0.05,0.5,0.2856315328467288,4.5
+C uncompressed + prestress disorder (breaks),1,0.1,2.0,1.0,0.3518957910047955,8.7
+C uncompressed + prestress disorder (breaks),1,0.1,0.5,2.0,0.8659226586337692,17.2
+C uncompressed + prestress disorder (breaks),0,2.0,2.0,4.0,0.9999999975754851,34.2
+C uncompressed + prestress disorder (breaks),1,0.2,0.05,1.0,0.4524824198756183,8.7
+C uncompressed + prestress disorder (breaks),1,0.2,0.1,0.5,0.28648237694962075,4.4
+C uncompressed + prestress disorder (breaks),1,0.1,1.0,2.0,0.8888594851787867,17.2
+C uncompressed + prestress disorder (breaks),1,0.1,0.05,4.0,0.9999945455311839,34.8
+C uncompressed + prestress disorder (breaks),1,0.2,0.2,0.5,0.2854869237193708,4.4
+C uncompressed + prestress disorder (breaks),1,0.1,2.0,2.0,0.9437343898084224,17.2
+C uncompressed + prestress disorder (breaks),1,0.2,0.1,1.0,0.477841230916374,8.8
+C uncompressed + prestress disorder (breaks),1,0.1,0.1,4.0,0.9999867297632624,34.3
+C uncompressed + prestress disorder (breaks),1,0.2,0.2,1.0,0.4806536541535822,8.7
+C uncompressed + prestress disorder (breaks),1,0.2,0.5,0.5,0.27954448044442826,4.4
+C uncompressed + prestress disorder (breaks),1,0.2,0.05,2.0,0.9997808044034046,17.2
+C uncompressed + prestress disorder (breaks),1,0.1,0.2,4.0,0.9999177646591272,34.5
+C uncompressed + prestress disorder (breaks),1,0.2,0.5,1.0,0.42788259455813593,8.7
+C uncompressed + prestress disorder (breaks),1,0.2,1.0,0.5,0.2791567772384499,4.5
+C uncompressed + prestress disorder (breaks),1,0.2,0.1,2.0,0.9997739505173153,17.0
+C uncompressed + prestress disorder (breaks),1,0.1,0.5,4.0,0.9995482593433729,34.1
+C uncompressed + prestress disorder (breaks),1,0.2,2.0,0.5,0.275578199433669,4.4
+C uncompressed + prestress disorder (breaks),1,0.2,1.0,1.0,0.4031966578698992,8.7
+C uncompressed + prestress disorder (breaks),1,0.2,0.2,2.0,0.9992968748154649,17.4
+C uncompressed + prestress disorder (breaks),1,0.1,1.0,4.0,0.9995502274926493,34.1
+C uncompressed + prestress disorder (breaks),1,0.2,2.0,1.0,0.41807260312455685,8.6
+C uncompressed + prestress disorder (breaks),1,0.5,0.05,0.5,0.30623664864317623,4.5
+C uncompressed + prestress disorder (breaks),1,0.2,0.5,2.0,0.9924881732993177,17.3
+C uncompressed + prestress disorder (breaks),1,0.1,2.0,4.0,0.9985403024128195,34.2
+C uncompressed + prestress disorder (breaks),1,0.5,0.1,0.5,0.3084092220788499,4.6
+C uncompressed + prestress disorder (breaks),1,0.5,0.05,1.0,0.6649097883407138,8.7
+C uncompressed + prestress disorder (breaks),1,0.2,1.0,2.0,0.9819653192131639,17.1
+C uncompressed + prestress disorder (breaks),1,0.2,0.05,4.0,0.9999998182087301,34.3
+C uncompressed + prestress disorder (breaks),1,0.2,2.0,2.0,0.9853981963993756,17.0
+C uncompressed + prestress disorder (breaks),1,0.5,0.1,1.0,0.732198887039307,8.8
+C uncompressed + prestress disorder (breaks),1,0.5,0.2,0.5,0.31001638691870126,4.5
+C uncompressed + prestress disorder (breaks),1,0.2,0.1,4.0,0.9999997433796762,33.8
+C uncompressed + prestress disorder (breaks),1,0.5,0.5,0.5,0.30829305882508706,4.4
+C uncompressed + prestress disorder (breaks),1,0.5,0.05,2.0,0.9999984118978417,17.1
+C uncompressed + prestress disorder (breaks),1,0.5,0.2,1.0,0.7881701317602342,8.7
+C uncompressed + prestress disorder (breaks),1,0.2,0.2,4.0,0.9999987992659873,34.0
+C uncompressed + prestress disorder (breaks),1,0.5,1.0,0.5,0.30019642755558573,4.4
+C uncompressed + prestress disorder (breaks),1,0.5,0.5,1.0,0.7763726272853204,8.8
+C uncompressed + prestress disorder (breaks),1,0.5,0.1,2.0,0.9999988996819437,17.4
+C uncompressed + prestress disorder (breaks),1,0.2,0.5,4.0,0.9999916449739743,33.9
+C uncompressed + prestress disorder (breaks),1,0.5,1.0,1.0,0.6573394117620516,8.7
+C uncompressed + prestress disorder (breaks),1,0.5,2.0,0.5,0.3001550396266457,4.5
+C uncompressed + prestress disorder (breaks),1,0.5,0.2,2.0,0.9999982509188451,17.1
+C uncompressed + prestress disorder (breaks),1,0.2,1.0,4.0,0.9999832127509963,34.1
+C uncompressed + prestress disorder (breaks),1,0.5,0.5,2.0,0.9999749780793014,17.0
+C uncompressed + prestress disorder (breaks),1,1.0,0.05,0.5,0.32411845229965464,4.5
+C uncompressed + prestress disorder (breaks),1,0.5,2.0,1.0,0.5852032432911605,8.7
+C uncompressed + prestress disorder (breaks),1,0.2,2.0,4.0,0.9998372208946326,33.5
+C uncompressed + prestress disorder (breaks),1,1.0,0.05,1.0,0.9876736139863622,8.7
+C uncompressed + prestress disorder (breaks),1,1.0,0.1,0.5,0.34147129826140166,4.4
+C uncompressed + prestress disorder (breaks),1,0.5,1.0,2.0,0.9998374573419431,17.1
+C uncompressed + prestress disorder (breaks),1,0.5,0.05,4.0,0.9999999935335844,34.2
+C uncompressed + prestress disorder (breaks),1,1.0,0.1,1.0,0.9914547877196324,8.6
+C uncompressed + prestress disorder (breaks),1,1.0,0.2,0.5,0.3552803620068644,4.5
+C uncompressed + prestress disorder (breaks),1,0.5,2.0,2.0,0.9995565460590562,17.1
+C uncompressed + prestress disorder (breaks),1,0.5,0.1,4.0,0.9999999970906671,34.4
+C uncompressed + prestress disorder (breaks),1,1.0,0.5,0.5,0.36070480092179535,4.4
+C uncompressed + prestress disorder (breaks),1,1.0,0.2,1.0,0.9935199423447301,8.6
+C uncompressed + prestress disorder (breaks),1,1.0,0.05,2.0,0.9999990776955848,17.2
+C uncompressed + prestress disorder (breaks),1,0.5,0.2,4.0,0.9999999955640623,33.9
+C uncompressed + prestress disorder (breaks),1,1.0,1.0,0.5,0.3569536181609798,4.4
+C uncompressed + prestress disorder (breaks),1,1.0,0.5,1.0,0.9936926787832865,8.6
+C uncompressed + prestress disorder (breaks),1,1.0,0.1,2.0,0.999999706251609,17.4
+C uncompressed + prestress disorder (breaks),1,0.5,0.5,4.0,0.9999999767080245,34.7
+C uncompressed + prestress disorder (breaks),1,1.0,2.0,0.5,0.35922333618049485,4.5
+C uncompressed + prestress disorder (breaks),1,1.0,1.0,1.0,0.9893554052813586,8.6
+C uncompressed + prestress disorder (breaks),1,1.0,0.2,2.0,0.9999997449298338,17.0
+C uncompressed + prestress disorder (breaks),1,0.5,1.0,4.0,0.9999997765002644,34.0
+C uncompressed + prestress disorder (breaks),1,1.0,2.0,1.0,0.9754857319491254,8.7
+C uncompressed + prestress disorder (breaks),1,2.0,0.05,0.5,0.32920649896346954,4.5
+C uncompressed + prestress disorder (breaks),1,1.0,0.5,2.0,0.999999312439386,17.2
+C uncompressed + prestress disorder (breaks),1,0.5,2.0,4.0,0.999998995060466,34.4
+C uncompressed + prestress disorder (breaks),1,2.0,0.05,1.0,0.9984818635944716,8.6
+C uncompressed + prestress disorder (breaks),1,2.0,0.1,0.5,0.3430609516612618,4.5
+C uncompressed + prestress disorder (breaks),1,1.0,1.0,2.0,0.9999950872680728,17.2
+C uncompressed + prestress disorder (breaks),1,1.0,0.05,4.0,0.999999997237879,34.2
+C uncompressed + prestress disorder (breaks),1,2.0,0.2,0.5,0.3575290596374945,4.5
+C uncompressed + prestress disorder (breaks),1,2.0,0.1,1.0,0.998986780865012,8.7
+C uncompressed + prestress disorder (breaks),1,1.0,2.0,2.0,0.9999843457100508,17.4
+C uncompressed + prestress disorder (breaks),1,1.0,0.1,4.0,0.9999999979892625,34.2
+C uncompressed + prestress disorder (breaks),1,2.0,0.5,0.5,0.37203741851355154,4.4
+C uncompressed + prestress disorder (breaks),1,2.0,0.2,1.0,0.9993332089249348,8.8
+C uncompressed + prestress disorder (breaks),1,2.0,0.05,2.0,0.9999994058816511,17.3
+C uncompressed + prestress disorder (breaks),1,1.0,0.2,4.0,0.9999999986668275,34.3
+C uncompressed + prestress disorder (breaks),1,2.0,1.0,0.5,0.37230666073499274,4.4
+C uncompressed + prestress disorder (breaks),1,2.0,0.1,2.0,0.9999997515592519,17.3
+C uncompressed + prestress disorder (breaks),1,2.0,0.5,1.0,0.9996383561749458,8.8
+C uncompressed + prestress disorder (breaks),1,1.0,0.5,4.0,0.999999995937602,35.1
+C uncompressed + prestress disorder (breaks),1,2.0,1.0,1.0,0.9995212049322261,8.7
+C uncompressed + prestress disorder (breaks),1,2.0,0.2,2.0,0.9999998551487197,17.1
+C uncompressed + prestress disorder (breaks),1,2.0,2.0,0.5,0.36887723628874114,4.5
+C uncompressed + prestress disorder (breaks),1,1.0,1.0,4.0,0.999999989149879,34.0
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.05,0.5,0.2538598562820593,4.5
+C uncompressed + prestress disorder (breaks),1,2.0,2.0,1.0,0.9989674886319544,8.9
+C uncompressed + prestress disorder (breaks),1,2.0,0.5,2.0,0.9999998594484844,17.5
+C uncompressed + prestress disorder (breaks),1,1.0,2.0,4.0,0.9999999446157564,34.3
+C uncompressed + prestress disorder (breaks),1,2.0,1.0,2.0,0.9999995664737459,17.0
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.05,1.0,0.28196810213456824,8.8
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.1,0.5,0.24895825055404264,4.4
+C uncompressed + prestress disorder (breaks),1,2.0,0.05,4.0,0.9999999952581284,34.2
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.2,0.5,0.241329708081382,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.1,1.0,0.2834978222148212,8.7
+C uncompressed + prestress disorder (breaks),1,2.0,0.1,4.0,0.99999999823139,33.6
+C uncompressed + prestress disorder (breaks),1,2.0,2.0,2.0,0.9999981441562099,17.7
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.05,2.0,0.4636489386175713,17.3
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.2,1.0,0.2848749541263651,8.7
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.5,0.5,0.22387226623883794,4.5
+C uncompressed + prestress disorder (breaks),1,2.0,0.2,4.0,0.9999999988899934,34.6
+"D uniform, bistable (spontaneous breaking)",0,0.1,1.0,0.5,0.19219075378580341,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.1,2.0,0.4564273658225686,17.0
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.5,1.0,0.27032404560598877,8.6
+C uncompressed + prestress disorder (breaks),1,2.0,0.5,4.0,0.9999999980468204,34.4
+"D uniform, bistable (spontaneous breaking)",0,0.1,1.0,1.0,0.2473609849252909,8.6
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.2,2.0,0.440913047083315,17.0
+"D uniform, bistable (spontaneous breaking)",0,0.1,2.0,0.5,0.16368845715268865,4.5
+C uncompressed + prestress disorder (breaks),1,2.0,1.0,4.0,0.9999999968694678,34.2
+"D uniform, bistable (spontaneous breaking)",0,0.1,2.0,1.0,0.27248114975150994,8.6
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.05,0.5,0.25272355330813534,4.3
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.5,2.0,0.4579606539374208,17.5
+C uncompressed + prestress disorder (breaks),1,2.0,2.0,4.0,0.9999999935571648,33.8
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.05,1.0,0.29698856810038565,8.7
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.1,0.5,0.24820771561287736,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.1,1.0,2.0,0.45298772579322655,17.4
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.05,4.0,0.9999075881257911,33.9
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.2,0.5,0.24366143527735118,4.5
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.1,1.0,0.29997274644996796,8.8
+"D uniform, bistable (spontaneous breaking)",0,0.1,2.0,2.0,0.2897740991787521,17.6
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.1,4.0,0.9994242555268504,34.4
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.5,0.5,0.2293772749873535,4.8
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.2,1.0,0.2999760775811394,9.0
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.05,2.0,0.6243834926555822,17.3
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.2,4.0,0.9918360162842291,34.3
+"D uniform, bistable (spontaneous breaking)",0,0.2,1.0,0.5,0.20010756075507297,4.3
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.1,2.0,0.6216753295171249,17.4
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.5,1.0,0.28895053346351973,8.8
+"D uniform, bistable (spontaneous breaking)",0,0.1,0.5,4.0,0.8299111323849198,34.1
+"D uniform, bistable (spontaneous breaking)",0,0.2,1.0,1.0,0.26377275820161494,8.6
+"D uniform, bistable (spontaneous breaking)",0,0.2,2.0,0.5,0.16746091148563502,4.5
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.2,2.0,0.596860424606282,17.7
+"D uniform, bistable (spontaneous breaking)",0,0.1,1.0,4.0,0.7948804900430987,34.7
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.05,0.5,0.25784955225968564,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.2,2.0,1.0,0.27910002079224094,8.7
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.5,2.0,0.5972414705904949,17.2
+"D uniform, bistable (spontaneous breaking)",0,0.1,2.0,4.0,0.958917527534045,34.4
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.1,0.5,0.2527959460040574,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.05,1.0,0.3077400997262181,8.6
+"D uniform, bistable (spontaneous breaking)",0,0.2,1.0,2.0,0.5607229061451586,17.1
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.05,4.0,0.9999920660447936,34.5
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.2,0.5,0.2460593409085433,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.2,2.0,2.0,0.42696893494998744,17.2
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.1,1.0,0.3083243034471673,8.9
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.1,4.0,0.9999204995094357,34.7
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.2,1.0,0.3093023494904057,8.7
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.5,0.5,0.2337975155705886,4.5
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.05,2.0,0.9972703522975698,17.2
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.2,4.0,0.9987348041195218,34.6
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.5,1.0,0.3071323949780065,8.7
+"D uniform, bistable (spontaneous breaking)",0,0.5,1.0,0.5,0.21894703671931892,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.1,2.0,0.9977082523392605,17.1
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.5,4.0,0.959865251686572,35.1
+"D uniform, bistable (spontaneous breaking)",0,0.5,2.0,0.5,0.19646764870272015,4.3
+"D uniform, bistable (spontaneous breaking)",0,0.5,1.0,1.0,0.2933247848253636,8.8
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.2,2.0,0.9983972185216217,17.3
+"D uniform, bistable (spontaneous breaking)",0,0.2,1.0,4.0,0.8481579650024138,33.9
+"D uniform, bistable (spontaneous breaking)",0,0.5,2.0,1.0,0.2872368847220139,8.8
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.05,0.5,0.2691436331564937,4.4
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.5,2.0,0.9957675702277091,17.2
+"D uniform, bistable (spontaneous breaking)",0,0.2,2.0,4.0,0.9423496542484451,34.1
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.1,0.5,0.2648905062796354,4.5
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.05,1.0,0.3716154222430337,8.5
+"D uniform, bistable (spontaneous breaking)",0,0.5,1.0,2.0,0.9048668179314139,17.5
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.05,4.0,0.9999995728935072,34.1
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.2,0.5,0.2572402061031458,4.4
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.1,1.0,0.3766417855087212,8.8
+"D uniform, bistable (spontaneous breaking)",0,0.5,2.0,2.0,0.5872705226690765,17.3
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.1,4.0,0.9999985597094442,34.7
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.5,0.5,0.24207713543287368,4.4
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.2,1.0,0.38040582555832203,8.9
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.05,2.0,0.9999151754744415,17.5
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.2,4.0,0.9999990871707123,34.8
+"D uniform, bistable (spontaneous breaking)",0,1.0,1.0,0.5,0.22564190970912823,4.4
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.1,2.0,0.9998987232500954,17.4
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.5,1.0,0.3843653403905176,8.9
+"D uniform, bistable (spontaneous breaking)",0,0.5,0.5,4.0,0.9996592722768317,34.2
+"D uniform, bistable (spontaneous breaking)",0,1.0,1.0,1.0,0.38621632883156065,8.8
+"D uniform, bistable (spontaneous breaking)",0,1.0,2.0,0.5,0.20715892021885396,4.4
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.2,2.0,0.9998281417249448,17.6
+"D uniform, bistable (spontaneous breaking)",0,0.5,1.0,4.0,0.9543203807866683,34.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.05,0.5,0.28776261795614255,4.5
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.5,2.0,0.9996326693979064,17.4
+"D uniform, bistable (spontaneous breaking)",0,1.0,2.0,1.0,0.38423707446826516,9.1
+"D uniform, bistable (spontaneous breaking)",0,0.5,2.0,4.0,0.887137260973344,34.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.05,1.0,0.8329514024244857,8.6
+"D uniform, bistable (spontaneous breaking)",0,1.0,1.0,2.0,0.9857063169254832,17.1
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.1,0.5,0.2875148226147082,4.5
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.05,4.0,0.9999996583779174,34.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.2,0.5,0.28741712476936976,4.4
+"D uniform, bistable (spontaneous breaking)",0,1.0,2.0,2.0,0.9801498124393693,17.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.1,1.0,0.8378707178487562,9.2
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.1,4.0,0.9999989141821418,34.7
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.2,1.0,0.8418999225608177,8.6
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.5,0.5,0.2867481193465383,4.4
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.05,2.0,0.9999014849237959,17.3
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.2,4.0,0.9999985878559868,34.6
+"D uniform, bistable (spontaneous breaking)",0,2.0,1.0,0.5,0.28372469130154165,4.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.1,2.0,0.9999457306312186,17.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.5,1.0,0.8456519222009783,9.0
+"D uniform, bistable (spontaneous breaking)",0,1.0,0.5,4.0,0.9999875019165206,34.4
+"D uniform, bistable (spontaneous breaking)",0,2.0,1.0,1.0,0.843645518791809,8.7
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.2,2.0,0.9999541085589734,17.3
+"D uniform, bistable (spontaneous breaking)",0,2.0,2.0,0.5,0.2763466620695241,4.6
+"D uniform, bistable (spontaneous breaking)",0,1.0,1.0,4.0,0.9995739962055951,34.1
+E bistable + stiffness disorder,0,0.1,0.05,0.5,0.28735799027759734,4.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,2.0,1.0,0.8190857174729386,8.9
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.5,2.0,0.9999215658012419,17.6
+"D uniform, bistable (spontaneous breaking)",0,1.0,2.0,4.0,0.9572034884902689,34.3
+E bistable + stiffness disorder,0,0.1,0.05,1.0,0.45661263799905605,8.7
+E bistable + stiffness disorder,0,0.1,0.1,0.5,0.2885517062878582,4.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,1.0,2.0,0.9996817335199436,17.4
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.05,4.0,0.9999999642066154,34.3
+E bistable + stiffness disorder,0,0.1,0.2,0.5,0.2893849496445371,4.6
+"D uniform, bistable (spontaneous breaking)",0,2.0,2.0,2.0,0.9996997328273017,17.4
+E bistable + stiffness disorder,0,0.1,0.1,1.0,0.48442549621518405,8.8
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.1,4.0,0.9999999273962112,34.4
+E bistable + stiffness disorder,0,0.1,0.5,0.5,0.28709790471586216,4.4
+E bistable + stiffness disorder,0,0.1,0.2,1.0,0.49903468503622206,8.8
+E bistable + stiffness disorder,0,0.1,0.05,2.0,0.9997415667556119,17.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.2,4.0,0.9999999367781572,34.3
+E bistable + stiffness disorder,0,0.1,1.0,0.5,0.2779063062231807,4.4
+E bistable + stiffness disorder,0,0.1,0.5,1.0,0.4676849122420359,8.7
+E bistable + stiffness disorder,0,0.1,0.1,2.0,0.9993673943782888,17.2
+"D uniform, bistable (spontaneous breaking)",0,2.0,0.5,4.0,0.9999996910792365,35.0
+E bistable + stiffness disorder,0,0.1,1.0,1.0,0.39765082591215106,8.7
+E bistable + stiffness disorder,0,0.1,2.0,0.5,0.2667912258988354,4.6
+E bistable + stiffness disorder,0,0.1,0.2,2.0,0.9980839848799372,17.5
+"D uniform, bistable (spontaneous breaking)",0,2.0,1.0,4.0,0.9999998813636134,34.4
+E bistable + stiffness disorder,0,0.2,0.05,0.5,0.29541800120495354,4.5
+E bistable + stiffness disorder,0,0.1,2.0,1.0,0.3986407906331698,8.7
+E bistable + stiffness disorder,0,0.1,0.5,2.0,0.9639225611168524,17.2
+"D uniform, bistable (spontaneous breaking)",0,2.0,2.0,4.0,0.9998571552307067,34.6
+E bistable + stiffness disorder,0,0.2,0.1,0.5,0.2973926447768528,4.4
+E bistable + stiffness disorder,0,0.2,0.05,1.0,0.5446698645292165,8.9
+E bistable + stiffness disorder,0,0.1,1.0,2.0,0.9182792246568043,17.1
+E bistable + stiffness disorder,0,0.1,0.05,4.0,0.9999999636671425,34.8
+E bistable + stiffness disorder,0,0.2,0.1,1.0,0.5980694150548583,8.9
+E bistable + stiffness disorder,0,0.2,0.2,0.5,0.2981664697006159,4.5
+E bistable + stiffness disorder,0,0.1,2.0,2.0,nan,17.1
+E bistable + stiffness disorder,0,0.1,0.1,4.0,0.999999918611119,34.1
+E bistable + stiffness disorder,0,0.2,0.5,0.5,0.2941845270431074,4.4
+E bistable + stiffness disorder,0,0.2,0.2,1.0,0.6247698124439505,8.7
+E bistable + stiffness disorder,0,0.2,0.05,2.0,0.9999657466573962,17.2
+E bistable + stiffness disorder,0,0.1,0.2,4.0,0.9999993727756356,35.2
+E bistable + stiffness disorder,0,0.2,1.0,0.5,0.2879077257051653,4.4
+E bistable + stiffness disorder,0,0.2,0.1,2.0,0.9999624396966051,17.1
+E bistable + stiffness disorder,0,0.2,0.5,1.0,0.5971963517369352,8.8
+E bistable + stiffness disorder,0,0.1,0.5,4.0,0.9999849952764314,34.1
+E bistable + stiffness disorder,0,0.2,1.0,1.0,0.5170774998006826,8.8
+E bistable + stiffness disorder,0,0.2,2.0,0.5,0.28368798514196103,4.4
+E bistable + stiffness disorder,0,0.2,0.2,2.0,0.9999371602301302,17.5
+E bistable + stiffness disorder,0,0.1,1.0,4.0,0.9999574056078478,34.2
+E bistable + stiffness disorder,0,0.5,0.05,0.5,0.32539794564858626,4.4
+E bistable + stiffness disorder,0,0.2,0.5,2.0,0.9990267009861795,17.3
+E bistable + stiffness disorder,0,0.2,2.0,1.0,0.4384876784837892,8.9
+E bistable + stiffness disorder,0,0.1,2.0,4.0,0.9997409611348647,34.5
+E bistable + stiffness disorder,0,0.5,0.1,0.5,0.33631306691637297,4.5
+E bistable + stiffness disorder,0,0.5,0.05,1.0,0.8749280551611833,8.9
+E bistable + stiffness disorder,0,0.2,0.05,4.0,0.9999999927034428,34.6
+E bistable + stiffness disorder,0,0.2,1.0,2.0,0.9662467759534787,17.5
+E bistable + stiffness disorder,0,0.5,0.1,1.0,0.9324325794206129,8.8
+E bistable + stiffness disorder,0,0.2,2.0,2.0,0.9522734193727204,17.2
+E bistable + stiffness disorder,0,0.5,0.2,0.5,0.3429988308164449,4.5
+E bistable + stiffness disorder,0,0.2,0.1,4.0,0.9999999802928247,34.3
+E bistable + stiffness disorder,0,0.5,0.5,0.5,0.3377862376169891,4.5
+E bistable + stiffness disorder,0,0.5,0.05,2.0,0.9999993415724853,17.3
+E bistable + stiffness disorder,0,0.5,0.2,1.0,0.9550555668037057,8.8
+E bistable + stiffness disorder,0,0.2,0.2,4.0,0.9999999720891675,34.3
+E bistable + stiffness disorder,0,0.5,1.0,0.5,0.3188799093025648,4.4
+E bistable + stiffness disorder,0,0.5,0.5,1.0,0.9325017925247823,8.7
+E bistable + stiffness disorder,0,0.5,0.1,2.0,0.9999996347329154,17.2
+E bistable + stiffness disorder,0,0.2,0.5,4.0,0.999998102467846,34.3
+E bistable + stiffness disorder,0,0.5,2.0,0.5,0.29700844754207645,4.4
+E bistable + stiffness disorder,0,0.5,1.0,1.0,0.8333573731294688,8.7
+E bistable + stiffness disorder,0,0.5,0.2,2.0,0.9999986684777888,17.6
+E bistable + stiffness disorder,0,0.2,1.0,4.0,0.9999425745742797,34.1
+E bistable + stiffness disorder,0,0.5,2.0,1.0,0.6434241079066024,8.7
+E bistable + stiffness disorder,0,0.5,0.5,2.0,0.9999930502529046,17.2
+E bistable + stiffness disorder,0,1.0,0.05,0.5,0.34906820523482596,4.6
+E bistable + stiffness disorder,0,0.2,2.0,4.0,0.9993764567288769,34.2
+E bistable + stiffness disorder,0,1.0,0.1,0.5,0.3632438047615758,4.5
+E bistable + stiffness disorder,0,0.5,1.0,2.0,0.9993878214011656,17.1
+E bistable + stiffness disorder,0,1.0,0.05,1.0,0.998303820733933,9.0
+E bistable + stiffness disorder,0,0.5,0.05,4.0,0.999999994901568,34.3
+E bistable + stiffness disorder,0,1.0,0.1,1.0,0.9992578787974701,8.9
+E bistable + stiffness disorder,0,1.0,0.2,0.5,0.3727647482794916,4.6
+E bistable + stiffness disorder,0,0.5,2.0,2.0,0.9910678669319957,17.3
+E bistable + stiffness disorder,0,0.5,0.1,4.0,0.9999999932770566,34.7
+E bistable + stiffness disorder,0,1.0,0.5,0.5,0.37776744313745836,4.5
+E bistable + stiffness disorder,0,1.0,0.05,2.0,0.9999996874092009,17.4
+E bistable + stiffness disorder,0,1.0,0.2,1.0,0.9993755200678777,9.2
+E bistable + stiffness disorder,0,0.5,0.2,4.0,0.9999999934015519,34.9
+E bistable + stiffness disorder,0,1.0,0.5,1.0,0.9983457189385199,9.0
+E bistable + stiffness disorder,0,1.0,1.0,0.5,0.36273507482860434,4.4
+E bistable + stiffness disorder,0,1.0,0.1,2.0,0.9999998316574606,17.6
+E bistable + stiffness disorder,0,0.5,0.5,4.0,0.9999999753921117,34.5
+E bistable + stiffness disorder,0,1.0,2.0,0.5,0.3563786243909186,4.4
+E bistable + stiffness disorder,0,1.0,1.0,1.0,0.9961712817586323,8.9
+E bistable + stiffness disorder,0,1.0,0.2,2.0,0.9999998222166919,17.3
+E bistable + stiffness disorder,0,0.5,1.0,4.0,0.9980286874493569,34.5
+E bistable + stiffness disorder,0,2.0,0.05,0.5,0.3842473515447212,4.6
+E bistable + stiffness disorder,0,1.0,2.0,1.0,0.9797082888265944,8.7
+E bistable + stiffness disorder,0,1.0,0.5,2.0,0.9999995533346869,17.4
+E bistable + stiffness disorder,0,0.5,2.0,4.0,nan,34.5
+E bistable + stiffness disorder,0,2.0,0.05,1.0,0.9998934810941651,8.8
+E bistable + stiffness disorder,0,2.0,0.1,0.5,0.3991705804977592,4.4
+E bistable + stiffness disorder,0,1.0,1.0,2.0,0.9999816588039835,17.4
+E bistable + stiffness disorder,0,1.0,0.05,4.0,0.9999999943001685,34.6
+E bistable + stiffness disorder,0,2.0,0.2,0.5,0.4061438217780121,4.4
+E bistable + stiffness disorder,0,2.0,0.1,1.0,0.9999583346754558,8.7
+E bistable + stiffness disorder,0,1.0,2.0,2.0,0.9968181216990155,17.3
+E bistable + stiffness disorder,0,1.0,0.1,4.0,0.9999999951186539,34.9
+E bistable + stiffness disorder,0,2.0,0.5,0.5,0.4082749353427957,4.5
+E bistable + stiffness disorder,0,2.0,0.2,1.0,0.9999573344637835,8.7
+E bistable + stiffness disorder,0,2.0,0.05,2.0,0.9999999069509503,17.2
+E bistable + stiffness disorder,0,1.0,0.2,4.0,0.9999999955065416,34.7
+E bistable + stiffness disorder,0,2.0,1.0,0.5,0.40562488879326597,4.5
+E bistable + stiffness disorder,0,2.0,0.5,1.0,0.9999556241195806,8.9
+E bistable + stiffness disorder,0,2.0,0.1,2.0,0.9999999241516465,17.6
+E bistable + stiffness disorder,0,1.0,0.5,4.0,0.9999999921974473,34.6
+E bistable + stiffness disorder,0,2.0,1.0,1.0,0.9999065406292187,8.6
+E bistable + stiffness disorder,0,2.0,2.0,0.5,0.3901689921788819,4.4
+E bistable + stiffness disorder,0,2.0,0.2,2.0,0.9999998787756621,17.4
+E bistable + stiffness disorder,0,1.0,1.0,4.0,0.9999999080489705,34.3
+E bistable + stiffness disorder,1,0.1,0.05,0.5,0.2885612239204647,4.5
+E bistable + stiffness disorder,0,2.0,2.0,1.0,0.9988533945428164,8.9
+E bistable + stiffness disorder,0,2.0,0.5,2.0,0.9999998841373099,17.4
+E bistable + stiffness disorder,0,1.0,2.0,4.0,0.9954933768248807,34.6
+E bistable + stiffness disorder,1,0.1,0.05,1.0,0.45426752287371464,8.7
+E bistable + stiffness disorder,1,0.1,0.1,0.5,0.28866373900535347,4.5
+E bistable + stiffness disorder,0,2.0,1.0,2.0,0.9999996631074732,17.4
+E bistable + stiffness disorder,0,2.0,0.05,4.0,0.9999999893780667,35.4
+E bistable + stiffness disorder,1,0.1,0.2,0.5,0.2888763130331162,4.6
+E bistable + stiffness disorder,1,0.1,0.1,1.0,0.4746916858480771,9.0
+E bistable + stiffness disorder,0,2.0,2.0,2.0,0.9999112179408285,17.3
+E bistable + stiffness disorder,0,2.0,0.1,4.0,0.9999999907024892,34.6
+E bistable + stiffness disorder,1,0.1,0.05,2.0,0.9993243730757493,17.2
+E bistable + stiffness disorder,1,0.1,0.5,0.5,0.2881210245068878,4.5
+E bistable + stiffness disorder,1,0.1,0.2,1.0,0.4935193050259019,8.9
+E bistable + stiffness disorder,0,2.0,0.2,4.0,0.99999999547091,34.7
+E bistable + stiffness disorder,1,0.1,0.5,1.0,0.4651227800969292,8.9
+E bistable + stiffness disorder,1,0.1,1.0,0.5,0.278216083605209,4.5
+E bistable + stiffness disorder,1,0.1,0.1,2.0,0.999242103450816,17.2
+E bistable + stiffness disorder,0,2.0,0.5,4.0,0.9999999943240206,34.5
+E bistable + stiffness disorder,1,0.1,1.0,1.0,0.38106998610107234,8.8
+E bistable + stiffness disorder,1,0.1,2.0,0.5,0.24764652011882726,4.5
+E bistable + stiffness disorder,1,0.1,0.2,2.0,0.9974537447073939,17.9
+E bistable + stiffness disorder,0,2.0,1.0,4.0,0.9999999473535189,34.6
+E bistable + stiffness disorder,1,0.1,2.0,1.0,0.3806526695093918,8.7
+E bistable + stiffness disorder,1,0.2,0.05,0.5,0.2982448374759933,4.4
+E bistable + stiffness disorder,1,0.1,0.5,2.0,0.9399007594450408,17.4
+E bistable + stiffness disorder,0,2.0,2.0,4.0,0.9994811640001423,34.2
+E bistable + stiffness disorder,1,0.2,0.1,0.5,0.2997507214329225,4.4
+E bistable + stiffness disorder,1,0.1,1.0,2.0,0.8548156333114438,17.3
+E bistable + stiffness disorder,1,0.1,0.05,4.0,0.99999995678883,34.3
+E bistable + stiffness disorder,1,0.2,0.05,1.0,0.5401600834845339,8.9
+E bistable + stiffness disorder,1,0.2,0.1,1.0,0.5821695440249399,8.6
+E bistable + stiffness disorder,1,0.2,0.2,0.5,0.3018602150570485,4.5
+E bistable + stiffness disorder,1,0.1,2.0,2.0,nan,17.1
+E bistable + stiffness disorder,1,0.1,0.1,4.0,0.9999997746642734,34.7
+E bistable + stiffness disorder,1,0.2,0.5,0.5,0.29954051134508297,4.5
+E bistable + stiffness disorder,1,0.2,0.2,1.0,0.6108711271180505,8.5
+E bistable + stiffness disorder,1,0.2,0.05,2.0,0.9999454704289282,17.3
+E bistable + stiffness disorder,1,0.1,0.2,4.0,0.9999980828273362,34.8
+E bistable + stiffness disorder,1,0.2,0.5,1.0,0.5425008904907511,8.6
+E bistable + stiffness disorder,1,0.2,0.1,2.0,0.9999295487801305,16.9
+E bistable + stiffness disorder,1,0.2,1.0,0.5,0.28792150272915873,4.4
+E bistable + stiffness disorder,1,0.1,0.5,4.0,0.9997777876271292,34.4
+E bistable + stiffness disorder,1,0.2,2.0,0.5,0.26919167001138355,4.5
+E bistable + stiffness disorder,1,0.2,1.0,1.0,0.5028152359838638,8.7
+E bistable + stiffness disorder,1,0.2,0.2,2.0,0.9998898297631656,17.5
+E bistable + stiffness disorder,1,0.1,1.0,4.0,0.9997613873678666,34.6
+E bistable + stiffness disorder,1,0.2,2.0,1.0,0.4171558954560368,8.7
+E bistable + stiffness disorder,1,0.5,0.05,0.5,0.3195825068537468,4.6
+E bistable + stiffness disorder,1,0.2,0.5,2.0,0.9967369443708781,17.2
+E bistable + stiffness disorder,1,0.1,2.0,4.0,0.999287186607566,34.0
+E bistable + stiffness disorder,1,0.5,0.1,0.5,0.3260775563065391,4.5
+E bistable + stiffness disorder,1,0.5,0.05,1.0,0.8722008229106364,8.9
+E bistable + stiffness disorder,1,0.2,1.0,2.0,0.9472245850530513,17.1
+E bistable + stiffness disorder,1,0.2,0.05,4.0,0.9999999823942892,34.1
+E bistable + stiffness disorder,1,0.5,0.2,0.5,0.33030187566204294,4.6
+E bistable + stiffness disorder,1,0.5,0.1,1.0,0.9288426012403942,8.8
+E bistable + stiffness disorder,1,0.2,2.0,2.0,0.9637414643529548,17.4
+E bistable + stiffness disorder,1,0.2,0.1,4.0,0.999999963477602,34.5
+E bistable + stiffness disorder,1,0.5,0.5,0.5,0.32774563466563467,4.5
+E bistable + stiffness disorder,1,0.5,0.2,1.0,0.949416056839042,8.8
+E bistable + stiffness disorder,1,0.5,0.05,2.0,0.9999996071108206,17.3
+E bistable + stiffness disorder,1,0.2,0.2,4.0,0.999999934864879,33.9
+E bistable + stiffness disorder,1,0.5,1.0,0.5,0.31495600540667434,4.5
+E bistable + stiffness disorder,1,0.5,0.5,1.0,0.9226185517791872,8.7
+E bistable + stiffness disorder,1,0.5,0.1,2.0,0.999999626996257,17.6
+E bistable + stiffness disorder,1,0.2,0.5,4.0,0.9999941061402052,34.6
+E bistable + stiffness disorder,1,0.5,0.2,2.0,0.99999831609089,17.3
+E bistable + stiffness disorder,1,0.5,2.0,0.5,0.3003330138875454,4.5
+E bistable + stiffness disorder,1,0.5,1.0,1.0,0.8501477988420458,8.9
+E bistable + stiffness disorder,1,0.2,1.0,4.0,0.9999505187482345,34.0
+E bistable + stiffness disorder,1,0.5,2.0,1.0,0.6719371750772206,8.7
+E bistable + stiffness disorder,1,1.0,0.05,0.5,0.3412760753389277,4.6
+E bistable + stiffness disorder,1,0.5,0.5,2.0,0.999989463363716,17.2
+E bistable + stiffness disorder,1,0.2,2.0,4.0,0.9995973298584602,34.0
+E bistable + stiffness disorder,1,1.0,0.1,0.5,0.3598140512611452,4.4
+E bistable + stiffness disorder,1,0.5,1.0,2.0,0.999095312827286,17.4
+E bistable + stiffness disorder,1,1.0,0.05,1.0,0.9972035974508564,8.9
+E bistable + stiffness disorder,1,0.5,0.05,4.0,0.9999999844335442,34.5
+E bistable + stiffness disorder,1,1.0,0.1,1.0,0.9984022872701729,8.9
+E bistable + stiffness disorder,1,1.0,0.2,0.5,0.37867416899874007,4.5
+E bistable + stiffness disorder,1,0.5,2.0,2.0,0.9955668396535455,17.5
+E bistable + stiffness disorder,1,0.5,0.1,4.0,0.9999999884595918,34.9
+E bistable + stiffness disorder,1,1.0,0.2,1.0,0.998747408672896,8.7
+E bistable + stiffness disorder,1,1.0,0.5,0.5,0.39030968996344106,4.6
+E bistable + stiffness disorder,1,1.0,0.05,2.0,0.9999997368351079,17.3
+E bistable + stiffness disorder,1,0.5,0.2,4.0,0.9999999882561721,35.7
+E bistable + stiffness disorder,1,1.0,1.0,0.5,0.38241373958424163,4.5
+E bistable + stiffness disorder,1,1.0,0.1,2.0,0.9999997936011987,17.3
+E bistable + stiffness disorder,1,1.0,0.5,1.0,0.9978015336398561,8.9
+E bistable + stiffness disorder,1,0.5,0.5,4.0,0.999999947194268,34.2
+E bistable + stiffness disorder,1,1.0,1.0,1.0,0.9948961290954323,8.9
+E bistable + stiffness disorder,1,1.0,2.0,0.5,0.3565643310405091,4.5
+E bistable + stiffness disorder,1,1.0,0.2,2.0,0.999999704497018,17.6
+E bistable + stiffness disorder,1,0.5,1.0,4.0,0.9999977890713085,35.0
+E bistable + stiffness disorder,1,2.0,0.05,0.5,0.37582830147161084,4.5
+E bistable + stiffness disorder,1,1.0,2.0,1.0,0.9761189853256019,8.9
+E bistable + stiffness disorder,1,1.0,0.5,2.0,0.9999993237651451,17.5
+E bistable + stiffness disorder,1,0.5,2.0,4.0,0.9946976248185041,34.5
+E bistable + stiffness disorder,1,2.0,0.1,0.5,0.3921134762339846,4.6
+E bistable + stiffness disorder,1,2.0,0.05,1.0,0.9998411609007082,8.8
+E bistable + stiffness disorder,1,1.0,1.0,2.0,0.9999865973764895,17.6
+E bistable + stiffness disorder,1,1.0,0.05,4.0,0.999999996846573,35.0
+E bistable + stiffness disorder,1,2.0,0.2,0.5,0.40864797890977,4.6
+E bistable + stiffness disorder,1,1.0,2.0,2.0,0.9835929770642025,17.3
+E bistable + stiffness disorder,1,2.0,0.1,1.0,0.9998917850920682,8.8
+E bistable + stiffness disorder,1,1.0,0.1,4.0,0.9999999929860014,34.7
+E bistable + stiffness disorder,1,2.0,0.5,0.5,0.41644226271310514,4.5
+E bistable + stiffness disorder,1,2.0,0.05,2.0,0.999999686442844,17.5
+E bistable + stiffness disorder,1,1.0,0.2,4.0,0.9999999937094352,34.4
+E bistable + stiffness disorder,1,2.0,0.2,1.0,0.9999099155539342,8.9
+E bistable + stiffness disorder,1,2.0,0.5,1.0,0.9999297496516192,8.8
+E bistable + stiffness disorder,1,2.0,0.1,2.0,0.9999998822576244,17.3
+E bistable + stiffness disorder,1,2.0,1.0,0.5,0.4115050215772459,4.5
+E bistable + stiffness disorder,1,1.0,0.5,4.0,0.9999999867753478,34.5
+E bistable + stiffness disorder,1,2.0,2.0,0.5,0.395387856242027,4.6
+E bistable + stiffness disorder,1,2.0,1.0,1.0,0.9998526387032348,8.9
+E bistable + stiffness disorder,1,2.0,0.2,2.0,0.9999997019438919,17.6
+E bistable + stiffness disorder,1,1.0,1.0,4.0,0.9999999594114224,34.6
+E bistable + stiffness disorder,1,2.0,0.5,2.0,0.9999998281623373,16.7
+E bistable + stiffness disorder,1,2.0,2.0,1.0,0.9990159130347178,8.2
+E bistable + stiffness disorder,1,1.0,2.0,4.0,0.9895284796697177,33.9
+E bistable + stiffness disorder,1,2.0,1.0,2.0,0.9999994701172558,15.9
+E bistable + stiffness disorder,1,2.0,0.05,4.0,0.9999999864574408,32.5
+E bistable + stiffness disorder,1,2.0,2.0,2.0,0.9988944296728293,14.5
+E bistable + stiffness disorder,1,2.0,0.1,4.0,0.9999999923225513,31.5
+E bistable + stiffness disorder,1,2.0,0.2,4.0,0.9999999958830187,29.9
+E bistable + stiffness disorder,1,2.0,0.5,4.0,0.9999999940997203,28.8
+E bistable + stiffness disorder,1,2.0,1.0,4.0,0.999999973197743,27.5
+E bistable + stiffness disorder,1,2.0,2.0,4.0,0.9979335974706657,25.0
+F bistable + prestress disorder,0,0.1,0.05,0.5,0.28643927211505316,5.5
+F bistable + prestress disorder,0,0.1,0.5,0.5,0.28066658487705465,5.5
+F bistable + prestress disorder,0,0.1,0.2,0.5,0.28570146378519146,5.5
+F bistable + prestress disorder,0,0.1,0.1,0.5,0.2868118638389682,5.7
+F bistable + prestress disorder,0,0.1,0.1,1.0,0.4364349096948775,9.1
+F bistable + prestress disorder,0,0.1,0.05,1.0,0.41829851183168065,9.1
+F bistable + prestress disorder,0,0.1,0.5,1.0,0.40759867952468387,9.4
+F bistable + prestress disorder,0,0.1,0.2,1.0,0.4580573951815785,9.5
+F bistable + prestress disorder,0,0.1,1.0,0.5,0.26848078925297614,4.0
+F bistable + prestress disorder,0,0.1,1.0,1.0,0.32460252105392406,7.9
+F bistable + prestress disorder,0,0.1,2.0,0.5,0.23296263985470445,4.2
+F bistable + prestress disorder,0,0.1,0.2,2.0,0.9976823247300898,16.9
+F bistable + prestress disorder,0,0.1,0.1,2.0,0.9996869971526023,17.0
+F bistable + prestress disorder,0,0.1,2.0,1.0,0.35400375964961195,7.9
+F bistable + prestress disorder,0,0.1,0.05,2.0,0.9998511867149807,17.4
+F bistable + prestress disorder,0,0.2,0.05,0.5,0.29047584125348513,4.1
+F bistable + prestress disorder,0,0.1,0.5,2.0,0.9842865285714644,16.0
+F bistable + prestress disorder,0,0.2,0.1,0.5,0.28959491618560085,4.3
+F bistable + prestress disorder,0,0.1,1.0,2.0,0.8109197358843715,16.2
+F bistable + prestress disorder,0,0.2,0.05,1.0,0.4860112151846502,8.5
+F bistable + prestress disorder,0,0.1,2.0,2.0,0.8683432755927576,16.0
+F bistable + prestress disorder,0,0.2,0.1,1.0,0.507177588206832,8.1
+F bistable + prestress disorder,0,0.2,0.2,0.5,0.28594789348224614,4.3
+F bistable + prestress disorder,0,0.1,0.2,4.0,0.9999989356208585,33.3
+F bistable + prestress disorder,0,0.2,0.05,2.0,0.9999896554934233,16.6
+F bistable + prestress disorder,0,0.1,0.1,4.0,0.9999999900275023,33.6
+F bistable + prestress disorder,0,0.1,0.05,4.0,0.9999999969242964,33.8
+F bistable + prestress disorder,0,0.2,0.2,1.0,0.511660900940748,8.5
+F bistable + prestress disorder,0,0.2,0.5,0.5,0.2804781149903235,4.4
+F bistable + prestress disorder,0,0.1,0.5,4.0,0.9998138165159002,32.5
+F bistable + prestress disorder,0,0.2,1.0,0.5,0.2714271787447632,4.4
+F bistable + prestress disorder,0,0.2,0.1,2.0,0.9999884831259728,17.0
+F bistable + prestress disorder,0,0.2,0.5,1.0,0.48326261428877826,8.7
+F bistable + prestress disorder,0,0.1,1.0,4.0,0.9993893262228057,32.9
+F bistable + prestress disorder,0,0.2,0.2,2.0,0.9999636378661344,17.0
+F bistable + prestress disorder,0,0.2,2.0,0.5,0.24839762502089135,4.4
+F bistable + prestress disorder,0,0.2,1.0,1.0,0.40490469520737893,8.8
+F bistable + prestress disorder,0,0.5,0.05,0.5,0.32064646529341534,4.5
+F bistable + prestress disorder,0,0.1,2.0,4.0,0.9984856858218221,33.3
+F bistable + prestress disorder,0,0.2,2.0,1.0,0.36327056467998875,9.1
+F bistable + prestress disorder,0,0.2,0.5,2.0,0.9977342135920515,17.2
+F bistable + prestress disorder,0,0.2,0.05,4.0,0.9999999982407247,33.6
+F bistable + prestress disorder,0,0.2,1.0,2.0,0.9781209654187467,17.0
+F bistable + prestress disorder,0,0.5,0.05,1.0,0.8017699079666689,8.6
+F bistable + prestress disorder,0,0.5,0.1,0.5,0.3244860881424,4.5
+F bistable + prestress disorder,0,0.5,0.2,0.5,0.3254968890913359,4.2
+F bistable + prestress disorder,0,0.2,0.1,4.0,0.9999999963559828,34.3
+F bistable + prestress disorder,0,0.5,0.1,1.0,0.8599784317396968,8.6
+F bistable + prestress disorder,0,0.2,2.0,2.0,0.9537563306408354,17.0
+F bistable + prestress disorder,0,0.5,0.05,2.0,0.9999997558030482,16.9
+F bistable + prestress disorder,0,0.2,0.2,4.0,0.9999999864694462,33.8
+F bistable + prestress disorder,0,0.5,0.2,1.0,0.8814870691845933,8.5
+F bistable + prestress disorder,0,0.5,0.5,0.5,0.3191363554562189,4.4
+F bistable + prestress disorder,0,0.5,1.0,0.5,0.30497321589121074,4.4
+F bistable + prestress disorder,0,0.5,0.5,1.0,0.8116811153927701,8.8
+F bistable + prestress disorder,0,0.5,0.1,2.0,0.9999997850210018,16.9
+F bistable + prestress disorder,0,0.2,0.5,4.0,0.999957807010618,34.2
+F bistable + prestress disorder,0,0.5,1.0,1.0,0.6891374008555615,8.6
+F bistable + prestress disorder,0,0.5,0.2,2.0,0.9999992026863099,17.2
+F bistable + prestress disorder,0,0.5,2.0,0.5,0.29528673814070583,4.4
+F bistable + prestress disorder,0,0.2,1.0,4.0,0.9997619310814675,34.0
+F bistable + prestress disorder,0,1.0,0.05,0.5,0.34502369880941897,4.3
+F bistable + prestress disorder,0,0.2,2.0,4.0,0.999783752065223,33.7
+F bistable + prestress disorder,0,0.5,0.5,2.0,0.9999831313354615,17.1
+F bistable + prestress disorder,0,0.5,2.0,1.0,0.5829929811837257,8.6
+F bistable + prestress disorder,0,0.5,1.0,2.0,0.9995431802763205,17.0
+F bistable + prestress disorder,0,1.0,0.05,1.0,0.9961629354433095,8.8
+F bistable + prestress disorder,0,1.0,0.1,0.5,0.36524122880249055,4.5
+F bistable + prestress disorder,0,0.5,0.05,4.0,0.9999999980793611,34.2
+F bistable + prestress disorder,0,1.0,0.2,0.5,0.3793964950923766,4.6
+F bistable + prestress disorder,0,1.0,0.1,1.0,0.997480958736768,8.5
+F bistable + prestress disorder,0,0.5,2.0,2.0,0.9968725531165845,17.2
+F bistable + prestress disorder,0,0.5,0.1,4.0,0.999999998878505,34.3
+F bistable + prestress disorder,0,1.0,0.5,0.5,0.3764177618851946,4.4
+F bistable + prestress disorder,0,1.0,0.2,1.0,0.9980010429377434,8.8
+F bistable + prestress disorder,0,1.0,0.05,2.0,0.9999996953279191,17.4
+F bistable + prestress disorder,0,0.5,0.2,4.0,0.9999999974262797,34.7
+F bistable + prestress disorder,0,1.0,1.0,0.5,0.3636824061872226,4.4
+F bistable + prestress disorder,0,1.0,0.1,2.0,0.999999884314105,17.3
+F bistable + prestress disorder,0,1.0,0.5,1.0,0.9959543780289113,9.0
+F bistable + prestress disorder,0,0.5,0.5,4.0,0.9999998230775681,34.7
+F bistable + prestress disorder,0,1.0,2.0,0.5,0.3575321229790792,4.4
+F bistable + prestress disorder,0,1.0,1.0,1.0,0.9902875848960916,8.8
+F bistable + prestress disorder,0,0.5,1.0,4.0,0.9999953208984431,34.3
+F bistable + prestress disorder,0,1.0,0.2,2.0,0.9999998553763099,17.4
+F bistable + prestress disorder,0,1.0,2.0,1.0,0.9660906283343825,8.7
+F bistable + prestress disorder,0,2.0,0.05,0.5,0.36046669921842445,4.5
+F bistable + prestress disorder,0,1.0,0.5,2.0,0.9999994932597946,17.6
+F bistable + prestress disorder,0,0.5,2.0,4.0,0.9999786656982111,34.7
+F bistable + prestress disorder,0,2.0,0.1,0.5,0.3901287943510653,4.4
+F bistable + prestress disorder,0,2.0,0.05,1.0,0.9996074547423205,8.8
+F bistable + prestress disorder,0,1.0,1.0,2.0,0.9999928470001667,17.5
+F bistable + prestress disorder,0,1.0,0.05,4.0,0.9999999980080845,34.8
+F bistable + prestress disorder,0,2.0,0.2,0.5,0.41329432383517617,4.4
+F bistable + prestress disorder,0,1.0,2.0,2.0,0.9999392615166822,17.5
+F bistable + prestress disorder,0,2.0,0.1,1.0,0.9997717907296967,8.8
+F bistable + prestress disorder,0,1.0,0.1,4.0,0.9999999982940829,35.2
+F bistable + prestress disorder,0,2.0,0.05,2.0,0.9999997893214261,17.3
+F bistable + prestress disorder,0,2.0,0.5,0.5,0.4227574129643189,4.4
+F bistable + prestress disorder,0,2.0,0.2,1.0,0.9998448468533344,9.0
+F bistable + prestress disorder,0,1.0,0.2,4.0,0.9999999983446154,35.7
+F bistable + prestress disorder,0,2.0,0.1,2.0,0.9999998530807589,17.2
+F bistable + prestress disorder,0,2.0,0.5,1.0,0.9998080276007495,8.9
+F bistable + prestress disorder,0,2.0,1.0,0.5,0.4142490464401808,4.5
+F bistable + prestress disorder,0,1.0,0.5,4.0,0.9999999962178275,34.4
+F bistable + prestress disorder,0,2.0,0.2,2.0,0.9999999114901688,17.4
+F bistable + prestress disorder,0,2.0,1.0,1.0,0.9996529449554397,8.7
+F bistable + prestress disorder,0,2.0,2.0,0.5,0.40199995659304555,4.7
+F bistable + prestress disorder,0,1.0,1.0,4.0,0.9999999249733307,34.6
+F bistable + prestress disorder,0,2.0,2.0,1.0,0.99906271422957,8.9
+F bistable + prestress disorder,1,0.1,0.05,0.5,0.2865590097238744,4.4
+F bistable + prestress disorder,0,2.0,0.5,2.0,0.999999892137672,17.5
+F bistable + prestress disorder,0,1.0,2.0,4.0,0.9999992751358581,34.5
+F bistable + prestress disorder,1,0.1,0.1,0.5,0.28588465219745895,4.5
+F bistable + prestress disorder,1,0.1,0.05,1.0,0.42050053754355154,8.9
+F bistable + prestress disorder,0,2.0,1.0,2.0,0.9999995635242285,17.8
+F bistable + prestress disorder,0,2.0,0.05,4.0,0.9999999980005267,34.6
+F bistable + prestress disorder,1,0.1,0.2,0.5,0.2850067517993251,4.5
+F bistable + prestress disorder,1,0.1,0.1,1.0,0.44584970788567924,8.9
+F bistable + prestress disorder,0,2.0,2.0,2.0,0.9999970437163979,17.2
+F bistable + prestress disorder,0,2.0,0.1,4.0,0.9999999975831845,34.4
+F bistable + prestress disorder,1,0.1,0.5,0.5,0.28114517061124733,4.7
+F bistable + prestress disorder,1,0.1,0.05,2.0,0.9998418719119854,17.1
+F bistable + prestress disorder,1,0.1,0.2,1.0,0.46960623632934106,9.3
+F bistable + prestress disorder,0,2.0,0.2,4.0,0.999999998190609,35.0
+F bistable + prestress disorder,1,0.1,0.5,1.0,0.4258903023638487,8.8
+F bistable + prestress disorder,1,0.1,1.0,0.5,0.2653141199993818,4.4
+F bistable + prestress disorder,1,0.1,0.1,2.0,0.9998245651684521,17.4
+F bistable + prestress disorder,0,2.0,0.5,4.0,0.9999999990480021,34.9
+F bistable + prestress disorder,1,0.1,2.0,0.5,0.23996882976795864,4.4
+F bistable + prestress disorder,1,0.1,1.0,1.0,0.3365659144974926,8.9
+F bistable + prestress disorder,0,2.0,1.0,4.0,0.9999999968026005,34.6
+F bistable + prestress disorder,1,0.1,0.2,2.0,0.9992043922435825,17.8
+F bistable + prestress disorder,1,0.1,0.5,2.0,0.9749937633550293,17.2
+F bistable + prestress disorder,1,0.1,2.0,1.0,0.3585915985345244,9.0
+F bistable + prestress disorder,1,0.2,0.05,0.5,0.29238924653027165,4.7
+F bistable + prestress disorder,0,2.0,2.0,4.0,0.9999999866883125,35.1
+F bistable + prestress disorder,1,0.2,0.1,0.5,0.29203271224873706,4.6
+F bistable + prestress disorder,1,0.2,0.05,1.0,0.48954899811914543,8.9
+F bistable + prestress disorder,1,0.1,1.0,2.0,0.8696166300964294,17.5
+F bistable + prestress disorder,1,0.1,0.05,4.0,0.9999999983653521,35.3
+F bistable + prestress disorder,1,0.2,0.2,0.5,0.2890804705307105,4.5
+F bistable + prestress disorder,1,0.1,2.0,2.0,0.8730718059187872,17.7
+F bistable + prestress disorder,1,0.2,0.1,1.0,0.5117059116633871,9.4
+F bistable + prestress disorder,1,0.1,0.1,4.0,0.9999999968888168,35.0
+F bistable + prestress disorder,1,0.2,0.05,2.0,0.9999925444387794,17.8
+F bistable + prestress disorder,1,0.2,0.2,1.0,0.518136328749795,8.9
+F bistable + prestress disorder,1,0.2,0.5,0.5,0.2824520595305342,4.6
+F bistable + prestress disorder,1,0.1,0.2,4.0,0.9999996871653312,35.3
+F bistable + prestress disorder,1,0.2,1.0,0.5,0.27336503873802964,4.4
+F bistable + prestress disorder,1,0.2,0.5,1.0,0.49492635077948754,8.8
+F bistable + prestress disorder,1,0.2,0.1,2.0,0.9999892540342735,17.6
+F bistable + prestress disorder,1,0.1,0.5,4.0,0.9998730720790168,35.1
+F bistable + prestress disorder,1,0.2,1.0,1.0,0.46286082947402685,8.8
+F bistable + prestress disorder,1,0.2,2.0,0.5,0.26035642687669003,4.6
+F bistable + prestress disorder,1,0.2,0.2,2.0,0.9999711656187787,17.7
+F bistable + prestress disorder,1,0.1,1.0,4.0,0.9992504097710041,35.3
+F bistable + prestress disorder,1,0.5,0.05,0.5,0.31605684516104315,4.6
+F bistable + prestress disorder,1,0.2,0.5,2.0,0.999250163037409,17.4
+F bistable + prestress disorder,1,0.2,2.0,1.0,0.4195348191818792,8.9
+F bistable + prestress disorder,1,0.1,2.0,4.0,0.9982560594895263,35.3
+F bistable + prestress disorder,1,0.5,0.1,0.5,0.31903061760688434,4.5
+F bistable + prestress disorder,1,0.5,0.05,1.0,0.7105565081061513,9.0
+F bistable + prestress disorder,1,0.2,1.0,2.0,0.9854609304569847,17.8
+F bistable + prestress disorder,1,0.2,0.05,4.0,0.9999999993190656,35.1
+F bistable + prestress disorder,1,0.5,0.1,1.0,0.7908615422626496,9.0
+F bistable + prestress disorder,1,0.5,0.2,0.5,0.31955601813483914,4.6
+F bistable + prestress disorder,1,0.2,2.0,2.0,0.9482380994532734,17.8
+F bistable + prestress disorder,1,0.2,0.1,4.0,0.9999999979814355,35.0
+F bistable + prestress disorder,1,0.5,0.5,0.5,0.3082713909778385,4.4
+F bistable + prestress disorder,1,0.5,0.2,1.0,0.8128691879769425,9.1
+F bistable + prestress disorder,1,0.5,0.05,2.0,0.9999993302980216,17.7
+F bistable + prestress disorder,1,0.2,0.2,4.0,0.9999999739118146,35.1
+F bistable + prestress disorder,1,0.5,1.0,0.5,0.2938507491546115,4.6
+F bistable + prestress disorder,1,0.5,0.5,1.0,0.7302196975510187,8.9
+F bistable + prestress disorder,1,0.5,0.1,2.0,0.9999994294141898,17.7
+F bistable + prestress disorder,1,0.2,0.5,4.0,0.9999972984355643,35.6
+F bistable + prestress disorder,1,0.5,2.0,0.5,0.208211101489862,4.5
+F bistable + prestress disorder,1,0.5,1.0,1.0,0.6178890370999537,9.1
+F bistable + prestress disorder,1,0.5,0.2,2.0,0.9999991232830882,17.6
+F bistable + prestress disorder,1,0.2,1.0,4.0,0.999873564206734,35.2
+F bistable + prestress disorder,1,0.5,0.5,2.0,0.9999905827625888,17.5
+F bistable + prestress disorder,1,0.5,2.0,1.0,0.5430834542902122,9.1
+F bistable + prestress disorder,1,1.0,0.05,0.5,0.3402078881611853,4.8
+F bistable + prestress disorder,1,0.2,2.0,4.0,0.9984168159426796,35.5
+F bistable + prestress disorder,1,1.0,0.05,1.0,0.99080727951173,8.9
+F bistable + prestress disorder,1,1.0,0.1,0.5,0.35626541898818553,4.6
+F bistable + prestress disorder,1,0.5,1.0,2.0,0.9994969181976027,18.0
+F bistable + prestress disorder,1,0.5,0.05,4.0,0.9999999982189849,36.2
+F bistable + prestress disorder,1,1.0,0.1,1.0,0.991807564717508,8.8
+F bistable + prestress disorder,1,1.0,0.2,0.5,0.3613346362394336,4.6
+F bistable + prestress disorder,1,0.5,2.0,2.0,0.9936429886270289,17.7
+F bistable + prestress disorder,1,0.5,0.1,4.0,0.999999998708896,35.2
+F bistable + prestress disorder,1,1.0,0.5,0.5,0.3507852611244835,4.5
+F bistable + prestress disorder,1,1.0,0.05,2.0,0.9999993527504972,17.4
+F bistable + prestress disorder,1,1.0,0.2,1.0,0.9903129533882115,8.8
+F bistable + prestress disorder,1,0.5,0.2,4.0,0.999999996699632,35.3
+F bistable + prestress disorder,1,1.0,1.0,0.5,0.33573797940444605,4.8
+F bistable + prestress disorder,1,1.0,0.1,2.0,0.9999997354218351,17.6
+F bistable + prestress disorder,1,1.0,0.5,1.0,0.9831639545717455,8.8
+F bistable + prestress disorder,1,0.5,0.5,4.0,0.9999999143882813,35.7
+F bistable + prestress disorder,1,1.0,1.0,1.0,0.9713339472155063,9.2
+F bistable + prestress disorder,1,1.0,2.0,0.5,0.32257136882318516,4.7
+F bistable + prestress disorder,1,1.0,0.2,2.0,0.999999793974649,18.3
+F bistable + prestress disorder,1,0.5,1.0,4.0,0.9999560412101668,35.9
+F bistable + prestress disorder,1,1.0,2.0,1.0,0.9486250805083509,9.2
+F bistable + prestress disorder,1,2.0,0.05,0.5,0.33455682121093233,4.6
+F bistable + prestress disorder,1,1.0,0.5,2.0,0.9999987785368148,18.2
+F bistable + prestress disorder,1,0.5,2.0,4.0,0.999798564545526,36.2
+F bistable + prestress disorder,1,2.0,0.1,0.5,0.3475063750593579,4.6
+F bistable + prestress disorder,1,1.0,1.0,2.0,0.9999752845728792,18.2
+F bistable + prestress disorder,1,2.0,0.05,1.0,0.9985145413304405,9.1
+F bistable + prestress disorder,1,1.0,0.05,4.0,0.9999999965811195,35.1
+F bistable + prestress disorder,1,2.0,0.1,1.0,0.9989995944097891,9.0
+F bistable + prestress disorder,1,2.0,0.2,0.5,0.35771751741361,4.6
+F bistable + prestress disorder,1,1.0,2.0,2.0,0.9994932086743015,17.9
+F bistable + prestress disorder,1,1.0,0.1,4.0,0.9999999982446381,35.2
+F bistable + prestress disorder,1,2.0,0.5,0.5,0.35701583859384634,4.6
+F bistable + prestress disorder,1,2.0,0.05,2.0,0.9999994758371595,18.2
+F bistable + prestress disorder,1,2.0,0.2,1.0,0.9992973753131362,9.4
+F bistable + prestress disorder,1,1.0,0.2,4.0,0.9999999982335773,35.6
+F bistable + prestress disorder,1,2.0,0.5,1.0,0.9993226607923588,9.1
+F bistable + prestress disorder,1,2.0,0.1,2.0,0.9999996091946841,17.7
+F bistable + prestress disorder,1,2.0,1.0,0.5,0.3494699800289538,4.6
+F bistable + prestress disorder,1,1.0,0.5,4.0,0.9999999813167403,35.8
+F bistable + prestress disorder,1,2.0,0.2,2.0,0.9999996666729378,17.6
+F bistable + prestress disorder,1,2.0,2.0,0.5,0.3394940637356697,4.6
+F bistable + prestress disorder,1,2.0,1.0,1.0,0.9987969574203811,9.2
+F bistable + prestress disorder,1,1.0,1.0,4.0,0.9999909052174369,35.4
+F bistable + prestress disorder,1,2.0,2.0,1.0,0.9973427149227074,8.6
+F bistable + prestress disorder,1,2.0,0.5,2.0,0.9999995087105914,17.3
+F bistable + prestress disorder,1,1.0,2.0,4.0,0.9999865521041678,34.7
+F bistable + prestress disorder,1,2.0,1.0,2.0,0.9999975372923389,16.1
+F bistable + prestress disorder,1,2.0,0.05,4.0,0.9999999939961847,33.5
+F bistable + prestress disorder,1,2.0,2.0,2.0,0.9999095425204992,14.7
+F bistable + prestress disorder,1,2.0,0.1,4.0,0.9999999957973839,32.0
+F bistable + prestress disorder,1,2.0,0.2,4.0,0.9999999954096823,31.2
+F bistable + prestress disorder,1,2.0,0.5,4.0,0.9999999956903296,28.7
+F bistable + prestress disorder,1,2.0,1.0,4.0,0.9999998828227966,27.5
+F bistable + prestress disorder,1,2.0,2.0,4.0,0.9999994614206165,25.4

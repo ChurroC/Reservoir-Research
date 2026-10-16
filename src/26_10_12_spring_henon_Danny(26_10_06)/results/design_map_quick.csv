@@ -1,0 +1,5 @@
+struct,seed,kappa,f,Omega,r2,seconds
+"A uniform, uncompressed (symmetric)",0,0.2,0.2,1.0,0.26769128413102494,6.2
+"D uniform, bistable (spontaneous breaking)",0,0.2,0.2,1.0,0.2999760775811394,6.2
+"D uniform, bistable (spontaneous breaking)",0,1.0,1.0,4.0,0.9995739962055951,23.4
+"A uniform, uncompressed (symmetric)",0,1.0,1.0,4.0,0.9152765708568233,23.4
