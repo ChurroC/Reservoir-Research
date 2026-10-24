@@ -259,3 +259,5 @@ physical reservoir
 Ideas more Chloe
 Basically the bistable energy landscape but do it to the entire structure as multiple are conncted
 Also for the spring displacment heat plot what if we also have another plot left of it that colors based of the strength of the spring so we can see that it gets forced into the localized due to that.
+
+maybe pca on springs network
