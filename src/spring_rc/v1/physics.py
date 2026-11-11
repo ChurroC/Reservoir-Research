@@ -2,6 +2,7 @@
 Physics engine that uses Velocity-Verlet integration for a 2D mass-spring lattice
 """
 
+from typing import Union
 import numpy as np
 from numba import njit
 
@@ -81,6 +82,7 @@ def run_simulation(
     rest: FloatArray,
     fixed_nodes: IntArray,
     rec_nodes: IntArray,
+    target_dim: Union[int, tuple[int, ...]] = 0,
 ) -> tuple[FloatArray, FloatArray]:
     """Integrates using velocity verlet with impulses at each macro step and records states at the end of substeps.
 
@@ -126,6 +128,11 @@ def run_simulation(
     for node in fixed_nodes:
         mask[node, :] = 0.0
 
+    if isinstance(target_dim, int):
+        n_dims = 1
+    else:
+        n_dims = len(target_dim)
+
     # 18.75 KB active state buffers
     x = np.zeros((n, d))
     v = np.zeros((n, d))
@@ -134,8 +141,8 @@ def run_simulation(
     U = np.zeros((n, d))
 
     # Output which doesn't count the free steps
-    Xd = np.zeros((steps, len(rec_nodes)))
-    Xv = np.zeros((steps, len(rec_nodes)))
+    Xd = np.zeros((steps, len(rec_nodes) * n_dims))
+    Xv = np.zeros((steps, len(rec_nodes) * n_dims))
 
     compute_spring_forces(conn, x, init_pos, rest, k, F)
     damping_inv = 1.0 / (1.0 + 0.5 * dt * c_diag * m_inv)
@@ -162,7 +169,15 @@ def run_simulation(
 
         if sub == free_steps - 1:
             for j in range(len(rec_nodes)):
-                Xd[h, j] = x[rec_nodes[j], 0]
-                Xv[h, j] = v[rec_nodes[j], 0]
+                node_idx = rec_nodes[j]
+                if isinstance(target_dim, int):
+                    Xd[h, j] = x[node_idx, target_dim]
+                    Xv[h, j] = v[node_idx, target_dim]
+                else:
+                    for d_idx in range(n_dims):
+                        dim = target_dim[d_idx]
+                        col_idx = j * n_dims + d_idx
+                        Xd[h, col_idx] = x[node_idx, dim]
+                        Xv[h, col_idx] = v[node_idx, dim]
 
     return Xd, Xv

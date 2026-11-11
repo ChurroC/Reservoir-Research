@@ -204,7 +204,7 @@ def r_2_plots_grid(
 
     n_cols = actual_list.shape[1]
 
-    # Normalize subplot_titles similar to scatter_plot
+    # Do same as scatterplot
     if isinstance(subplot_titles, str):
         subplot_titles = [subplot_titles]
     elif subplot_titles is not None:
@@ -212,8 +212,6 @@ def r_2_plots_grid(
     else:
         subplot_titles = [f"Dim {i}" for i in range(n_cols)]
 
-    # Precompute R² scores and format subplot titles cleanly
-    subplot_titles = []
     for i in range(n_cols):
         name = subplot_titles[i % len(subplot_titles)]
         r2 = r2_vals[i % len(r2_vals)]
@@ -226,7 +224,7 @@ def r_2_plots_grid(
         predicted = predicted_list[:, i]
         col = i + 1
 
-        # 1. Background scatter points (semi-transparent)
+        # transhaprent bckgroudn points
         fig.add_trace(
             go.Scatter(
                 x=actual,
@@ -240,7 +238,7 @@ def r_2_plots_grid(
             col=col,
         )
 
-        # 2. Compute binned error/spread statistics
+        # Bins
         bin_edges = np.linspace(predicted.min(), predicted.max(), n_bins + 1)
         bin_centers = []
         mean_actuals = []
