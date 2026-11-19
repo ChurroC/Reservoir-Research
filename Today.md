@@ -1,0 +1,11 @@
+
+- ## November 18, 2026 — Daily Log
+  - Worked on [[Experiments/26_09_22_benchmark_mem_cap]] today.
+  - **Literature Context:** 
+    - Re-read core equations from @wringe2024reservoir (imported via Zotero).
+  - **Handwritten Brainstorming:** 
+    - Sketched out the matrix dimension fix on the iPad: ![[pendulum_math_scratchpad.pdf]]
+  - **Code Execution:**
+    - Ran `0_echo_state.ipynb` — fixed the gradient scaling bug.
+  - **Results:**
+    - ![Plot Preview](plots/0.1_henon_comparison.png)

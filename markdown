@@ -1,1 +1,0 @@
-/Users/churroc/logseq/graphs/Disorder Reservoir Research/mirror/markdown
