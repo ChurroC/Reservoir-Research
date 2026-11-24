@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c73387adf0bd4718",
+        "id": "8e28a0044c9dd060",
         "type": "tabs",
         "children": [
           {
-            "id": "e4339fe35d064df0",
+            "id": "3d79cbfbafc49612",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,6 +19,18 @@
               },
               "icon": "lucide-file",
               "title": "26_09_22_benchmark_mem_cap"
+            }
+          },
+          {
+            "id": "ccab8c468ee8fb7b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "file:/Users/churroc/Zotero/storage/8A7HM59R/Wringe et al. - 2024 - Reservoir Computing Benchmarks a review, a taxonomy, some best practices.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Wringe et al. - 2024 - Reservoir Computing Benchmarks a review, a taxonomy, some best practices"
             }
           }
         ]
@@ -55,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "delay lag",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +111,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/experiments/26_09_22_benchmark_mem_cap/26_09_22_benchmark_mem_cap.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -118,7 +129,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/experiments/26_09_22_benchmark_mem_cap/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +171,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/experiments/26_09_22_benchmark_mem_cap/test.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -169,13 +178,36 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "cea51bec192bca88",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "e81ae5fd417cf360",
+            "type": "leaf",
+            "state": {
+              "type": "zotero-annotation-view",
+              "state": {
+                "followMode": "active-tab",
+                "previousMode": "active-tab"
+              },
+              "icon": "highlighter",
+              "title": "Zotero annotations"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,41 +218,62 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "journal-view:Open journal": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "zotlit:Open Zotero annotations": false,
+      "zotlit:Open Zotero library": false
     }
   },
-  "active": "e4339fe35d064df0",
+  "active": "be2fcfc7d66da987",
   "lastOpenFiles": [
-    "src/experiments/26_09_15_fly_brain/26_09_15_fly_brain.md",
+    "file:/Users/churroc/Zotero/storage/8A7HM59R/Wringe et al. - 2024 - Reservoir Computing Benchmarks a review, a taxonomy, some best practices.pdf",
     "src/experiments/26_09_22_benchmark_mem_cap/26_09_22_benchmark_mem_cap.md",
-    "src/experiments/26_10_07_benchmark_rank_gr/26_10_07_benchmark_rank_gr.md",
-    "notes/test.ipynb",
-    "src/experiments/26_10_06_anderson_local/26_10_06_anderson_local.md",
+    "vault/literature/wringeReservoirComputingBenchmarks2024.md",
+    "vault/journal/2026_11_17.md",
+    "vault/notes/ARTICLES.md",
+    "vault/notes/ALL_FOLDERS.md",
+    "vault/templates/init_experiment.md",
+    "vault/templates/zotlit-profile.default.md",
+    "vault/templates/sync_experiment.md",
+    "vault/literature/attachments/zotlit-excerpt-1dbbbfda6aa1047d22bfba6e607b233da6b4f26efa2f73e7024f92831fd659c6-c8cea36c0d5337f2b006feba18278c275188ca825829eb84ac4c6ba389265e9b.webp",
+    "vault/literature/attachments/zotlit-excerpt-be0b793227523a8ab07697792c7af66786e7b20e9fc7ffc8be8c479984b13ad2-6a43722c9fa1ce4dee8461cee813036b9139e832ca0f3300ecbef4c988e96163.webp",
+    "vault/literature/attachments/zotlit-excerpt-f1ea7136f69c3dbb8ae890f50af348adb6042f9935ca44e26477f7e84f30fa21-f4fe4f0a016649f9607e273becfe33000731f87ed8767100c6459246d7ff944e.webp",
+    "vault/literature/attachments/zotlit-excerpt-a390e750cb2f87289b5adb962faf11de1180358699cb2e224e07aa23c351c6df-81828112bbb47ea2cf395ade993809d03daa8d0580a97615797247337ebac77a.webp",
+    "vault/literature/attachments/zotlit-excerpt-826fb8e1c2dc5887274451ee8a98f45ae8a8440801015b8670fb30b142059474-d0a8b16574e6bc65225ad6f93f5422bb961990177b7215fe795530a1934d863e.webp",
+    "vault/notes/Today.md",
+    "vault/notes/README.md",
+    "vault/notes/predicted.md",
+    "vault/notes/BIGIDEAS.md",
+    "vault/notes/IDEAS.md",
+    "file:/Users/churroc/Zotero/storage/D8NKPIAL/Seara - Levitation Update.pdf",
+    "My Library.zotquery",
+    "templates",
+    "vault/literature/attachments/zotlit-excerpt-5b1c71396f0eb9a409bf82ba377fb4f2e68eaea3b9e20cc6de2a61f9f9cc070e-060fd08b88883631af2e9f012d8e09a2d2b2c650cbf0d7f495a61df07b6cb027.webp",
+    "vault/literature/attachments/zotlit-excerpt-09e9ac146a991e3383df3f57a72537110319693abb3ffe533f139439aa8e689f-1ac899f6a9123fce59e0229540f0390a27199416433fe1abc856ae8d3be93689.webp",
+    "vault/literature/attachments/zotlit-excerpt-ab4b62eb5f468840658f5d3f0d85f1ba90b8c9c15ea0bc9e780924669a0b5d93-e59988ae6d541598622542d1c4b56c7fba9429914b173d90f1ac9bb8bec26e3d.webp",
+    "vault/literature/attachments/zotlit-excerpt-e8fed40f72895a6d126e0045d6778ebab0ca99116823a2d129abef2af617b869-e3d0d49ed7f49b300048701dba1bc665ad2a00c45e86297a3ada25fd1ee9e031.webp",
+    "vault/literature/attachments/zotlit-excerpt-e9dad1e9d465e86952c742fffd99dd46e68687f8ed036750d217fa6f29b547ad-887ca2478f49e39312480d505a2094fedfefb0368c261390ad7e3a0312ecbaa5.webp",
+    "zotero_notes.md",
+    "vault/literature/attachments",
+    "0.4_gen_mem_cap_vs_delay.md",
+    "vault/notes",
     "Untitled 1.md",
-    "src/experiments/26_09_30_bayesian_mem_cap/26_09_30_bayesian_mem_cap.md",
-    "src/experiments/26_10_10_basic_results_overview_grant/26_10_10_basic_results_overview_grant.md",
-    "src/experiments/26_10_12_spring_henon_Danny_26_10_06/26_10_12_spring_henon_Danny_26_10_06.md",
-    "src/experiments/26_08_03_pendulum_res/26_08_03_pendulum_res.md",
+    "Untitled.canvas",
+    "Untitled 2.canvas",
+    "Untitled.base",
+    "Untitled 1.canvas",
+    "Untitled 1.base",
+    "src/experiments/26_09_22_benchmark_mem_cap/hmm.md",
+    "notes/templates/test.md",
+    "vault/templates",
+    "vault/journal/2026_11_19.md",
+    "vault/journal/2026_11_18.md",
+    "vault/journal/2026_11_20.md",
+    "2026-W47.md",
     "src/experiments/26_10_13_spring_potentials/26_10_13_spring_potentials.md",
-    "src/experiments/0_summer/0_summer.md",
-    "src/experiments/26_10_12_slideshow/26_10_12_slideshow.md",
-    "src/experiments/26_11_17_contrabillity/26_11_17_contrabillity.md",
-    "src/experiments/26_09_22_benchmark_mem_cap/26_09_22_benchmark_sssmem_cap.md",
-    "src/experiments/26_09_22_benchmark_mem_cap/26_09_22_asdwdbenchmark_mem_cap.md",
-    "src/experiments/26_09_22_benchmark_mem_cap/26_09_22_bencswswshmark_mem_cap.md",
-    "src/experiments/26_09_22_benchmark_mem_cap/26_09_22_benchssmark_mem_cap.md",
-    "src/experiments/26_09_22_benchmark_mem_cap/ssssss.md",
-    "src/experiments/26_09_22_benchmark_mem_cap/plots/0.1_henon_comparison.png",
-    "src/experiments/26_09_22_benchmark_mem_cap/ss.md",
-    "src/experiments/26_09_22_benchmark_mem_cap/h.md",
-    "Today.md",
-    "src/test.ipynb",
-    "src/experiments/26_09_22_benchmark_mem_cap/plots/0.3_lin_mem_cap_vs_delay.png",
-    "ALL_FOLDERS.md",
-    "notes/notability",
-    "src/experiments/26_09_22_benchmark_mem_cap/Untitled.md",
-    "notes/literature",
-    "notes/daily_logs",
-    "notes"
+    "vault/notes/PAPERS.md",
+    "src/experiments/26_09_30_bayesian_mem_cap/26_09_30_bayesian_mem_cap.md",
+    "Experiments"
   ]
 }

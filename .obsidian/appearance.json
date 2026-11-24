@@ -1,4 +1,9 @@
 {
   "showRibbon": false,
-  "translucency": true
+  "translucency": true,
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "showViewHeader": true,
+  "interfaceFontFamily": "Andale Mono,Inter,PT Mono",
+  "baseFontSizeAction": false
 }

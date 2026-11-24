@@ -1,3 +1,12 @@
 [
-  "dataview"
+  "dataview",
+  "obsidian-minimal-settings",
+  "calendar",
+  "journal-view",
+  "languagetool",
+  "omnisearch",
+  "text-extractor",
+  "templater-obsidian",
+  "ai-image-analyzer",
+  "zotlit"
 ]

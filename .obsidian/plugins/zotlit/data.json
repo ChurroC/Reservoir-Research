@@ -1,0 +1,43 @@
+{
+  "__VERSION__": 11,
+  "release.previous-version": "2.2.4",
+  "library.document": {
+    "node": {
+      "kind": "collection",
+      "library": {
+        "type": "personal"
+      },
+      "path": [
+        "Reservoir Research"
+      ]
+    },
+    "facets": [],
+    "tags": [],
+    "search": "",
+    "sort": [],
+    "card": {
+      "allFields": false,
+      "annotations": false
+    },
+    "expanded": [
+      "[\"personal\",\"Reservoir Research\"]",
+      "[\"personal\",\"Reservoir Research\",\"Disorder\"]"
+    ]
+  },
+  "note.default-profile": {
+    "bindings": {
+      "note.literature-folder": "vault/literature",
+      "citation.references-style": null,
+      "note.import-folder": "zotero_notes",
+      "note.import-colored-highlights": false,
+      "note.import-annotations-as-template": false
+    }
+  },
+  "reader.recent-colors": [
+    "#ffd400"
+  ],
+  "attachment.folder-path": "vault/literature/attachments",
+  "template.folder": "vault/templates",
+  "welcome.dismissed": false,
+  "welcome.requested": true
+}

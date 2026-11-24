@@ -1,0 +1,2040 @@
+/* ==========================================================================
+   Journal View
+   ========================================================================== */
+
+.journal-view .view-content {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.journal-content {
+	/* Places the year progress strip beside the scroller. */
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
+}
+
+/* ------------------------------------------------------------- toolbar --- */
+
+.journal-view:not(.journal-view-mobile) .view-header {
+	position: relative;
+	container: journal-header / inline-size;
+	border-bottom: 1px solid var(--divider-color);
+}
+
+.journal-view:not(.journal-view-mobile) .view-header-title-container {
+	position: absolute;
+	inset-inline-start: 50%;
+	inset-block-start: 50%;
+	width: max-content;
+	max-width: 100%;
+	min-width: 0;
+	transform: translate(-50%, -50%);
+}
+
+.journal-view:not(.journal-view-mobile) .view-actions {
+	margin-inline-start: auto;
+}
+
+/* The query sees the header's content box; 30.5rem plus its 1.5rem horizontal
+   padding preserves the 32rem pane breakpoint. */
+@container journal-header (max-width: 30.5rem) {
+	.journal-view:not(.journal-view-mobile) .view-header-title-container {
+		position: static;
+		width: auto;
+		max-width: none;
+		transform: none;
+	}
+}
+
+.journal-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--size-4-2);
+	padding: var(--size-4-2) var(--size-4-4);
+	border-bottom: 1px solid var(--background-modifier-border);
+	background-color: var(--background-primary);
+	flex: 0 0 auto;
+}
+
+.journal-toolbar.is-hidden,
+.journal-find-bar.is-hidden {
+	display: none;
+}
+
+.journal-toolbar-label {
+	font-size: var(--font-ui-small);
+	font-weight: var(--font-semibold);
+	color: var(--text-muted);
+	letter-spacing: 0.02em;
+}
+
+.journal-toolbar-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--size-2-2);
+}
+
+.journal-toolbar-labeled-button {
+	width: auto;
+	gap: var(--size-2-2);
+	padding-inline: var(--size-4-2);
+}
+
+button.journal-filter-button.is-active,
+.journal-filter-button.is-active {
+	color: var(--text-accent);
+}
+
+/* ----------------------------------------------------------- find bar --- */
+
+.journal-find-bar {
+	display: flex;
+	align-items: center;
+	gap: var(--size-2-2);
+	padding: var(--size-4-2) var(--size-4-4);
+	border-bottom: 1px solid var(--background-modifier-border);
+	background-color: var(--background-primary);
+	flex: 0 0 auto;
+}
+
+.journal-find-input-wrap {
+	display: flex;
+	align-items: center;
+	gap: var(--size-2-2);
+	min-width: 0;
+	height: var(--input-height);
+	padding: 0 var(--size-2-3);
+	border-radius: var(--input-radius);
+	background-color: var(--background-modifier-form-field);
+	box-shadow: var(--input-shadow);
+	flex: 1 1 auto;
+}
+
+.journal-find-input-wrap:focus-within {
+	box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+}
+
+.journal-find-search-icon {
+	display: flex;
+	color: var(--text-muted);
+	flex: 0 0 auto;
+}
+
+.journal-find-search-icon svg {
+	width: var(--icon-s);
+	height: var(--icon-s);
+}
+
+input.journal-find-input {
+	min-width: 4rem;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	flex: 1 1 auto;
+}
+
+input.journal-find-input:focus {
+	border: 0;
+	box-shadow: none;
+}
+
+.journal-find-count {
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+	white-space: nowrap;
+	flex: 0 0 auto;
+}
+
+button.journal-find-button {
+	flex: 0 0 auto;
+}
+
+button.journal-find-button.is-active {
+	color: var(--text-accent);
+	background-color: var(--background-modifier-hover);
+}
+
+/* -------------------------------------------------------------- scroller -- */
+
+.journal-scroll {
+	position: relative;
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/* The view pins the scroll position to its own anchor day. Chromium's
+	   built-in scroll anchoring would correct for the same layout changes a
+	   second time, and the two corrections fight each other. */
+	overflow-anchor: none;
+	/* Only the vertical axis: a sideways wheel has to carry on to the
+	   workspace, which scrolls stacked tabs with it. */
+	overscroll-behavior-y: contain;
+	/* A rebuild empties the timeline for a moment. Keeping the scrollbar's
+	   room then stops the column, and the year progress strip beside it,
+	   from shifting sideways while the scrollbar comes and goes. */
+	scrollbar-gutter: stable;
+}
+
+.journal-days,
+.journal-day {
+	overflow-anchor: none;
+}
+
+.journal-days {
+	display: flex;
+	flex-direction: column;
+	/* Leaves room so the first and last day can still be centred. The view
+	   updates the custom property to absorb layout shifts above the reader
+	   without touching scrollTop, and drops it to a gutter once the timeline
+	   has no more days to put above the first one - room the reader cannot
+	   reach is worth having, blank they can scroll into is not. */
+	padding: var(--journal-padding-top, 40vh) var(--size-4-4) 40vh;
+	margin: 0 auto;
+	/* Obsidian's readable line width belongs to the note content. Keep the
+	   timeline and card gutters outside that width so journal text wraps at the
+	   same point as the native note editor. */
+	max-width: calc(
+		var(--file-line-width, 700px) + var(--size-4-4) + var(--size-4-4) + var(--size-4-3) +
+			var(--size-4-3)
+	);
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.journal-days > .journal-day + .journal-day {
+	margin-top: var(--size-4-6);
+}
+
+/* ------------------------------------------------------------------ day --- */
+
+.journal-day {
+	position: relative;
+}
+
+.journal-day-card {
+	position: relative;
+	border-radius: var(--radius-m);
+	padding: var(--size-4-2) var(--size-4-3) var(--size-4-3);
+	transition: background-color 120ms ease-in-out;
+}
+
+.journal-year-separator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--size-4-3);
+	margin: var(--size-4-6) 0 var(--size-4-5);
+	padding: 0 var(--size-4-3);
+	color: var(--text-normal);
+	font-size: var(--font-ui-medium);
+	font-weight: var(--font-bold);
+	line-height: var(--line-height-tight);
+}
+
+.journal-year-separator[hidden] {
+	display: none;
+}
+
+.journal-year-separator::before,
+.journal-year-separator::after {
+	content: "";
+	height: 1px;
+	background-color: var(--background-modifier-border);
+	flex: 1 1 0;
+}
+
+.journal-month-separator {
+	display: flex;
+	align-items: baseline;
+	gap: var(--size-2-2);
+	margin: var(--size-4-4) 0 var(--size-4-5);
+	padding: 0 var(--size-4-3);
+	color: var(--text-normal);
+	font-size: var(--font-ui-medium);
+	font-weight: var(--font-semibold);
+	line-height: var(--line-height-tight);
+}
+
+.journal-month-separator[hidden] {
+	display: none;
+}
+
+.journal-day:first-child .journal-month-separator {
+	margin-top: 0;
+}
+
+.journal-month-separator::after {
+	content: "";
+	height: 1px;
+	margin-left: var(--size-2-2);
+	background-color: var(--background-modifier-border);
+	flex: 1 1 auto;
+}
+
+.journal-month-year {
+	color: var(--text-faint);
+	font-size: var(--font-ui-small);
+	font-weight: var(--font-normal);
+}
+
+/* The year already has its own heading at a boundary; avoid repeating it in
+   the month heading immediately below. */
+.journal-day-year-start .journal-month-year {
+	display: none;
+}
+
+.journal-day-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--size-4-2);
+	padding-bottom: var(--size-2-2);
+	margin-bottom: var(--size-2-3);
+	border-bottom: 1px solid var(--background-modifier-border);
+	transition: opacity 120ms ease-in-out;
+}
+
+.journal-day-title {
+	display: flex;
+	align-items: baseline;
+	gap: var(--size-4-2);
+	min-width: 0;
+}
+
+.journal-day-title[hidden] {
+	display: none;
+}
+
+.journal-day-date {
+	min-width: 0;
+	font-size: var(--font-ui-small);
+	font-weight: var(--font-semibold);
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.journal-day-header-h1 {
+	border-bottom: none;
+}
+
+.journal-day-header-h1 .journal-day-date {
+	margin: 0;
+	padding-block: 0.08em;
+	color: var(--h1-color);
+	font-family: var(--h1-font);
+	font-size: var(--h1-size);
+	font-style: var(--h1-style);
+	font-variant: var(--h1-variant);
+	font-weight: var(--h1-weight);
+	letter-spacing: var(--h1-letter-spacing);
+	line-height: var(--h1-line-height);
+}
+
+/* Hidden dates should not leave an empty header band. Keep the note actions
+   available without letting their invisible state reserve layout space. */
+.journal-day-header-hidden {
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+}
+
+.journal-day-header-hidden .journal-day-actions {
+	position: absolute;
+	z-index: 1;
+	top: var(--size-4-2);
+	right: var(--size-4-3);
+	pointer-events: none;
+}
+
+.journal-day-header-hidden:hover .journal-day-actions,
+.journal-day-lead-hovered .journal-day-header-hidden .journal-day-actions,
+.journal-day-lead-active .journal-day-header-hidden .journal-day-actions,
+.journal-day-header-hidden .journal-day-actions:focus-within {
+	pointer-events: auto;
+}
+
+/* A quiet marker, not a call to action: today is already highlighted by its
+   background, so the badge only has to name it. */
+.journal-day-badge {
+	font-size: var(--font-ui-smaller);
+	font-weight: var(--font-normal);
+	color: var(--text-faint);
+	border-radius: var(--radius-s);
+	padding: 0 var(--size-2-1);
+	line-height: 1.5;
+	flex: 0 0 auto;
+}
+
+/* The time or name of the first note, when its file name says more than the date. */
+.journal-day-note-label {
+	flex: 0 0 auto;
+	font-size: var(--font-ui-smaller);
+	color: var(--text-faint);
+	white-space: nowrap;
+}
+
+.journal-day-note-label[hidden] {
+	display: none;
+}
+
+.journal-day-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--size-2-1);
+	opacity: 0;
+	transition: opacity 120ms ease-in-out;
+	flex: 0 0 auto;
+}
+
+/* The header's buttons belong to the note directly beneath it, so they show
+   for that note - hovered or written in - rather than for the whole day. */
+.journal-day-header:hover .journal-day-actions,
+.journal-day-lead-hovered .journal-day-actions,
+.journal-day-lead-active .journal-day-actions,
+.journal-day-actions:focus-within {
+	opacity: 1;
+}
+
+/* With a hover-capable pointer, keep the destructive action tied to the header
+   rather than the much larger day hover target. Focus always reveals it. */
+@media (hover: hover) {
+	.journal-day-actions button.journal-day-delete {
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 120ms ease-in-out;
+	}
+
+	.journal-day-header:hover button.journal-day-delete,
+	button.journal-day-delete:focus {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+button.journal-day-create {
+	font-size: var(--font-ui-smaller);
+	padding: 2px var(--size-2-3);
+	height: auto;
+	box-shadow: none;
+	background-color: var(--background-modifier-hover);
+	color: var(--text-muted);
+	cursor: var(--cursor);
+}
+
+button.journal-day-create:hover {
+	color: var(--text-normal);
+}
+
+/* -------------------------------------------------------------- notes --- */
+
+/* A day can hold several notes. The first sits directly under the day header;
+   each further one gets a quiet divider that names it and carries its buttons. */
+.journal-day-entries > .journal-entry + .journal-entry {
+	margin-top: var(--size-4-3);
+}
+
+.journal-entry-hidden {
+	display: none;
+}
+
+.journal-entry-heading {
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--size-2-3);
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+	line-height: var(--line-height-tight);
+}
+
+.journal-entry-heading[hidden] {
+	display: none;
+}
+
+.journal-entry-label {
+	flex: 0 1 auto;
+	margin-right: var(--size-4-2);
+	min-width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* The text after a note's date, which a click renames the note by. */
+.journal-note-title.is-editable {
+	cursor: text;
+	border-radius: var(--radius-s);
+}
+
+.journal-note-title.is-editable:hover {
+	color: var(--text-muted);
+	background-color: var(--background-modifier-hover);
+}
+
+.journal-day-header input.journal-note-title-input,
+.journal-entry-heading input.journal-note-title-input {
+	field-sizing: content;
+	min-width: 6ch;
+	max-width: 100%;
+	height: auto;
+	padding: 0 var(--size-2-1);
+	border-radius: var(--radius-s);
+	font: inherit;
+	color: var(--text-normal);
+}
+
+/* Today's button that adds another note sits in the room below its last
+   note, so the day is no taller for it. Like a note's buttons, it shows only
+   while today is hovered or written in. */
+.journal-day-add {
+	position: absolute;
+	right: var(--size-4-2);
+	bottom: var(--size-4-2);
+	opacity: 0;
+	transition: opacity 120ms ease-in-out;
+}
+
+.journal-day:hover .journal-day-add,
+.journal-day-focused .journal-day-add,
+.journal-day-add:focus-within {
+	opacity: 1;
+}
+
+.journal-day-add[hidden] {
+	display: none;
+}
+
+.journal-entry-rule {
+	flex: 1 1 auto;
+	height: 1px;
+	background-color: var(--background-modifier-border);
+}
+
+.journal-entry-actions {
+	display: flex;
+	align-items: center;
+	flex: 0 0 auto;
+}
+
+/* A further note's buttons take no room until they show, so its divider line
+   runs the full width and gives way only to the buttons that appear. A hidden
+   button keeps its height, so the divider never changes height. Open shows
+   for the note being hovered or written in; delete only while the divider
+   itself is hovered. */
+.journal-entry-actions > button {
+	max-width: 0;
+	margin-left: 0;
+	padding-inline: 0;
+	overflow: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transition:
+		max-width 120ms ease-in-out,
+		margin-left 120ms ease-in-out,
+		padding-inline 120ms ease-in-out,
+		opacity 120ms ease-in-out;
+}
+
+.journal-entry:hover .journal-entry-actions > button:not(.journal-day-delete),
+.journal-entry-active .journal-entry-actions > button:not(.journal-day-delete),
+.journal-entry-heading:hover .journal-entry-actions > button,
+.journal-entry-actions > button:focus-visible {
+	max-width: var(--size-4-12);
+	margin-left: var(--size-2-2);
+	padding-inline: var(--size-2-3);
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/* Without a hovering pointer, the note being written in shows both. */
+@media (hover: none) {
+	.journal-entry-active .journal-entry-actions > button.journal-day-delete {
+		max-width: var(--size-4-12);
+		margin-left: var(--size-2-2);
+		padding-inline: var(--size-2-3);
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+/* -------------------------------------------------------------- files --- */
+
+/* The files from a day sit under its notes as one quiet line, which opens
+   into a list of plain links. */
+.journal-day-files {
+	margin-top: var(--size-4-3);
+	margin-inline: var(--size-4-3);
+	font-size: var(--font-ui-smaller);
+	line-height: var(--line-height-tight);
+}
+
+.journal-day-files[hidden],
+.journal-day-files-list[hidden],
+.journal-day-files-more[hidden] {
+	display: none;
+}
+
+.journal-day-files-heading {
+	display: flex;
+	align-items: center;
+}
+
+button.journal-day-files-toggle {
+	display: flex;
+	align-items: center;
+	gap: var(--size-2-1);
+	flex: 0 1 auto;
+	min-width: 0;
+	height: auto;
+	padding: 0;
+	border: none;
+	box-shadow: none;
+	background: none;
+	color: var(--text-muted);
+	font-size: inherit;
+	cursor: var(--cursor);
+}
+
+button.journal-day-files-toggle:hover,
+button.journal-day-files-toggle:focus-visible {
+	background: none;
+	color: var(--text-muted);
+}
+
+.journal-day-files-chevron {
+	display: flex;
+}
+
+.journal-day-files-chevron svg {
+	width: var(--icon-xs);
+	height: var(--icon-xs);
+	transition: transform 120ms ease-in-out;
+}
+
+.journal-day-files.is-open .journal-day-files-chevron svg {
+	transform: rotate(90deg);
+}
+
+.journal-day-files-summary {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.journal-day-files-list,
+.journal-day-files-rows {
+	display: flex;
+	flex-direction: column;
+}
+
+.journal-day-files-list {
+	margin-top: var(--size-2-2);
+}
+
+.journal-day-file {
+	display: flex;
+	align-items: center;
+	gap: var(--size-2-3);
+	min-width: 0;
+	padding: var(--size-2-1) var(--size-2-2);
+	border-radius: var(--radius-s);
+	color: var(--text-muted);
+	cursor: var(--cursor);
+}
+
+.journal-day-file:hover,
+.journal-day-file:focus-visible {
+	background-color: var(--background-modifier-hover);
+}
+
+.journal-day-file-icon {
+	display: flex;
+	flex: 0 0 auto;
+}
+
+.journal-day-file-icon svg {
+	width: var(--icon-xs);
+	height: var(--icon-xs);
+}
+
+.journal-day-file-name {
+	flex: 0 1 auto;
+	min-width: 0;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.journal-day-file:hover .journal-day-file-name,
+.journal-day-file:focus-visible .journal-day-file-name {
+	color: var(--text-normal);
+}
+
+.journal-day-file-extension {
+	flex: 0 0 auto;
+	padding: 0 var(--size-2-1);
+	border-radius: var(--radius-s);
+	background-color: var(--background-modifier-hover);
+}
+
+.journal-day-file-folder {
+	flex: 1 1 0;
+	min-width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.journal-day-file-time {
+	display: flex;
+	gap: var(--size-2-2);
+	flex: 0 0 auto;
+	font-variant-numeric: tabular-nums;
+}
+
+.journal-day-file-kind {
+	font-style: italic;
+}
+
+button.journal-day-files-more {
+	align-self: flex-start;
+	height: auto;
+	margin-top: var(--size-2-1);
+	padding: var(--size-2-1) var(--size-2-2);
+	border: none;
+	box-shadow: none;
+	background: none;
+	color: var(--text-accent);
+	font-size: inherit;
+	cursor: var(--cursor);
+}
+
+button.journal-day-files-more:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+/* ----------------------------------------------------------- metadata --- */
+
+.journal-day-metadata {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--size-2-2) var(--size-2-3);
+	/* Match the header's bottom margin so the strip has the same breathing
+	   room above and below it. */
+	margin: 0 0 var(--size-2-3);
+	font-size: var(--font-ui-smaller);
+	line-height: var(--line-height-tight);
+}
+
+.journal-day-metadata[hidden] {
+	display: none;
+}
+
+.journal-day-metadata-row {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--size-2-3);
+	width: max-content;
+	max-width: 100%;
+	min-width: 0;
+	min-height: calc(20px + 2 * var(--size-2-2));
+	padding: var(--size-2-2) var(--size-2-3);
+	border-radius: var(--radius-s);
+	background-color: var(--background-primary-alt);
+	box-sizing: border-box;
+	flex: 0 0 auto;
+}
+
+.journal-day-metadata-row:not(.journal-day-metadata-tags) {
+	padding-block: var(--size-2-3);
+}
+
+.journal-day-metadata-row.journal-day-metadata-editing {
+	padding-block: var(--size-2-2);
+}
+
+.journal-day-metadata-row:not(.journal-day-metadata-tags).journal-day-metadata-list {
+	padding-block: var(--size-2-2);
+}
+
+.journal-day-metadata-label {
+	color: var(--text-muted);
+	font-weight: var(--font-medium);
+	white-space: nowrap;
+	flex: 0 0 auto;
+}
+
+.journal-day-metadata-value {
+	min-width: 0;
+	color: var(--text-normal);
+	overflow-wrap: anywhere;
+}
+
+button.journal-day-metadata-value-button {
+	appearance: none;
+	border: 0;
+	box-shadow: none;
+	background: transparent;
+	font: inherit;
+	line-height: inherit;
+	text-align: start;
+	height: auto;
+	padding: 0;
+	cursor: text;
+}
+
+button.journal-day-metadata-value-button:hover,
+button.journal-day-metadata-value-button:focus-visible {
+	color: var(--text-accent);
+}
+
+button.journal-day-metadata-value-empty {
+	padding-inline: var(--size-2-2);
+}
+
+button.journal-day-metadata-value-button:focus-visible,
+.journal-day-tag-remove:focus-visible,
+.journal-day-tag-add:focus-visible,
+.journal-day-metadata-clear:focus-visible {
+	outline: 2px solid var(--background-modifier-border-focus);
+	outline-offset: 2px;
+}
+
+.journal-day-property-editor {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--size-2-1);
+	min-width: 0;
+	max-width: 100%;
+}
+
+.journal-day-property-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--size-2-1);
+	min-width: 0;
+}
+
+.journal-day-property-input,
+.journal-day-tag-input {
+	height: 22px;
+	min-height: 22px;
+	padding: 1px var(--size-2-2);
+	border-radius: var(--input-radius);
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.journal-day-property-input:not([type="checkbox"]) {
+	width: var(--journal-property-input-width, min(9rem, 34vw));
+	min-width: min(9rem, 34vw);
+	max-width: min(24rem, 55vw);
+	box-sizing: border-box;
+}
+
+.journal-day-metadata-row.journal-day-metadata-editing .journal-day-property-input {
+	height: 20px;
+	min-height: 20px;
+	padding-block: 0;
+}
+
+.journal-day-property-input[type="checkbox"] {
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	min-height: 0;
+	margin: 0;
+}
+
+.journal-day-property-input.is-invalid,
+.journal-day-tag-input.is-invalid {
+	border-color: var(--text-error);
+	box-shadow: 0 0 0 1px var(--text-error);
+}
+
+.journal-day-metadata-clear {
+	--icon-size: var(--icon-xs);
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	color: var(--text-muted);
+}
+
+.journal-day-metadata-pending {
+	opacity: 0.65;
+}
+
+.journal-day-metadata-tags {
+	align-items: center;
+}
+
+.journal-day-metadata-tags-label {
+	display: flex;
+	align-items: center;
+	color: var(--text-muted);
+}
+
+.journal-day-metadata-tags-label svg {
+	width: var(--icon-xs);
+	height: var(--icon-xs);
+}
+
+.journal-day-tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--size-2-1);
+	min-width: 0;
+}
+
+.journal-day-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--size-2-1);
+	font: inherit;
+	line-height: inherit;
+	height: 18px;
+	padding: 0 var(--size-2-2) 0 calc(var(--size-2-2) + 2px);
+	border-radius: var(--radius-s);
+	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
+	overflow-wrap: anywhere;
+	box-sizing: border-box;
+}
+
+.journal-day-tag-remove {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	appearance: none;
+	border: 0;
+	box-shadow: none;
+	background: transparent;
+	width: 12px;
+	height: 14px;
+	padding: 0;
+	color: var(--text-muted);
+	font: inherit;
+	font-size: 1em;
+	line-height: 1;
+	cursor: var(--cursor);
+	transition: opacity 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+.journal-day-tag-remove:hover {
+	color: var(--text-normal);
+}
+
+@media (hover: hover) {
+	.journal-day-tag-text {
+		transform: translateX(6px);
+		transition: transform 100ms ease-in-out;
+	}
+
+	.journal-day-tag-remove {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.journal-day-tag:hover .journal-day-tag-text,
+	.journal-day-tag:focus-within .journal-day-tag-text {
+		transform: translateX(0);
+	}
+
+	.journal-day-tag:hover .journal-day-tag-remove,
+	.journal-day-tag:focus-within .journal-day-tag-remove {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+.journal-day-tag-add {
+	--icon-size: 12px;
+	width: 18px;
+	min-width: 18px;
+	max-width: 18px;
+	height: 18px;
+	min-height: 18px;
+	max-height: 18px;
+	padding: 2px;
+	border-radius: var(--radius-s);
+	color: var(--text-muted);
+	background-color: var(--background-modifier-hover);
+	box-sizing: border-box;
+}
+
+.journal-day-metadata-row.journal-day-metadata-tags .journal-day-tag-input,
+.journal-day-metadata-row.journal-day-metadata-list .journal-day-property-list-input {
+	width: min(9rem, 34vw);
+	height: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	padding-block: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.journal-day-body {
+	/* Breathing room above and below the text; zero for an ordinary day. */
+	--journal-body-pad-top: 0px;
+	--journal-body-pad-bottom: 0px;
+	position: relative;
+	transition: opacity 120ms ease-in-out;
+	padding-top: var(--journal-body-pad-top);
+	padding-bottom: var(--journal-body-pad-bottom);
+	/* A blank day still needs a line's worth of click target. */
+	min-height: calc(
+		var(--line-height-normal) * 1em + var(--journal-body-pad-top) + var(--journal-body-pad-bottom)
+	);
+}
+
+/* A note that has just become an editor is held at the height of the preview it
+   replaced until the editor completes its first real layout pass. */
+.journal-entry-editing .journal-day-body {
+	min-height: max(
+		calc(var(--line-height-normal) * 1em + var(--journal-body-pad-top) + var(--journal-body-pad-bottom)),
+		var(--journal-held-height, 0px)
+	);
+}
+
+/* ------------------------------------------------------------- preview --- */
+
+/* Days not being edited are static rendered markdown - fixed layout, true
+   height, which is what keeps the journal's scrolling stable. */
+.journal-day-preview {
+	cursor: text;
+	font-family: var(--font-text);
+	font-size: var(--font-text-size);
+	line-height: var(--line-height-normal);
+}
+
+.journal-day-preview > :first-child,
+.journal-day-preview > :first-child > :first-child {
+	margin-top: 0;
+}
+
+.journal-day-preview > :last-child,
+.journal-day-preview > :last-child > :last-child {
+	margin-bottom: 0;
+}
+
+/* Today gets a quiet highlight so the centre of the journal is obvious. */
+.journal-day-today .journal-day-card {
+	background-color: var(--background-primary-alt);
+}
+
+/* ...and more room around its text than the days around it. The bottom stands
+   in for the header stacked above the text, so the two gaps read as even; it
+   is short of that sum because the card's own padding sits under the body.
+   With several notes, the room goes above the first and below the last. */
+.journal-day-today .journal-entry:first-child .journal-day-body {
+	--journal-body-pad-top: var(--size-4-8);
+}
+
+.journal-day-today .journal-entry:last-child .journal-day-body {
+	--journal-body-pad-bottom: var(--size-4-12);
+}
+
+/* Days without a note yet: visible, but clearly not real content. */
+.journal-day-empty .journal-day-header,
+.journal-day-empty .journal-day-body {
+	opacity: 0.45;
+}
+
+.journal-day-empty:hover .journal-day-header,
+.journal-day-empty:hover .journal-day-body,
+.journal-day-empty.journal-day-focused .journal-day-header,
+.journal-day-empty.journal-day-focused .journal-day-body {
+	opacity: 1;
+}
+
+/* Placeholder, shown by the view while a note's editor is empty. */
+.journal-entry-blank .journal-day-body::after {
+	content: attr(data-placeholder);
+	position: absolute;
+	/* Absolute children sit against the padding box, so pay the padding back
+	   to keep the placeholder on the first line of the editor. */
+	top: var(--journal-body-pad-top);
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	color: var(--text-faint);
+	font-family: var(--font-text);
+	font-size: var(--font-text-size);
+	line-height: var(--line-height-normal);
+}
+
+.journal-day-hidden {
+	display: none;
+}
+
+/* ---------------------------------------------------------------- editor -- */
+
+.journal-day-body .markdown-source-view,
+.journal-day-body .cm-editor {
+	background-color: transparent;
+}
+
+.journal-day-body .cm-editor {
+	min-height: unset;
+}
+
+.journal-day-body .markdown-source-view .cm-editor .cm-scroller {
+	padding: 0;
+	overflow: visible;
+}
+
+/* Obsidian gives a phone's full-page Markdown scroller enough top padding to
+   clear its floating header. That host rule also matches these embedded
+   editors and is more specific than the reset above, so keep it out of each
+   journal day explicitly. */
+body.is-phone .journal-view .view-content .journal-entry-editing .journal-day-body
+	.markdown-source-view > .cm-editor > .cm-scroller {
+	padding-top: 0;
+}
+
+.journal-day-body .cm-contentContainer,
+.journal-day-body .cm-content {
+	padding: 0;
+}
+
+.journal-day-body .cm-gutters {
+	display: none;
+}
+
+.journal-day-body .journal-find-match,
+.journal-day-preview mark.journal-find-match,
+.journal-plain-find-layer mark.journal-find-match {
+	border-radius: 2px;
+	background-color: var(--text-highlight-bg);
+	color: inherit;
+}
+
+.journal-day-body .journal-find-match-selected,
+.journal-day-preview mark.journal-find-match-selected,
+.journal-plain-find-layer mark.journal-find-match-selected {
+	background-color: var(--text-selection);
+	outline: 1px solid var(--interactive-accent);
+}
+
+.journal-plain-editor {
+	width: 100%;
+	height: var(--journal-editor-height, auto);
+	min-height: 3em;
+	resize: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	padding: 0;
+	background-color: transparent;
+	color: var(--text-normal);
+	font-family: var(--font-text);
+	font-size: var(--font-text-size);
+	line-height: var(--line-height-normal);
+	overflow: hidden;
+	/* Bringing a cursor at the end into view scrolls to this textarea's bottom
+	   edge; the margin keeps those last lines clear of the pane's own edge and
+	   the status bar floating over it. Matches REVEAL_LINES in editor.ts. */
+	scroll-margin-bottom: calc(var(--line-height-normal) * 2em);
+}
+
+.journal-plain-editor-find-active {
+	position: relative;
+	z-index: 1;
+	-webkit-text-fill-color: transparent;
+	caret-color: var(--text-normal);
+}
+
+.journal-plain-find-layer {
+	position: absolute;
+	z-index: 0;
+	top: var(--journal-body-pad-top);
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+	color: var(--text-normal);
+	font-family: var(--font-text);
+	font-size: var(--font-text-size);
+	line-height: var(--line-height-normal);
+}
+
+.journal-plain-editor:focus,
+.journal-plain-editor:active {
+	border: none;
+	box-shadow: none;
+}
+
+/* ----------------------------------------------------------- date picker -- */
+
+/* The calendar is one continuous column of months, the same shape as the
+   journal it moves around in: a week per row, months stacked below each other,
+   and a dot under every day that has a note. */
+
+.journal-picker-modal {
+	width: min(420px, 92vw);
+}
+
+.journal-picker-modal .modal-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	margin-top: var(--size-4-2);
+}
+
+.journal-picker-weekdays {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 2px;
+	/* Matches the months' own gutter, so the labels stay over their columns. */
+	padding: 0 var(--size-2-2) var(--size-2-2) 0;
+	border-bottom: 1px solid var(--background-modifier-border);
+	font-size: var(--font-ui-smaller);
+	font-weight: var(--font-medium);
+	color: var(--text-faint);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	flex: 0 0 auto;
+}
+
+.journal-picker-scroll {
+	/* Positioned so a month's `offsetTop` is measured against the scroller
+	   itself, which is what the picker centres and compensates against. */
+	position: relative;
+	height: min(58vh, 480px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	overscroll-behavior: contain;
+	flex: 1 1 auto;
+	min-height: 0;
+	/* The picker compensates for a month built above the reader itself.
+	   Chromium's built-in scroll anchoring corrects for the same insertion a
+	   second time, which lands the reader a month away from where they were. */
+	overflow-anchor: none;
+}
+
+.journal-picker-months,
+.journal-picker-month {
+	overflow-anchor: none;
+}
+
+/* Keeps the scrollbar off the last column. */
+.journal-picker-months {
+	padding-right: var(--size-2-2);
+}
+
+.journal-picker-month-label {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: baseline;
+	gap: var(--size-2-2);
+	padding: var(--size-4-2) 0 var(--size-2-2);
+	background-color: var(--modal-background);
+	font-size: var(--font-ui-small);
+	font-weight: var(--font-semibold);
+	color: var(--text-normal);
+}
+
+.journal-picker-month-year {
+	font-weight: var(--font-normal);
+	color: var(--text-faint);
+}
+
+.journal-picker-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 2px;
+}
+
+button.journal-picker-day {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 34px;
+	padding: 0 0 5px;
+	border: none;
+	border-radius: var(--radius-s);
+	box-shadow: none;
+	background-color: transparent;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	font-variant-numeric: tabular-nums;
+	cursor: var(--cursor);
+}
+
+/* The dot sits under the number in every cell, so the numbers never shift
+   between a day that has a note and one that does not. */
+button.journal-picker-day::after {
+	content: "";
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	width: 4px;
+	height: 4px;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background-color: currentColor;
+	opacity: 0;
+}
+
+button.journal-picker-day.has-note {
+	color: var(--text-normal);
+	font-weight: var(--font-medium);
+}
+
+button.journal-picker-day.has-note::after {
+	opacity: 0.6;
+}
+
+button.journal-picker-day:hover {
+	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+button.journal-picker-day.is-today {
+	color: var(--text-accent);
+	font-weight: var(--font-semibold);
+	box-shadow: inset 0 0 0 1px var(--interactive-accent);
+}
+
+button.journal-picker-day.is-current,
+button.journal-picker-day.is-current:hover {
+	background-color: var(--interactive-accent);
+	color: var(--text-on-accent);
+	font-weight: var(--font-semibold);
+	box-shadow: none;
+}
+
+button.journal-picker-day.is-current::after {
+	opacity: 0;
+}
+
+button.journal-picker-day.is-current.has-note::after {
+	opacity: 0.8;
+}
+
+/* A day that only has files gets a hollow dot. */
+button.journal-picker-day.has-files::after {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 1px currentColor;
+	opacity: 0.6;
+}
+
+button.journal-picker-day.is-current.has-files::after {
+	opacity: 0.8;
+}
+
+button.journal-picker-day:focus-visible {
+	box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+}
+
+button.journal-picker-day.is-out-of-range {
+	opacity: 0.25;
+	cursor: default;
+}
+
+button.journal-picker-day.is-out-of-range:hover {
+	background-color: transparent;
+	color: var(--text-muted);
+}
+
+.journal-picker-blank {
+	height: 34px;
+}
+
+/* ----------------------------------------------------- appearance modal -- */
+
+.journal-appearance-modal {
+	width: min(520px, 92vw);
+}
+
+.journal-appearance-modal .modal-content {
+	margin-top: var(--size-4-2);
+}
+
+.journal-appearance-modal input[type="text"] {
+	width: min(16rem, 45vw);
+}
+
+.journal-appearance-setting-name {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--size-2-2);
+}
+
+.journal-appearance-setting-icon {
+	display: inline-flex;
+	align-items: center;
+	color: var(--text-muted);
+}
+
+.journal-appearance-setting-icon svg {
+	width: var(--icon-xs);
+	height: var(--icon-xs);
+}
+
+.modal.journal-appearance-modal .modal-content .journal-appearance-properties-heading.setting-item {
+	padding-bottom: var(--size-2-2);
+}
+
+.modal.journal-appearance-modal .modal-content .journal-appearance-add-property.setting-item {
+	border-top: 0;
+	padding-top: var(--size-2-3);
+	padding-bottom: var(--size-2-3);
+}
+
+.journal-appearance-properties {
+	max-height: min(40vh, 320px);
+	overflow-y: auto;
+	overscroll-behavior: contain;
+}
+
+.journal-appearance-properties > .setting-item:first-child {
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.modal.journal-appearance-modal .modal-content .journal-appearance-properties > .setting-item {
+	align-items: center;
+	min-height: 0;
+	padding-top: var(--size-2-2);
+	padding-bottom: var(--size-2-2);
+}
+
+.modal.journal-appearance-modal
+	.modal-content
+	.journal-appearance-properties
+	> .setting-item
+	> .setting-item-info,
+.modal.journal-appearance-modal
+	.modal-content
+	.journal-appearance-properties
+	> .setting-item
+	> .setting-item-control {
+	align-self: center;
+}
+
+.journal-appearance-empty {
+	padding: var(--size-4-3) 0;
+}
+
+button.journal-appearance-settings-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
+	height: auto;
+	margin: var(--size-4-3) auto 0;
+	padding: var(--size-2-2) var(--size-4-2);
+	border: 0;
+	box-shadow: none;
+	background-color: var(--background-modifier-hover);
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+
+button.journal-appearance-settings-link:hover {
+	background-color: var(--background-modifier-border);
+	color: var(--text-normal);
+}
+
+/* --------------------------------------------------------- filter modal -- */
+
+.journal-filter-modal {
+	width: min(680px, 94vw);
+}
+
+.journal-filter-modal .modal-content {
+	margin-top: var(--size-4-2);
+}
+
+.modal.journal-filter-modal .journal-filter-metadata-heading.setting-item {
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.modal.journal-filter-modal .journal-filter-add.setting-item {
+	align-items: flex-start;
+	border-top: 0;
+}
+
+.journal-filter-add .setting-item-control {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	min-width: 0;
+	gap: var(--size-2-2);
+}
+
+.journal-filter-add select,
+.journal-filter-add button {
+	flex: 0 0 auto;
+	width: auto;
+}
+
+.journal-filter-add input[type="text"] {
+	flex: 1 1 11rem;
+	min-width: 0;
+	width: min(11rem, 28vw);
+	max-width: 11rem;
+	box-sizing: border-box;
+}
+
+.journal-filter-add.is-property input[type="text"] {
+	flex-basis: 8rem;
+	width: min(8rem, 20vw);
+	max-width: 8rem;
+}
+
+.journal-filter-add input[hidden] {
+	display: none;
+}
+
+.journal-filter-rules {
+	margin-top: var(--size-4-2);
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.modal.journal-filter-modal .journal-filter-rules > .setting-item:first-child {
+	border-top: 0;
+	padding-top: var(--size-4-3);
+}
+
+.modal.journal-filter-modal .journal-filter-rules > .setting-item {
+	align-items: center;
+	min-height: 0;
+	padding-top: var(--size-2-3);
+	padding-bottom: var(--size-2-3);
+}
+
+.modal.journal-filter-modal .journal-filter-rules > .setting-item > .setting-item-info,
+.modal.journal-filter-modal .journal-filter-rules > .setting-item > .setting-item-control {
+	align-self: center;
+}
+
+.journal-filter-empty {
+	padding: var(--size-4-3) 0;
+}
+
+@media (max-width: 520px) {
+	.modal.journal-appearance-modal .journal-appearance-add-property.setting-item {
+		flex-direction: column;
+		align-items: stretch;
+		gap: var(--size-2-2);
+	}
+
+	.journal-appearance-add-property .setting-item-info {
+		margin-inline-end: 0;
+	}
+
+	.journal-appearance-add-property .setting-item-control {
+		justify-content: flex-start;
+	}
+
+	.journal-appearance-add-property input[type="text"] {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.modal.journal-filter-modal .journal-filter-add.setting-item {
+		display: block;
+	}
+
+	.journal-filter-add .setting-item-control {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-top: var(--size-4-2);
+	}
+
+	.journal-filter-add input[type="text"],
+	.journal-filter-add.is-property input[type="text"] {
+		width: min(100%, 13rem);
+		max-width: none;
+		flex: 1 1 9rem;
+	}
+}
+
+/* -------------------------------------------------------------- settings -- */
+
+.journal-settings-note {
+	margin-top: 0;
+	margin-bottom: var(--size-4-3);
+}
+
+/* ---------------------------------------------------------- statistics --- */
+
+.journal-statistics {
+	--journal-tile-size: 13px;
+	--journal-tile-gap: 3px;
+	--journal-weekday-width: 24px;
+	--journal-new-words-column: 32px;
+	padding: var(--size-4-6);
+	overflow: auto;
+}
+
+/* Wide enough for a 54-week year, so the header and card keep one width as the
+ * year changes: weekday labels, week columns with their gaps, the scroller's
+ * padding, and the card's padding and border. */
+.journal-statistics-page {
+	max-width: calc(
+		var(--journal-weekday-width) + 54 * (var(--journal-tile-size) + var(--journal-tile-gap))
+		+ 2 * var(--size-4-1) + 2 * var(--size-4-4) + 2px
+	);
+	margin-inline: auto;
+}
+
+.journal-statistics-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--size-4-4);
+	margin-bottom: var(--size-4-6);
+}
+
+.journal-statistics-header h2 {
+	margin: 0 0 var(--size-4-2);
+	font-size: var(--h2-size);
+}
+
+.journal-statistics-header p {
+	margin: 0;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	line-height: 1.6;
+}
+
+.journal-statistics-navigation {
+	display: flex;
+	align-items: center;
+	gap: var(--size-4-2);
+}
+
+.journal-statistics-navigation input {
+	width: 5.5em;
+	text-align: center;
+	font-variant-numeric: tabular-nums;
+}
+
+.journal-statistics-card {
+	padding: var(--size-4-4);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-l);
+	margin-bottom: var(--size-4-4);
+}
+
+.journal-statistics-scroll {
+	overflow-x: auto;
+	padding: var(--size-4-2) var(--size-4-1);
+}
+
+.journal-statistics-grid {
+	display: flex;
+	gap: var(--journal-tile-gap);
+	width: max-content;
+	margin-inline: auto;
+	padding-bottom: var(--size-4-2);
+}
+
+.journal-statistics-week,
+.journal-statistics-weekdays {
+	display: grid;
+	grid-template-rows: 22px repeat(7, var(--journal-tile-size));
+	gap: var(--journal-tile-gap);
+}
+
+.journal-statistics-week { flex: 0 0 var(--journal-tile-size); }
+
+.journal-statistics-month {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	white-space: nowrap;
+	width: var(--journal-tile-size);
+	overflow: visible;
+}
+
+.journal-statistics-weekdays {
+	flex: 0 0 var(--journal-weekday-width);
+	padding-right: var(--size-4-2);
+	white-space: nowrap;
+	font-size: 10px;
+	line-height: var(--journal-tile-size);
+	color: var(--text-faint);
+}
+
+.journal-statistics-tile,
+.journal-statistics-swatch {
+	--journal-tile-color: var(--background-modifier-border);
+	background: var(--journal-tile-color);
+	border: 1px solid transparent;
+	border-radius: 2px;
+}
+
+.journal-statistics button.journal-statistics-tile {
+	background: var(--journal-tile-color);
+	width: 100%;
+	min-width: var(--journal-tile-size);
+	height: var(--journal-tile-size);
+	min-height: 0;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.journal-statistics .is-missing,
+.journal-statistics .level-0 {
+	--journal-tile-color: var(--background-secondary);
+}
+
+/* Levels 1-3 blend the accent over the pane background. Alpha blending is
+ * supported everywhere Obsidian runs, unlike color-mix on older mobile engines. */
+.journal-statistics .level-1 {
+	--journal-tile-color: hsla(var(--interactive-accent-hsl), 0.25);
+}
+
+.journal-statistics .level-2 {
+	--journal-tile-color: hsla(var(--interactive-accent-hsl), 0.45);
+}
+
+.journal-statistics .level-3 {
+	--journal-tile-color: hsla(var(--interactive-accent-hsl), 0.7);
+}
+
+.journal-statistics .level-4 { --journal-tile-color: var(--interactive-accent); }
+
+.journal-statistics button.journal-statistics-tile.is-loading {
+	background: repeating-linear-gradient(135deg, var(--background-secondary) 0 3px, var(--background-modifier-border) 3px 5px);
+}
+
+.journal-statistics-tile.is-error {
+	--journal-tile-color: var(--background-secondary);
+	border: 1px dashed var(--text-error);
+}
+
+.journal-statistics button.journal-statistics-tile:hover,
+.journal-statistics button.journal-statistics-tile:focus-visible,
+.journal-statistics button.journal-statistics-tile.is-selected {
+	background: var(--journal-tile-color);
+	outline: 2px solid var(--text-normal);
+	outline-offset: 1px;
+}
+
+.journal-statistics-tile[aria-current="date"] { border-color: var(--text-normal); }
+
+.journal-statistics-legend {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: var(--size-4-3);
+	margin-top: var(--size-4-3);
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+}
+
+.journal-statistics-legend > span {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--size-4-1);
+}
+
+.journal-statistics-swatch { width: 12px; height: 12px; }
+
+.journal-statistics-status {
+	margin-top: var(--size-4-4);
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	min-height: 1.5em;
+}
+
+.journal-statistics-selection {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--size-4-2);
+	border-top: 1px solid var(--background-modifier-border);
+	padding-top: var(--size-4-3);
+	margin-top: var(--size-4-3);
+	min-height: 3em;
+	font-size: var(--font-ui-small);
+}
+
+.journal-statistics-selection button[hidden] { display: none; }
+
+/* The earliest weeks or years, left out when the pane is too narrow for them. */
+.journal-statistics .is-clipped { display: none; }
+
+.journal-statistics-section-heading { margin: var(--size-4-8) 0 var(--size-4-4); }
+
+.journal-statistics-section-heading h3 {
+	margin: 0 0 var(--size-4-1);
+	font-size: var(--h3-size);
+}
+
+.journal-statistics-section-heading p {
+	margin: 0;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+/* A column of twelve month tiles per year, under its year, beside a column of
+ * month names: like the year mosaic, later is always down or to the right. */
+.journal-new-words-grid {
+	display: grid;
+	grid-template-rows: auto repeat(12, var(--journal-tile-size));
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(var(--journal-new-words-column), 1fr);
+	gap: var(--journal-tile-gap);
+	width: max-content;
+	/* The width of the year mosaic above, which the year columns stretch to fill:
+	 * its weekday names, then each week column and the gap before it. */
+	min-width: calc(
+		var(--journal-weekday-width)
+		+ var(--journal-statistics-weeks, 53) * (var(--journal-tile-size) + var(--journal-tile-gap))
+	);
+	margin-inline: auto;
+	align-items: center;
+}
+
+.journal-new-words-label {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+/* Month names match the year mosaic's weekday names. */
+.journal-new-words-label.is-month {
+	padding-right: var(--size-4-2);
+	font-size: 10px;
+	line-height: var(--journal-tile-size);
+	color: var(--text-faint);
+}
+
+.journal-new-words-label.is-year {
+	padding-bottom: var(--size-4-1);
+	text-align: center;
+}
+
+.journal-new-words-list:empty { display: none; }
+
+.journal-new-words-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--size-4-2);
+	margin: var(--size-4-3) 0;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+.journal-new-words-note {
+	margin-top: var(--size-4-3);
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+.journal-new-words-words {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--size-4-1);
+}
+
+.journal-statistics button.journal-new-words-word {
+	height: auto;
+	padding: 2px var(--size-4-2);
+	border-radius: var(--radius-s);
+	background: var(--background-secondary);
+	font-size: var(--font-ui-small);
+	box-shadow: none;
+}
+
+.journal-new-words-more { margin-top: var(--size-4-3); }
+
+/* ------------------------------------------------------- year progress --- */
+
+/* Twelve month lines beside the journal column. The view places the strip at
+   the card edge and centres it on the pane; it hides itself when the pane has
+   no room beside the column. It sits over the scroller rather than in it, and
+   passes the wheel on to the journal itself. */
+.journal-year-progress {
+	position: absolute;
+	top: var(--journal-year-progress-top, 50%);
+	left: var(--journal-year-progress-left, 0);
+	/* A month's line and the click target around it. */
+	width: calc(12px + 2 * var(--size-4-2));
+	height: min(26rem, 60%);
+	transform: translateY(-50%);
+}
+
+.journal-year-progress-track {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+/* Newest to oldest, December sits at the top, as the days above are later. */
+.journal-year-progress.is-descending .journal-year-progress-track {
+	flex-direction: column-reverse;
+}
+
+/* The experimental mode turns like a wheel picker. Every month sits in the
+   middle slot, a twelfth of the strip tall, moved up or down by its distance
+   in months from the marked one, so they all slide as the marked month
+   changes. Months fade with distance, and the strip clips whatever has turned
+   past its ends. Only the vertical overflow is clipped, as the names reach
+   out to the side. */
+.journal-year-progress.is-labelled {
+	overflow-x: visible;
+	overflow-y: clip;
+}
+
+.journal-year-progress.is-labelled .journal-year-progress-track {
+	position: relative;
+}
+
+.journal-year-progress.is-labelled .journal-year-progress-month {
+	position: absolute;
+	top: calc(50% - 100% / 24);
+	left: 0;
+	right: 0;
+	height: calc(100% / 12);
+	transform: translateY(calc(var(--journal-year-progress-offset, 0) * 100%));
+	/* Gone by six months away, where the strip's ends cut through a month. */
+	opacity: max(0, calc(1 - var(--journal-year-progress-distance, 0) * 0.18));
+	transition:
+		transform 300ms ease-out,
+		color 300ms ease-out,
+		opacity 300ms ease-out;
+}
+
+.journal-year-progress.is-left {
+	transform: translate(-100%, -50%);
+}
+
+.journal-year-progress.is-hidden {
+	display: none;
+}
+
+/* Each month is a click target as tall as its share of the strip, with its
+   line drawn across the middle. The month's colour is its line's and its
+   label's alike, always. */
+.journal-year-progress-month {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex: 1 1 0;
+	padding: 0 var(--size-4-2);
+	color: color-mix(in srgb, var(--text-faint), var(--text-muted));
+	cursor: var(--cursor);
+	/* Long enough that the bright month glides between lines while scrolling
+	   rather than jumping; a fast scroll retargets the fade mid-way. */
+	transition: color 300ms ease-out;
+}
+
+.journal-year-progress-month::before {
+	content: "";
+	width: 12px;
+	height: 2px;
+	border-radius: 1px;
+	background-color: currentColor;
+}
+
+.journal-year-progress-month.is-current {
+	color: var(--text-normal);
+}
+
+/* Months still to come recede well behind the ones already past. */
+.journal-year-progress-month.is-future {
+	color: color-mix(in srgb, var(--text-faint) 35%, transparent);
+}
+
+/* Without names, the lines alone have to single out the marked month, so the
+   others step further back; still to come stays fainter than past. */
+.journal-year-progress:not(.is-labelled) .journal-year-progress-month {
+	color: color-mix(in srgb, var(--text-faint) 60%, transparent);
+}
+
+.journal-year-progress:not(.is-labelled) .journal-year-progress-month.is-current {
+	color: var(--text-normal);
+}
+
+.journal-year-progress:not(.is-labelled) .journal-year-progress-month.is-future {
+	color: color-mix(in srgb, var(--text-faint) 25%, transparent);
+}
+
+/* Outranks every shade above, so hovering brightens a month in any mode. */
+.journal-year-progress .journal-year-progress-month:hover:not(.is-current) {
+	color: var(--text-muted);
+	transition-duration: 100ms;
+}
+
+/* Month names, and the marked month's year, sit on the side of the lines
+   away from the journal, in the month's colour. The experimental mode shows
+   them all; the others show a month's only while it is hovered. Hidden
+   names keep their size, so whether they fit can be measured in any mode. */
+.journal-year-progress-label {
+	position: absolute;
+	display: flex;
+	visibility: hidden;
+	top: 50%;
+	left: calc(100% + var(--size-4-2));
+	gap: var(--size-4-3);
+	font-size: var(--font-ui-small);
+	line-height: 1;
+	text-transform: uppercase;
+	white-space: nowrap;
+	transform: translateY(-50%);
+}
+
+.journal-year-progress.is-labelled .journal-year-progress-label,
+.journal-year-progress-month:hover .journal-year-progress-label {
+	visibility: visible;
+}
+
+.journal-year-progress.is-left .journal-year-progress-label {
+	right: calc(100% + var(--size-4-2));
+	left: auto;
+}
+
+/* Away from the journal on either side: year, month on the left; month,
+   year on the right. */
+.journal-year-progress:not(.is-left) .journal-year-progress-label {
+	flex-direction: row-reverse;
+}
+
+.journal-year-progress-month.is-current .journal-year-progress-label {
+	font-weight: var(--font-medium);
+}
+
+.journal-year-progress-year {
+	display: none;
+	text-transform: none;
+}
+
+.journal-year-progress-month.shows-year .journal-year-progress-year {
+	display: inline;
+}
+
+/* Comes last, to outrank hovering as well as the experimental mode. */
+.journal-year-progress.is-unlabelled .journal-year-progress-label {
+	visibility: hidden;
+}

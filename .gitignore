@@ -10,3 +10,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+
+
+
+# Ignore Smart Environment folder
+.smart-env
